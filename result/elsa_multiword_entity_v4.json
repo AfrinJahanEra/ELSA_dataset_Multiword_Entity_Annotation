@@ -1,0 +1,2751 @@
+{
+  "description": "ELSA Dataset — Multi-Word Entity Sentences with BIO Tags and Sentiment",
+  "version": "v4",
+  "total_multiword_sentences": 63,
+  "sentiment_distribution": {
+    "Negative": 10,
+    "Positive": 44,
+    "Neutral": 9
+  },
+  "unique_multiword_entities": 20,
+  "records": [
+    {
+      "record_no": 1,
+      "id": 68865,
+      "sentence": "ফেস ওয়াশ এর ক্যাপ টা ভাঙ্গা, খুলা যাচ্ছে না",
+      "tagged_sentence": "_NE_ফেস ওয়াশ এর ক্যাপ টা ভাঙ্গা খুলা খুলা না",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 7,
+      "sentiment_label": "Negative",
+      "sentiment_code": 0
+    },
+    {
+      "record_no": 2,
+      "id": 75729,
+      "sentence": "ডেটল সাবান তো ভাল সাবান সবাই জানে।",
+      "tagged_sentence": "_NE_ডেটল সাবান তো ভাল সাবান সবাই সবাই জানে।।",
+      "NE_tag": [
+        "ডেটল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ডেটল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "সাবান",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ডেটল সাবান",
+          "raw_tokens": [
+            "ডেটল",
+            "সাবান"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ডেটল সাবান"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 6,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 3,
+      "id": 75838,
+      "sentence": "ডেটল সাবান নিয়ে বলার কিছু নাই।",
+      "tagged_sentence": "_NE_ডেটল সাবান নিয়ে বলার কিছু কিছু নাই।",
+      "NE_tag": [
+        "ডেটল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ডেটল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "সাবান",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ডেটল সাবান",
+          "raw_tokens": [
+            "ডেটল",
+            "সাবান"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ডেটল সাবান"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 5,
+      "sentiment_label": "Neutral",
+      "sentiment_code": 1
+    },
+    {
+      "record_no": 4,
+      "id": 76622,
+      "sentence": "ডেটল সাবান সবসময়ের জন্যই ভালো,অরিজিনাল প্রোডাক্ট। ",
+      "tagged_sentence": "_NE_ডেটল সাবান সবসময়ের জন্যই ভালো অরিজিনাল অরিজিনাল।।",
+      "NE_tag": [
+        "ডেটল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ডেটল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "সাবান",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ডেটল সাবান",
+          "raw_tokens": [
+            "ডেটল",
+            "সাবান"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ডেটল সাবান"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 5,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 5,
+      "id": 76738,
+      "sentence": "ডেটল সাবান আমি সবসময় ব্যবহার করি। পণ্যের মান ভালো। চাইলে কেউ নিতে পারেন। ধন্যবাদ দারাজ।",
+      "tagged_sentence": "_NE_ডেটল সাবান আমি সবসময় ব্যবহার ব্যবহার করি।পণ্যের মান ভালো।চাইলে কেউ নিতে পারেন।ধন্যবাদ দারাজ।",
+      "NE_tag": [
+        "ডেটল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ডেটল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "সাবান",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ডেটল সাবান",
+          "raw_tokens": [
+            "ডেটল",
+            "সাবান"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ডেটল সাবান"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 11,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 6,
+      "id": 76764,
+      "sentence": "ডেটল সাবানগুলা অনেক ভালো।অথেনটিক পণ‍্য।আপনারা সবাই নিতে পারেন।",
+      "tagged_sentence": "_NE_ডেটল সাবানগুলা অনেক ভালো।অথেনটিক পণ‍্য।আপনারা সবাই নিতে নিতে পারেন।",
+      "NE_tag": [
+        "ডেটল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ডেটল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "সাবানগুলা",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ডেটল সাবান",
+          "raw_tokens": [
+            "ডেটল",
+            "সাবানগুলা"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ডেটল সাবান"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 7,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 7,
+      "id": 78022,
+      "sentence": "ডেটল সাবান বাংলাদেশের নামবার ওয়ান সাবান",
+      "tagged_sentence": "_NE_ডেটল সাবান বাংলাদেশের নামবার ওয়ান সাবান",
+      "NE_tag": [
+        "ডেটল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ডেটল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "সাবান",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ডেটল সাবান",
+          "raw_tokens": [
+            "ডেটল",
+            "সাবান"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ডেটল সাবান"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 4,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 8,
+      "id": 78395,
+      "sentence": "10 টাকায় মিনি লাক্স সাবান, খুব ভালো প্রোডাক্ট।",
+      "tagged_sentence": "10 টাকায় মিনি _NE_লাক্স সাবান খুব ভালো প্রোডাক্ট।।",
+      "NE_tag": [
+        "লাক্স"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 3,
+          "token": "লাক্স",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 4,
+          "token": "সাবান",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "লাক্স সাবান",
+          "raw_tokens": [
+            "লাক্স",
+            "সাবান"
+          ],
+          "start_token_idx": 3,
+          "end_token_idx": 4,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "লাক্স সাবান"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 6,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 9,
+      "id": 79372,
+      "sentence": "ধন্যবাদ আজ   ডেটল সাবানটি পেয়েছি  অসংখ্য ধন্যবাদ দারাজ ছেলার কে ???",
+      "tagged_sentence": "ধন্যবাদ আজ _NE_ডেটল সাবানটি পেয়েছি অসংখ্য ধন্যবাদ দারাজ দারাজ ছেলার কে কে",
+      "NE_tag": [
+        "ডেটল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 2,
+          "token": "ডেটল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 3,
+          "token": "সাবানটি",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ডেটল সাবান",
+          "raw_tokens": [
+            "ডেটল",
+            "সাবানটি"
+          ],
+          "start_token_idx": 2,
+          "end_token_idx": 3,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ডেটল সাবান"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 10,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 10,
+      "id": 79906,
+      "sentence": "ডেটল সাবান সবসময় আমার কাছে ভালোই লাগে।",
+      "tagged_sentence": "_NE_ডেটল সাবান সবসময় আমার কাছে ভালোই লাগে লাগে।",
+      "NE_tag": [
+        "ডেটল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ডেটল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "সাবান",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ডেটল সাবান",
+          "raw_tokens": [
+            "ডেটল",
+            "সাবান"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ডেটল সাবান"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 6,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 11,
+      "id": 80352,
+      "sentence": "আমি অনেক আগে থেকেই ডেটল সাবান দারাজ থেকে আনা হয়।",
+      "tagged_sentence": "আমি অনেক আগে থেকেই _NE_ডেটল সাবান দারাজ থেকে থেকে আনা হয় হয়",
+      "NE_tag": [
+        "ডেটল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 4,
+          "token": "ডেটল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 5,
+          "token": "সাবান",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ডেটল সাবান",
+          "raw_tokens": [
+            "ডেটল",
+            "সাবান"
+          ],
+          "start_token_idx": 4,
+          "end_token_idx": 5,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ডেটল সাবান"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 10,
+      "sentiment_label": "Neutral",
+      "sentiment_code": 1
+    },
+    {
+      "record_no": 12,
+      "id": 80632,
+      "sentence": "বাজারের চেয়ে কম মূল্যে অরিজিনাল স্যাভলন সাবান",
+      "tagged_sentence": "বাজারের চেয়ে কম মূল্যে অরিজিনাল অরিজিনাল _NE_স্যাভলন সাবান",
+      "NE_tag": [
+        "স্যাভলন"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 6,
+          "token": "স্যাভলন",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 7,
+          "token": "সাবান",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "স্যাভলন সাবান",
+          "raw_tokens": [
+            "স্যাভলন",
+            "সাবান"
+          ],
+          "start_token_idx": 6,
+          "end_token_idx": 7,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "স্যাভলন সাবান"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 6,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 13,
+      "id": 82749,
+      "sentence": "বাজার থেকে কিছুটা কমে পেয়েছি। আর ডেটল সাবান তো ভালো।",
+      "tagged_sentence": "বাজার থেকে কিছুটা কমে পেয়েছি।আর _NE_ডেটল সাবান তো ভালো।",
+      "NE_tag": [
+        "ডেটল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 5,
+          "token": "ডেটল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 6,
+          "token": "সাবান",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ডেটল সাবান",
+          "raw_tokens": [
+            "ডেটল",
+            "সাবান"
+          ],
+          "start_token_idx": 5,
+          "end_token_idx": 6,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ডেটল সাবান"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 7,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 14,
+      "id": 85228,
+      "sentence": "বাংলাদেশি সাবান গুলোর মধ্যে Savlon Soap Mild আমার কাছে Best মনে হয়েছে।",
+      "tagged_sentence": "বাংলাদেশি সাবান গুলোর মধ্যে _NE_Savlon সাবান মাইল্ড আমার কাছে সেরা মনে হয়েছে।।।",
+      "NE_tag": [
+        "Savlon"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 4,
+          "token": "Savlon",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 5,
+          "token": "সাবান",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "Savlon সাবান",
+          "raw_tokens": [
+            "Savlon",
+            "সাবান"
+          ],
+          "start_token_idx": 4,
+          "end_token_idx": 5,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "Savlon সাবান"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 10,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 15,
+      "id": 103621,
+      "sentence": "শ্যাম্পু ব্যবহার করিনি। গিফট দিয়ে দিয়েছি। বাট ফেস ওয়াশ টা ভালো",
+      "tagged_sentence": "_NE_শ্যাম্পু ব্যবহার করিনি।গিফট দিয়ে দিয়েছি।বাট _NE_ফেস ওয়াশ টা ভালো",
+      "NE_tag": [
+        "শ্যাম্পু",
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "শ্যাম্পু",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 5,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 6,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "শ্যাম্পু",
+          "raw_tokens": [
+            "শ্যাম্পু"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 0,
+          "token_count": 1,
+          "type": "SINGLE-WORD"
+        },
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 5,
+          "end_token_idx": 6,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 2,
+      "i_count": 1,
+      "o_count": 6,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 16,
+      "id": 103996,
+      "sentence": "প্যানটিন শ্যাম্পু সবসময়ই আমার চুল পড়া কমিয়েছে। অনেক ভালো একটা প্রোডাক্ট। ধন্যবাদ সেলারকে।",
+      "tagged_sentence": "_NE_প্যানটিন শ্যাম্পু সবসময়ই আমার চুল পড়া কমিয়েছে কমিয়েছে।অনেক ভালো একটা প্রোডাক্ট।ধন্যবাদ সেলারকে।",
+      "NE_tag": [
+        "প্যানটিন"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "প্যানটিন",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "শ্যাম্পু",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "প্যানটিন শ্যাম্পু",
+          "raw_tokens": [
+            "প্যানটিন",
+            "শ্যাম্পু"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "প্যানটিন শ্যাম্পু"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 10,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 17,
+      "id": 108329,
+      "sentence": "চুল পড়ে, শক্ত হয়ে যায়,  স্প্রে বোতল সমস্যা ",
+      "tagged_sentence": "চুল পড়ে শক্ত হয়ে যায় _NE_স্প্রে বোতল সমস্যা",
+      "NE_tag": [
+        "স্প্রে"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 5,
+          "token": "স্প্রে",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 6,
+          "token": "বোতল",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "স্প্রে বোতল",
+          "raw_tokens": [
+            "স্প্রে",
+            "বোতল"
+          ],
+          "start_token_idx": 5,
+          "end_token_idx": 6,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "স্প্রে বোতল"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 6,
+      "sentiment_label": "Negative",
+      "sentiment_code": 0
+    },
+    {
+      "record_no": 18,
+      "id": 124661,
+      "sentence": "আলহামদুলিল্লাহ ব্রাশ সেট গুলো ঠিকঠাক হাতে পেয়েছি! মান অনেক ভালো! ব্রাশের তুলি গুলো অনেক সফট্।",
+      "tagged_sentence": "আলহামদুলিল্লাহ _NE_ব্রাশ সেট গুলো ঠিকঠাক ঠিকঠাক হাতে মান অনেক ভালো ব্রাশের তুলি গুলো অনেক সফট্।",
+      "NE_tag": [
+        "ব্রাশ"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 1,
+          "token": "ব্রাশ",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 2,
+          "token": "সেট",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ব্রাশ সেট",
+          "raw_tokens": [
+            "ব্রাশ",
+            "সেট"
+          ],
+          "start_token_idx": 1,
+          "end_token_idx": 2,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ব্রাশ সেট"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 13,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 19,
+      "id": 124832,
+      "sentence": "এক কথায় অসাধারণ ব্রাশ সেট টা  ❤️❤️❤️❤️❤️❤️❤️❤",
+      "tagged_sentence": "এক কথায় অসাধারণ _NE_ব্রাশ সেট টা ❤টা❤❤❤❤❤❤❤❤",
+      "NE_tag": [
+        "ব্রাশ"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 3,
+          "token": "ব্রাশ",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 4,
+          "token": "সেট",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ব্রাশ সেট",
+          "raw_tokens": [
+            "ব্রাশ",
+            "সেট"
+          ],
+          "start_token_idx": 3,
+          "end_token_idx": 4,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ব্রাশ সেট"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 5,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 20,
+      "id": 129623,
+      "sentence": "এইটা আশা করি নাই যে প্রোডাক্টের জন্য নিলাম সেটা পুরোটাই খারাপ Face Wash",
+      "tagged_sentence": "এইটা আশা করি নাই যে প্রোডাক্টের জন্য নিলাম নিলাম সেটা খারাপ খারাপ _NE_ফেস ওয়াশ",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 12,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 13,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 12,
+          "end_token_idx": 13,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 12,
+      "sentiment_label": "Negative",
+      "sentiment_code": 0
+    },
+    {
+      "record_no": 21,
+      "id": 149805,
+      "sentence": "Face wash টা ঠিক আছে \nতবে ক্রিমের উৎপাদন অনেক দিন আগের\n",
+      "tagged_sentence": "_NE_ফেস ওয়াশ টা ঠিক আছে তবে _NE_ক্রিমের উৎপাদন অনেক দিন আগের",
+      "NE_tag": [
+        "ফেস",
+        "ক্রিমের"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        },
+        {
+          "token_index": 6,
+          "token": "ক্রিমের",
+          "tag": "B-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        },
+        {
+          "entity_text": "ক্রিম",
+          "raw_tokens": [
+            "ক্রিমের"
+          ],
+          "start_token_idx": 6,
+          "end_token_idx": 6,
+          "token_count": 1,
+          "type": "SINGLE-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 2,
+      "i_count": 1,
+      "o_count": 8,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 22,
+      "id": 150274,
+      "sentence": "ফেস ওয়াশ ঠিক আছে, মেয়াদ ভালোই আছে। কিন্তু ক্রিমের মেয়াদ কম।",
+      "tagged_sentence": "_NE_ফেস ওয়াশ ঠিক আছে মেয়াদ ভালোই আছে আছে।কিন্তু _NE_ক্রিমের মেয়াদ কম।",
+      "NE_tag": [
+        "ফেস",
+        "ক্রিমের"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        },
+        {
+          "token_index": 8,
+          "token": "ক্রিমের",
+          "tag": "B-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        },
+        {
+          "entity_text": "ক্রিম",
+          "raw_tokens": [
+            "ক্রিমের"
+          ],
+          "start_token_idx": 8,
+          "end_token_idx": 8,
+          "token_count": 1,
+          "type": "SINGLE-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 2,
+      "i_count": 1,
+      "o_count": 8,
+      "sentiment_label": "Neutral",
+      "sentiment_code": 1
+    },
+    {
+      "record_no": 23,
+      "id": 150418,
+      "sentence": "Face wash টা নকল\nক্রিমটা ঠিক আছে \nনেওয়ার আগে ভেবে নেবেন।",
+      "tagged_sentence": "_NE_ফেস ওয়াশ টা নকল _NE_ক্রিমটা ঠিক আছে নেওয়ার আগে ভেবে নেবেন।",
+      "NE_tag": [
+        "ফেস",
+        "ক্রিমটা"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        },
+        {
+          "token_index": 4,
+          "token": "ক্রিমটা",
+          "tag": "B-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        },
+        {
+          "entity_text": "ক্রিম",
+          "raw_tokens": [
+            "ক্রিমটা"
+          ],
+          "start_token_idx": 4,
+          "end_token_idx": 4,
+          "token_count": 1,
+          "type": "SINGLE-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 2,
+      "i_count": 1,
+      "o_count": 8,
+      "sentiment_label": "Negative",
+      "sentiment_code": 0
+    },
+    {
+      "record_no": 24,
+      "id": 150463,
+      "sentence": "ফেসওয়াসের বোতল ফাটা ।।\nএকদমি বাজে হয়েছে।",
+      "tagged_sentence": "_NE_ফেস ওয়াশের বোতল ফাটা ।। একদম বাজে হয়েছে।",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "ওয়াশের",
+          "tag": "I-PRODUCT"
+        },
+        {
+          "token_index": 2,
+          "token": "বোতল",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ বোতল",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশের",
+            "বোতল"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 2,
+          "token_count": 3,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ বোতল"
+      ],
+      "b_count": 1,
+      "i_count": 2,
+      "o_count": 4,
+      "sentiment_label": "Negative",
+      "sentiment_code": 0
+    },
+    {
+      "record_no": 25,
+      "id": 151474,
+      "sentence": "ধন্যবাদ দারাজ কম মুল্যে অরিজিনাল studio X face wash টি দেওয়ার জন্য❤️❤️❤️❤️❤️",
+      "tagged_sentence": "ধন্যবাদ দারাজ কম মুল্যে অরিজিনাল স্টুডিও এক্স _NE_ফেস ওয়াশ টি দেওয়ার জন্য❤ ❤❤❤❤❤",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 7,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 8,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 7,
+          "end_token_idx": 8,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 10,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 26,
+      "id": 151604,
+      "sentence": "তেলের বোতলটা পুরানো মনে হলো।সাবান আর ফেসওয়াস ঠিক আছে",
+      "tagged_sentence": "_NE_তেলের বোতলটা পুরানো মনে হলো।সাবান আর ফেসওয়াস ঠিক ঠিক আছে",
+      "NE_tag": [
+        "তেলের"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "তেলের",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "বোতলটা",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "তেল বোতল",
+          "raw_tokens": [
+            "তেলের",
+            "বোতলটা"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "তেল বোতল"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 8,
+      "sentiment_label": "Neutral",
+      "sentiment_code": 1
+    },
+    {
+      "record_no": 27,
+      "id": 151663,
+      "sentence": "এই দামের মধ্যে বেস্ট Facewaah",
+      "tagged_sentence": "এই দামের মধ্যে বেস্ট _NE_ফেস ওয়াশ",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 4,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 5,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 4,
+          "end_token_idx": 5,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 4,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 28,
+      "id": 152641,
+      "sentence": "ফেস ওয়াশ টা ভালো ছিল",
+      "tagged_sentence": "_NE_ফেস ওয়াশ টা ভালো ছিল",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 3,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 29,
+      "id": 163544,
+      "sentence": "বাজারের অন্যান্য Face Masks ? তুলনায় Sepnil Face Mask অনেক ভালো।",
+      "tagged_sentence": "অন্যান্য অন্যান্য মুখের মুখোশ ? তুলনায় সেপিনিল _NE_ফেস মাস্ক অনেক ভালো।",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 6,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 7,
+          "token": "মাস্ক",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস মাস্ক",
+          "raw_tokens": [
+            "ফেস",
+            "মাস্ক"
+          ],
+          "start_token_idx": 6,
+          "end_token_idx": 7,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস মাস্ক"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 8,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 30,
+      "id": 163550,
+      "sentence": "সেপনিল মাস্ক টা অনেক ভালো এবং ব্যাবহার করে ও মজাThis is good",
+      "tagged_sentence": "_NE_সেপনিল মাস্ক টা অনেক অনেক এবং ব্যাবহার ব্যাবহার করে মজা মজা এটি ভাল",
+      "NE_tag": [
+        "সেপনিল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "সেপনিল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "মাস্ক",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "সেপনিল মাস্ক",
+          "raw_tokens": [
+            "সেপনিল",
+            "মাস্ক"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "সেপনিল মাস্ক"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 11,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 31,
+      "id": 163815,
+      "sentence": "এত কম দামে সেপনিল মাস্ক। খুব খুশি কিনতে পেরে।",
+      "tagged_sentence": "এত কম দামে _NE_সেপনিল মাস্ক।খুব খুশি কিনতে পেরে।",
+      "NE_tag": [
+        "সেপনিল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 3,
+          "token": "সেপনিল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 4,
+          "token": "মাস্ক।খুব",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "সেপনিল মাস্ক",
+          "raw_tokens": [
+            "সেপনিল",
+            "মাস্ক।খুব"
+          ],
+          "start_token_idx": 3,
+          "end_token_idx": 4,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "সেপনিল মাস্ক"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 6,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 32,
+      "id": 165827,
+      "sentence": "থ্রিডি মাস্কগুলো বেশ ভালোই ছিল।\nস্বাচ্ছন্দ ভাবেই ব্যবহার করছি। ধন্যবাদ দারাজ।",
+      "tagged_sentence": "_NE_থ্রিডি মাস্কগুলো বেশ ভালোই ছিল। স্বাচ্ছন্দ ভাবেই ব্যবহার করছি।ধন্যবাদ দারাজ।",
+      "NE_tag": [
+        "থ্রিডি"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "থ্রিডি",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "মাস্কগুলো",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "থ্রিডি মাস্ক",
+          "raw_tokens": [
+            "থ্রিডি",
+            "মাস্কগুলো"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "থ্রিডি মাস্ক"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 8,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 33,
+      "id": 170259,
+      "sentence": "Face Mask  টি মোটামুটি মানের আর Packaging টাও ভাল ছিল না। Delivery Fast ছিল।",
+      "tagged_sentence": "_NE_ফেস মাস্ক টি মোটামুটি মানের আর প্যাকেজিং টাও ভাল ছিল না।বিতরণ দ্রুত ছিল।",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "মাস্ক",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস মাস্ক",
+          "raw_tokens": [
+            "ফেস",
+            "মাস্ক"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস মাস্ক"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 11,
+      "sentiment_label": "Negative",
+      "sentiment_code": 0
+    },
+    {
+      "record_no": 34,
+      "id": 172899,
+      "sentence": "ক্রিমটি ফেসের সাথে মিসে যায় নাহ। ভেসে থাকে ?",
+      "tagged_sentence": "_NE_ক্রিমটি ফেসের সাথে মিসে যায় যায় নাহ।ভেসে থাকে ?",
+      "NE_tag": [
+        "ক্রিমটি"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ক্রিমটি",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "ফেসের",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ক্রিম ফেস",
+          "raw_tokens": [
+            "ক্রিমটি",
+            "ফেসের"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ক্রিম ফেস"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 6,
+      "sentiment_label": "Negative",
+      "sentiment_code": 0
+    },
+    {
+      "record_no": 35,
+      "id": 183695,
+      "sentence": "অনেক ভালো হয়েছে ফেসিয়াল স্ক্রাব টা। ২০২৪ সাল পপর্যন্ত মেয়াদ। ডিসকাউন্ট রেটে পেয়েছি। সবাই নিতে পারেন।???❤️",
+      "tagged_sentence": "অনেক ভালো হয়েছে _NE_ফেসিয়াল স্ক্রাব স্ক্রাব টা।২০২৪ সাল পপর্যন্ত মেয়াদ।ডিসকাউন্ট রেটে পেয়েছি।সবাই নিতে পারেন।???❤",
+      "NE_tag": [
+        "ফেসিয়াল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 3,
+          "token": "ফেসিয়াল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 4,
+          "token": "স্ক্রাব",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেসিয়াল স্ক্রাব",
+          "raw_tokens": [
+            "ফেসিয়াল",
+            "স্ক্রাব"
+          ],
+          "start_token_idx": 3,
+          "end_token_idx": 4,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেসিয়াল স্ক্রাব"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 12,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 36,
+      "id": 184839,
+      "sentence": "আলহামদুলিল্লাহ ফেস ওয়াশ টি খুবই ভালো, ধন্যবাদ আপনাদেরকে। ",
+      "tagged_sentence": "আলহামদুলিল্লাহ _NE_ফেস ওয়াশ টি খুবই ভালো ধন্যবাদ ধন্যবাদ।",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 1,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 2,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 1,
+          "end_token_idx": 2,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 6,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 37,
+      "id": 185213,
+      "sentence": "ফেস ওয়াশ টার পেকেট এর মুখ খোলা ছিলো,\nঅরিজিনাল কিনা সন্দেহ আছে ?",
+      "tagged_sentence": "_NE_ফেস ওয়াশ টার পেকেট এর মুখ খোলা ছিলো ছিলো অরিজিনাল কিনা সন্দেহ আছে ?",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 11,
+      "sentiment_label": "Negative",
+      "sentiment_code": 0
+    },
+    {
+      "record_no": 38,
+      "id": 185392,
+      "sentence": "অনেক ভাল একটা ফেস ওয়াশ। রিকমন্ডেড।",
+      "tagged_sentence": "অনেক ভাল একটা _NE_ফেস ওয়াশ।রিকমন্ডেড।",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 3,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 4,
+          "token": "ওয়াশ।রিকমন্ডেড।",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ।রিকমন্ডেড।"
+          ],
+          "start_token_idx": 3,
+          "end_token_idx": 4,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 3,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 39,
+      "id": 185436,
+      "sentence": "খুবই বাজে একটা ফেস ওয়াশ। আমার টাকা গুলো নষ্ট হয়েছে।",
+      "tagged_sentence": "খুবই বাজে একটা _NE_ফেস ওয়াশ।আমার টাকা গুলো নষ্ট হয়েছে।",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 3,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 4,
+          "token": "ওয়াশ।আমার",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ।আমার"
+          ],
+          "start_token_idx": 3,
+          "end_token_idx": 4,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 7,
+      "sentiment_label": "Negative",
+      "sentiment_code": 0
+    },
+    {
+      "record_no": 40,
+      "id": 186479,
+      "sentence": "খুব ভালো একটি face wash এবং খুব সুন্দর প্যাকেজিং",
+      "tagged_sentence": "খুব ভালো একটি _NE_ফেস ওয়াশ এবং খুব সুন্দর প্যাকেজিং প্যাকেজিং",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 3,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 4,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 3,
+          "end_token_idx": 4,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 8,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 41,
+      "id": 187437,
+      "sentence": "খুব ভালো ফেস ওয়াশ। ভালো ডিসকাউন্ট পেয়েছি। চাইলে যে কেউ নিতে পারেন।",
+      "tagged_sentence": "খুব ভালো _NE_ফেস ওয়াশ।ভালো ডিসকাউন্ট পেয়েছি।চাইলে যে কেউ নিতে পারেন।",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 2,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 3,
+          "token": "ওয়াশ।ভালো",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ।ভালো"
+          ],
+          "start_token_idx": 2,
+          "end_token_idx": 3,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 8,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 42,
+      "id": 187460,
+      "sentence": "ভালো প্রোডাক্ট।\n১৬৫ টাকায় ভালোই ফেস ওয়াশ টা।\nআপনারাও নিতে পারেন।",
+      "tagged_sentence": "ভালো প্রোডাক্ট। ১৬৫ টাকায় ভালোই _NE_ফেস ওয়াশ ওয়াশ টা। আপনারাও নিতে পারেন।",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 5,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 6,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 5,
+          "end_token_idx": 6,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 10,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 43,
+      "id": 188225,
+      "sentence": "ফেশ ওয়াশ টি orginal uniliver এর প্রোডাক্ট ??",
+      "tagged_sentence": "_NE_ফেস ওয়াশ টি আসল ইউনিলিভার এর প্রোডাক্ট ?? ??",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 5,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 44,
+      "id": 190929,
+      "sentence": "সব কিছু ঠিক আছে সাথে একটা lux body wash ফ্রি দিছে",
+      "tagged_sentence": "সব কিছু ঠিক আছে আছে একটা _NE_লাক্স বডি ওয়াশ ফ্রি দিছে দিছে দিছে",
+      "NE_tag": [
+        "লাক্স"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 6,
+          "token": "লাক্স",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 7,
+          "token": "বডি",
+          "tag": "I-PRODUCT"
+        },
+        {
+          "token_index": 8,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "লাক্স বডি ওয়াশ",
+          "raw_tokens": [
+            "লাক্স",
+            "বডি",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 6,
+          "end_token_idx": 8,
+          "token_count": 3,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "লাক্স বডি ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 2,
+      "o_count": 10,
+      "sentiment_label": "Neutral",
+      "sentiment_code": 1
+    },
+    {
+      "record_no": 45,
+      "id": 191413,
+      "sentence": "face wash টা অনেক অনেক ভালো??????",
+      "tagged_sentence": "_NE_ফেস ওয়াশ টা অনেক অনেক ভালো??????",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 4,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 46,
+      "id": 191639,
+      "sentence": "ফেস ওয়াশের সাথে ভেজলিন লোশন ফ্রি পেয়েছি।",
+      "tagged_sentence": "_NE_ফেস ওয়াশের সাথে ভেজলিন লোশন ফ্রি ফ্রি পেয়েছি।।",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "ওয়াশের",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশের"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 6,
+      "sentiment_label": "Neutral",
+      "sentiment_code": 1
+    },
+    {
+      "record_no": 47,
+      "id": 191684,
+      "sentence": "কি আর বলবো এমন একটা ভালো face wash,\nআপনারা চাইলে নিতে পারেন,, ",
+      "tagged_sentence": "কি আর বলবো এমন একটা ভালো _NE_ফেস ওয়াশ আপনারা চাইলে নিতে পারেন",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 6,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 7,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 6,
+          "end_token_idx": 7,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 10,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 48,
+      "id": 191807,
+      "sentence": "ফেস ওয়াশটি অনেক ভালো উন্নত মানের",
+      "tagged_sentence": "_NE_ফেস ওয়াশটি অনেক ভালো উন্নত মানের",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "ওয়াশটি",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশটি"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 4,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 49,
+      "id": 192063,
+      "sentence": "দাম অনুযায়ী অনেক  ভালো  একটা সানছ ক্রিম, ",
+      "tagged_sentence": "দাম অনুযায়ী অনেক ভালো একটা _NE_সানছ ক্রিম ক্রিম",
+      "NE_tag": [
+        "সানছ"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 5,
+          "token": "সানছ",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 6,
+          "token": "ক্রিম",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "সানছ ক্রিম",
+          "raw_tokens": [
+            "সানছ",
+            "ক্রিম"
+          ],
+          "start_token_idx": 5,
+          "end_token_idx": 6,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "সানছ ক্রিম"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 6,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 50,
+      "id": 192879,
+      "sentence": "ফেইস ওয়াশটি অনেক ভালো। ময়েসশ্চার করে ত্বককে। অরিজিনাল পণ্য। স্টোরটাও অরিজিনাল। নির্ভরযোগ্য স্টোর।",
+      "tagged_sentence": "_NE_ফেইস ওয়াশটি অনেক ভালো।ময়েসশ্চার করে ত্বককে।অরিজিনাল পণ্য।স্টোরটাও অরিজিনাল।নির্ভরযোগ্য স্টোর।",
+      "NE_tag": [
+        "ফেইস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ফেইস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "ওয়াশটি",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেইস ওয়াশ",
+          "raw_tokens": [
+            "ফেইস",
+            "ওয়াশটি"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেইস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 7,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 51,
+      "id": 194291,
+      "sentence": "ফেস ওয়াশটা ভালোই মনে হচ্ছে।",
+      "tagged_sentence": "_NE_ফেস ওয়াশটা ভালোই মনে হচ্ছে।",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "ওয়াশটা",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশটা"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 3,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 52,
+      "id": 194297,
+      "sentence": "Face wash টি পেয়েছি ঠিক মতো।ভালোই আছে।",
+      "tagged_sentence": "_NE_ফেস ওয়াশ টি পেয়েছি ঠিক মতো।ভালোই মতো।ভালোই।।",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 5,
+      "sentiment_label": "Neutral",
+      "sentiment_code": 1
+    },
+    {
+      "record_no": 53,
+      "id": 194650,
+      "sentence": "প্যকেট করা হয় নাই। ফেসওয়াস পরে গেছে",
+      "tagged_sentence": "প্যাকেট করা হয় নাই।_NE_ফেস ওয়াশ পরে গেছে",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 3,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 4,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 3,
+          "end_token_idx": 4,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 5,
+      "sentiment_label": "Negative",
+      "sentiment_code": 0
+    },
+    {
+      "record_no": 54,
+      "id": 202512,
+      "sentence": "ফেস ওয়াশ টা অনেক ভালো",
+      "tagged_sentence": "_NE_ফেস ওয়াশ টা অনেক ভালো",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 3,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 55,
+      "id": 203819,
+      "sentence": "সুন্দর  ফেস ওয়াস\nশেষ হয়ে গেছে ,  আর একটা অডার দিব কিন্তু পাচ্ছি না।",
+      "tagged_sentence": "সুন্দর _NE_ফেস ওয়াশ শেষ হয়ে গেছে আর আর অর্ডার দিব দিব কিন্তু পাচ্ছি না না",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 1,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 2,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 1,
+          "end_token_idx": 2,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 13,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 56,
+      "id": 212149,
+      "sentence": "ফেসওয়াশটা গত পরশু হাতে পেলাম। ১০০% অরিজিনাল ফেস ওয়াশ। ধন্যবাদ অরিজিনাল প্রোডাক্ট দেয়ার জন্য।",
+      "tagged_sentence": "ফেসওয়াশটা গত পরশু হাতে পেলাম।১০০ অরিজিনাল _NE_ফেস ওয়াশ।ধন্যবাদ অরিজিনাল প্রোডাক্ট দেয়ার জন্য।",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 6,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 7,
+          "token": "ওয়াশ।ধন্যবাদ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ।ধন্যবাদ"
+          ],
+          "start_token_idx": 6,
+          "end_token_idx": 7,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 10,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 57,
+      "id": 214788,
+      "sentence": "খুবি ভালো একটা ফেস ওয়াশ",
+      "tagged_sentence": "খুবি ভালো একটা _NE_ফেস ওয়াশ",
+      "NE_tag": [
+        "ফেস"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 3,
+          "token": "ফেস",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 4,
+          "token": "ওয়াশ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ফেস ওয়াশ",
+          "raw_tokens": [
+            "ফেস",
+            "ওয়াশ"
+          ],
+          "start_token_idx": 3,
+          "end_token_idx": 4,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ফেস ওয়াশ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 3,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 58,
+      "id": 218967,
+      "sentence": "ডেটল সাবান মোটামুটি অর্ধেক দামে পেয়েছি। ধন্যবাদ দারাজ ?",
+      "tagged_sentence": "_NE_ডেটল সাবান মোটামুটি অর্ধেক দামে দামে পেয়েছি।ধন্যবাদ দারাজ ?",
+      "NE_tag": [
+        "ডেটল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ডেটল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "সাবান",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ডেটল সাবান",
+          "raw_tokens": [
+            "ডেটল",
+            "সাবান"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ডেটল সাবান"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 6,
+      "sentiment_label": "Neutral",
+      "sentiment_code": 1
+    },
+    {
+      "record_no": 59,
+      "id": 219000,
+      "sentence": "আমার ভালো লাগে ডেটল সাবান ধন্যবাদ ???",
+      "tagged_sentence": "আমার ভালো লাগে _NE_ডেটল সাবান সাবান ধন্যবাদ ???",
+      "NE_tag": [
+        "ডেটল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 3,
+          "token": "ডেটল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 4,
+          "token": "সাবান",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ডেটল সাবান",
+          "raw_tokens": [
+            "ডেটল",
+            "সাবান"
+          ],
+          "start_token_idx": 3,
+          "end_token_idx": 4,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ডেটল সাবান"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 5,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 60,
+      "id": 219021,
+      "sentence": "ডেটল সাবান আমার খুব প্রিয় সাবান।",
+      "tagged_sentence": "_NE_ডেটল সাবান আমার খুব প্রিয় প্রিয় সাবান।",
+      "NE_tag": [
+        "ডেটল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "ডেটল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "সাবান",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ডেটল সাবান",
+          "raw_tokens": [
+            "ডেটল",
+            "সাবান"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ডেটল সাবান"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 5,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 61,
+      "id": 223757,
+      "sentence": "বাজারে যে রকম dettol  সাবান পাওয়া যায় ঠিক সে রকমই দারাজের dettol সাবান ।",
+      "tagged_sentence": "বাজারে যে রকম _NE_ডেটল সাবান পাওয়া যায় ঠিক সে রকমই দারাজের ডেটল সাবান।।",
+      "NE_tag": [
+        "ডেটল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 3,
+          "token": "ডেটল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 4,
+          "token": "সাবান",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ডেটল সাবান",
+          "raw_tokens": [
+            "ডেটল",
+            "সাবান"
+          ],
+          "start_token_idx": 3,
+          "end_token_idx": 4,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ডেটল সাবান"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 11,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    },
+    {
+      "record_no": 62,
+      "id": 224675,
+      "sentence": "ওলিভ ওয়েল ও কারবন সোপ অর্ডার করছিলাম, কারবন সোপ আসে নাই??",
+      "tagged_sentence": "_NE_অলিভ অয়েল ও কারবন কারবন অর্ডার করেছিলাম করেছিলাম কারবোন _NE_সোপ আসে নাই??",
+      "NE_tag": [
+        "অলিভ",
+        "সোপ"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 0,
+          "token": "অলিভ",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 1,
+          "token": "অয়েল",
+          "tag": "I-PRODUCT"
+        },
+        {
+          "token_index": 9,
+          "token": "সোপ",
+          "tag": "B-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "অলিভ অয়েল",
+          "raw_tokens": [
+            "অলিভ",
+            "অয়েল"
+          ],
+          "start_token_idx": 0,
+          "end_token_idx": 1,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        },
+        {
+          "entity_text": "সোপ",
+          "raw_tokens": [
+            "সোপ"
+          ],
+          "start_token_idx": 9,
+          "end_token_idx": 9,
+          "token_count": 1,
+          "type": "SINGLE-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "অলিভ অয়েল"
+      ],
+      "b_count": 2,
+      "i_count": 1,
+      "o_count": 9,
+      "sentiment_label": "Neutral",
+      "sentiment_code": 1
+    },
+    {
+      "record_no": 63,
+      "id": 226188,
+      "sentence": "চেনা বামুনের পৈতা লাগে না।\nডেটল সোপ কেমন তা সবাই জানে।\n",
+      "tagged_sentence": "চেনা বামুনের পৈতা লাগে না। _NE_ডেটল সোপ কেমন তা সবাই সবাই জানে।",
+      "NE_tag": [
+        "ডেটল"
+      ],
+      "bio_tag_indexes": [
+        {
+          "token_index": 5,
+          "token": "ডেটল",
+          "tag": "B-PRODUCT"
+        },
+        {
+          "token_index": 6,
+          "token": "সোপ",
+          "tag": "I-PRODUCT"
+        }
+      ],
+      "entity_spans": [
+        {
+          "entity_text": "ডেটল সোপ",
+          "raw_tokens": [
+            "ডেটল",
+            "সোপ"
+          ],
+          "start_token_idx": 5,
+          "end_token_idx": 6,
+          "token_count": 2,
+          "type": "MULTI-WORD"
+        }
+      ],
+      "multi_word_entities": [
+        "ডেটল সোপ"
+      ],
+      "b_count": 1,
+      "i_count": 1,
+      "o_count": 10,
+      "sentiment_label": "Positive",
+      "sentiment_code": 2
+    }
+  ]
+}

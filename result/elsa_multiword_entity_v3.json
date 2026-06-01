@@ -1,0 +1,937 @@
+[
+  {
+    "id": 1,
+    "doc_id": 68865,
+    "sentence": "ফেস ওয়াশ এর ক্যাপ টা ভাঙ্গা, খুলা যাচ্ছে না",
+    "sentiment": "Negative",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "doc_id": 75729,
+    "sentence": "ডেটল সাবান তো ভাল সাবান সবাই জানে।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ডেটল সাবান",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "doc_id": 75838,
+    "sentence": "ডেটল সাবান নিয়ে বলার কিছু নাই।",
+    "sentiment": "Neutral",
+    "entities": [
+      {
+        "text": "ডেটল সাবান",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "doc_id": 76622,
+    "sentence": "ডেটল সাবান সবসময়ের জন্যই ভালো,অরিজিনাল প্রোডাক্ট। ",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ডেটল সাবান",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "doc_id": 76738,
+    "sentence": "ডেটল সাবান আমি সবসময় ব্যবহার করি। পণ্যের মান ভালো। চাইলে কেউ নিতে পারেন। ধন্যবাদ দারাজ।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ডেটল সাবান",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "doc_id": 76764,
+    "sentence": "ডেটল সাবানগুলা অনেক ভালো।অথেনটিক পণ‍্য।আপনারা সবাই নিতে পারেন।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ডেটল সাবান",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "doc_id": 78022,
+    "sentence": "ডেটল সাবান বাংলাদেশের নামবার ওয়ান সাবান",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ডেটল সাবান",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "doc_id": 78395,
+    "sentence": "10 টাকায় মিনি লাক্স সাবান, খুব ভালো প্রোডাক্ট।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "লাক্স সাবান",
+        "start_idx": 3,
+        "end_idx": 4,
+        "tokens": [
+          "লাক্স",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "doc_id": 79372,
+    "sentence": "ধন্যবাদ আজ   ডেটল সাবানটি পেয়েছি  অসংখ্য ধন্যবাদ দারাজ ছেলার কে ???",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ডেটল সাবান",
+        "start_idx": 2,
+        "end_idx": 3,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "doc_id": 79906,
+    "sentence": "ডেটল সাবান সবসময় আমার কাছে ভালোই লাগে।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ডেটল সাবান",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "doc_id": 80352,
+    "sentence": "আমি অনেক আগে থেকেই ডেটল সাবান দারাজ থেকে আনা হয়।",
+    "sentiment": "Neutral",
+    "entities": [
+      {
+        "text": "ডেটল সাবান",
+        "start_idx": 4,
+        "end_idx": 5,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "doc_id": 80632,
+    "sentence": "বাজারের চেয়ে কম মূল্যে অরিজিনাল স্যাভলন সাবান",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "স্যাভলন সাবান",
+        "start_idx": 6,
+        "end_idx": 7,
+        "tokens": [
+          "স্যাভলন",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "doc_id": 82749,
+    "sentence": "বাজার থেকে কিছুটা কমে পেয়েছি। আর ডেটল সাবান তো ভালো।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ডেটল সাবান",
+        "start_idx": 5,
+        "end_idx": 6,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "doc_id": 85228,
+    "sentence": "বাংলাদেশি সাবান গুলোর মধ্যে Savlon Soap Mild আমার কাছে Best মনে হয়েছে।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "Savlon সাবান",
+        "start_idx": 4,
+        "end_idx": 5,
+        "tokens": [
+          "Savlon",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "doc_id": 103621,
+    "sentence": "শ্যাম্পু ব্যবহার করিনি। গিফট দিয়ে দিয়েছি। বাট ফেস ওয়াশ টা ভালো",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 5,
+        "end_idx": 6,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "doc_id": 103996,
+    "sentence": "প্যানটিন শ্যাম্পু সবসময়ই আমার চুল পড়া কমিয়েছে। অনেক ভালো একটা প্রোডাক্ট। ধন্যবাদ সেলারকে।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "প্যানটিন শ্যাম্পু",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "প্যানটিন",
+          "শ্যাম্পু"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "doc_id": 129623,
+    "sentence": "এইটা আশা করি নাই যে প্রোডাক্টের জন্য নিলাম সেটা পুরোটাই খারাপ Face Wash",
+    "sentiment": "Negative",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 12,
+        "end_idx": 13,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "doc_id": 149805,
+    "sentence": "Face wash টা ঠিক আছে \nতবে ক্রিমের উৎপাদন অনেক দিন আগের\n",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "doc_id": 150274,
+    "sentence": "ফেস ওয়াশ ঠিক আছে, মেয়াদ ভালোই আছে। কিন্তু ক্রিমের মেয়াদ কম।",
+    "sentiment": "Neutral",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "doc_id": 150418,
+    "sentence": "Face wash টা নকল\nক্রিমটা ঠিক আছে \nনেওয়ার আগে ভেবে নেবেন।",
+    "sentiment": "Negative",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "doc_id": 150463,
+    "sentence": "ফেসওয়াসের বোতল ফাটা ।।\nএকদমি বাজে হয়েছে।",
+    "sentiment": "Negative",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "doc_id": 151474,
+    "sentence": "ধন্যবাদ দারাজ কম মুল্যে অরিজিনাল studio X face wash টি দেওয়ার জন্য❤️❤️❤️❤️❤️",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 7,
+        "end_idx": 8,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "doc_id": 151663,
+    "sentence": "এই দামের মধ্যে বেস্ট Facewaah",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 4,
+        "end_idx": 5,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "doc_id": 152641,
+    "sentence": "ফেস ওয়াশ টা ভালো ছিল",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "doc_id": 163544,
+    "sentence": "বাজারের অন্যান্য Face Masks ? তুলনায় Sepnil Face Mask অনেক ভালো।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস মাস্ক",
+        "start_idx": 6,
+        "end_idx": 7,
+        "tokens": [
+          "ফেস",
+          "মাস্ক"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "doc_id": 163550,
+    "sentence": "সেপনিল মাস্ক টা অনেক ভালো এবং ব্যাবহার করে ও মজাThis is good",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "সেপনিল মাস্ক",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "সেপনিল",
+          "মাস্ক"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "doc_id": 163815,
+    "sentence": "এত কম দামে সেপনিল মাস্ক। খুব খুশি কিনতে পেরে।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "সেপনিল মাস্ক",
+        "start_idx": 3,
+        "end_idx": 4,
+        "tokens": [
+          "সেপনিল",
+          "মাস্ক"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "doc_id": 165827,
+    "sentence": "থ্রিডি মাস্কগুলো বেশ ভালোই ছিল।\nস্বাচ্ছন্দ ভাবেই ব্যবহার করছি। ধন্যবাদ দারাজ।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "থ্রিডি মাস্ক",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "থ্রিডি",
+          "মাস্ক"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "doc_id": 170259,
+    "sentence": "Face Mask  টি মোটামুটি মানের আর Packaging টাও ভাল ছিল না। Delivery Fast ছিল।",
+    "sentiment": "Negative",
+    "entities": [
+      {
+        "text": "ফেস মাস্ক",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ফেস",
+          "মাস্ক"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "doc_id": 184839,
+    "sentence": "আলহামদুলিল্লাহ ফেস ওয়াশ টি খুবই ভালো, ধন্যবাদ আপনাদেরকে। ",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 1,
+        "end_idx": 2,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "doc_id": 185213,
+    "sentence": "ফেস ওয়াশ টার পেকেট এর মুখ খোলা ছিলো,\nঅরিজিনাল কিনা সন্দেহ আছে ?",
+    "sentiment": "Negative",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "doc_id": 185392,
+    "sentence": "অনেক ভাল একটা ফেস ওয়াশ। রিকমন্ডেড।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 3,
+        "end_idx": 4,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "doc_id": 185436,
+    "sentence": "খুবই বাজে একটা ফেস ওয়াশ। আমার টাকা গুলো নষ্ট হয়েছে।",
+    "sentiment": "Negative",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 3,
+        "end_idx": 4,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "doc_id": 186479,
+    "sentence": "খুব ভালো একটি face wash এবং খুব সুন্দর প্যাকেজিং",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 3,
+        "end_idx": 4,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "doc_id": 187437,
+    "sentence": "খুব ভালো ফেস ওয়াশ। ভালো ডিসকাউন্ট পেয়েছি। চাইলে যে কেউ নিতে পারেন।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 2,
+        "end_idx": 3,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "doc_id": 187460,
+    "sentence": "ভালো প্রোডাক্ট।\n১৬৫ টাকায় ভালোই ফেস ওয়াশ টা।\nআপনারাও নিতে পারেন।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 5,
+        "end_idx": 6,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "doc_id": 188225,
+    "sentence": "ফেশ ওয়াশ টি orginal uniliver এর প্রোডাক্ট ??",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "doc_id": 191413,
+    "sentence": "face wash টা অনেক অনেক ভালো??????",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "doc_id": 191639,
+    "sentence": "ফেস ওয়াশের সাথে ভেজলিন লোশন ফ্রি পেয়েছি।",
+    "sentiment": "Neutral",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "doc_id": 191684,
+    "sentence": "কি আর বলবো এমন একটা ভালো face wash,\nআপনারা চাইলে নিতে পারেন,, ",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 6,
+        "end_idx": 7,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "doc_id": 191807,
+    "sentence": "ফেস ওয়াশটি অনেক ভালো উন্নত মানের",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "doc_id": 192063,
+    "sentence": "দাম অনুযায়ী অনেক  ভালো  একটা সানছ ক্রিম, ",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "সানছ ক্রিম",
+        "start_idx": 5,
+        "end_idx": 6,
+        "tokens": [
+          "সানছ",
+          "ক্রিম"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "doc_id": 192879,
+    "sentence": "ফেইস ওয়াশটি অনেক ভালো। ময়েসশ্চার করে ত্বককে। অরিজিনাল পণ্য। স্টোরটাও অরিজিনাল। নির্ভরযোগ্য স্টোর।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেইস ওয়াশ",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ফেইস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "doc_id": 194291,
+    "sentence": "ফেস ওয়াশটা ভালোই মনে হচ্ছে।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "doc_id": 194297,
+    "sentence": "Face wash টি পেয়েছি ঠিক মতো।ভালোই আছে।",
+    "sentiment": "Neutral",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "doc_id": 202512,
+    "sentence": "ফেস ওয়াশ টা অনেক ভালো",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "doc_id": 203819,
+    "sentence": "সুন্দর  ফেস ওয়াস\nশেষ হয়ে গেছে ,  আর একটা অডার দিব কিন্তু পাচ্ছি না।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 1,
+        "end_idx": 2,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "doc_id": 212149,
+    "sentence": "ফেসওয়াশটা গত পরশু হাতে পেলাম। ১০০% অরিজিনাল ফেস ওয়াশ। ধন্যবাদ অরিজিনাল প্রোডাক্ট দেয়ার জন্য।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 6,
+        "end_idx": 7,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "doc_id": 214788,
+    "sentence": "খুবি ভালো একটা ফেস ওয়াশ",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ফেস ওয়াশ",
+        "start_idx": 3,
+        "end_idx": 4,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "doc_id": 218967,
+    "sentence": "ডেটল সাবান মোটামুটি অর্ধেক দামে পেয়েছি। ধন্যবাদ দারাজ ?",
+    "sentiment": "Neutral",
+    "entities": [
+      {
+        "text": "ডেটল সাবান",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "doc_id": 219000,
+    "sentence": "আমার ভালো লাগে ডেটল সাবান ধন্যবাদ ???",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ডেটল সাবান",
+        "start_idx": 3,
+        "end_idx": 4,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "doc_id": 219021,
+    "sentence": "ডেটল সাবান আমার খুব প্রিয় সাবান।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ডেটল সাবান",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "doc_id": 223757,
+    "sentence": "বাজারে যে রকম dettol  সাবান পাওয়া যায় ঠিক সে রকমই দারাজের dettol সাবান ।",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ডেটল সাবান",
+        "start_idx": 3,
+        "end_idx": 4,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "doc_id": 224675,
+    "sentence": "ওলিভ ওয়েল ও কারবন সোপ অর্ডার করছিলাম, কারবন সোপ আসে নাই??",
+    "sentiment": "Neutral",
+    "entities": [
+      {
+        "text": "অলিভ অয়েল",
+        "start_idx": 0,
+        "end_idx": 1,
+        "tokens": [
+          "অলিভ",
+          "অয়েল"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "doc_id": 226188,
+    "sentence": "চেনা বামুনের পৈতা লাগে না।\nডেটল সোপ কেমন তা সবাই জানে।\n",
+    "sentiment": "Positive",
+    "entities": [
+      {
+        "text": "ডেটল সোপ",
+        "start_idx": 5,
+        "end_idx": 6,
+        "tokens": [
+          "ডেটল",
+          "সোপ"
+        ]
+      }
+    ]
+  }
+]

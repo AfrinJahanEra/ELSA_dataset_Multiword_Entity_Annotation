@@ -1,0 +1,1000 @@
+================================================================================
+  ELSA DATASET — MULTI-WORD ENTITY DETECTION REPORT  [v3 — WITH SENTENCE IDs]
+  BIO (B-PRODUCT / I-PRODUCT / O) Tagging Analysis
+  Language: Bangla (Bengali) | Domain: E-commerce Product Reviews
+================================================================================
+
+================================================================================
+  SECTION 1: DATASET OVERVIEW
+================================================================================
+  Total Reviews (Sentences)  :   10,000
+  Total Tokens (all)         :   86,741
+  Total Entity Tokens (B+I)  :    8,876
+  Total Non-Entity Tokens (O):   77,865
+
+  Sentiment Distribution:
+    Negative    :    980  (9.8%)
+    Neutral     :  1,123  (11.2%)
+    Positive    :  7,897  (79.0%)
+
+================================================================================
+  SECTION 2: BIO TAG STATISTICS
+================================================================================
+  Tag                  Count    % of All Tokens
+  --------------- ---------- ------------------
+  B-PRODUCT            8,821             10.17%
+  I-PRODUCT               55              0.06%
+  O                   77,865             89.77%
+  TOTAL               86,741            100.00%
+
+  Explanation of Tags:
+    B-PRODUCT : First/only token of a product/entity name
+    I-PRODUCT : Continuation token (2nd, 3rd word of multi-word entity)
+    O         : Non-entity token (regular word)
+
+  v2/v3 Fixes Applied (affect I-PRODUCT / multi-word counts only):
+    G1 – Same-word repetition noise removed
+         e.g. _NE_সাবান সাবান  →  single-word 'সাবান' (not 'সাবান সাবান')
+    G2 – Interior sentence-boundary punctuation guard
+         e.g. _NE_পণ্য।ইতিপূর্বেও ব্যাগ  →  single-word only
+    G3 – Comma-list guard (uses original review text)
+         e.g. 'তেল, শ্যাম্পু'  →  two separate single-word entities
+
+================================================================================
+  SECTION 3: ENTITY SUMMARY
+================================================================================
+  Total Entity Spans Detected    :    8,821
+  Single-Word Entities (B only)  :    8,766  (99.4%)
+  Multi-Word Entities  (B+I)     :       55  (0.6%)
+
+  Unique Entity Strings (total)  :      247
+  Unique Single-Word Entities    :      234
+  Unique Multi-Word Entities     :       13
+
+  Sentences WITH at least 1 entity:   8,685  (86.9%)
+  Sentences WITH NO entity        :   1,315  (13.2%)
+
+================================================================================
+  SECTION 4: TOP 30 SINGLE-WORD ENTITIES (by frequency)
+================================================================================
+  Rank   Entity                                 Count    % of Single
+  ------ ----------------------------------- -------- --------------
+  1      প্রোডাক্ট                              2,583         29.47%
+  2      বই                                     1,210         13.80%
+  3      পণ্য                                     986         11.25%
+  4      প্রডাক্ট                                 830          9.47%
+  5      জিনিস                                    644          7.35%
+  6      সাবান                                    498          5.68%
+  7      মাস্ক                                    207          2.36%
+  8      শ্যাম্পু                                  98          1.12%
+  9      মাল                                       92          1.05%
+  10     ট্রিমা                                    82          0.94%
+  11     তেল                                       77          0.88%
+  12     পোডাক্ট                                   76          0.87%
+  13     পন্য                                      72          0.82%
+  14     ব্যাগ                                     63          0.72%
+  15     ক্রিম                                     63          0.72%
+  16     ব্রাশ                                     60          0.68%
+  17     ফেসওয়াশ                                  46          0.52%
+  18     হিজাব                                     43          0.49%
+  19     ডেটল                                      41          0.47%
+  20     লোশন                                      39          0.44%
+  21     মেশিন                                     36          0.41%
+  22     বইয়                                       35          0.40%
+  23     প্রডাক                                    34          0.39%
+  24     ব্যাটারি                                  31          0.35%
+  25     জেল                                       30          0.34%
+  26     বইটি                                      26          0.30%
+  27     জুতা                                      23          0.26%
+  28     বোতল                                      21          0.24%
+  29     কাপর                                      20          0.23%
+  30     প্রোডাক্টস                                20          0.23%
+
+================================================================================
+  SECTION 5: ALL MULTI-WORD ENTITIES DETECTED
+================================================================================
+  Total unique multi-word entities: 13
+
+  NOTE: 'IDs' column lists all Sentence/Review IDs where the entity
+        was detected. Use these to locate the exact row in the CSV
+        for manual verification. Format: ID(xN) means the entity
+        appears N times within that single sentence.
+
+  Rank   Multi-Word Entity                           Count   % of Multi  IDs
+  ------ ---------------------------------------- -------- ------------  --------------------------------------------------
+  1      ফেস ওয়াশ                                      28       50.91%  68865, 103621, 129623, 149805, 150274, 150418, 150463
+                                                                         151474, 151663, 152641, 184839, 185213, 185392, 185436
+                                                                         186479, 187437, 187460, 188225, 191413, 191639, 191684
+                                                                         191807, 194291, 194297, 202512, 203819, 212149, 214788
+  2      ডেটল সাবান                                     14       25.45%  75729, 75838, 76622, 76738, 76764, 78022, 79372, 79906
+                                                                         80352, 82749, 218967, 219000, 219021, 223757
+  3      ফেস মাস্ক                                       2        3.64%  163544, 170259
+  4      সেপনিল মাস্ক                                    2        3.64%  163550, 163815
+  5      লাক্স সাবান                                     1        1.82%  78395
+  6      স্যাভলন সাবান                                   1        1.82%  80632
+  7      Savlon সাবান                                    1        1.82%  85228
+  8      প্যানটিন শ্যাম্পু                               1        1.82%  103996
+  9      থ্রিডি মাস্ক                                    1        1.82%  165827
+  10     সানছ ক্রিম                                      1        1.82%  192063
+  11     ফেইস ওয়াশ                                      1        1.82%  192879
+  12     অলিভ অয়েল                                      1        1.82%  224675
+  13     ডেটল সোপ                                        1        1.82%  226188
+
+================================================================================
+  SECTION 6: MULTI-WORD ENTITY — DEEP ANALYSIS
+================================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  6.1  Token Length Distribution of Multi-Word Entities
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Token Length       Count          %
+  --------------- -------- ----------
+  2                     55    100.00%
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  6.2  Multi-Word Entity vs Single-Word Entity by Sentiment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Sentiment      Total Reviews   Single Ents   Multi Ents    Multi %
+  ------------ --------------- ------------- ------------ ----------
+  Positive               7,897         6,892           41       0.6%
+  Neutral                1,123         1,034            7       0.7%
+  Negative                 980           840            7       0.8%
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  6.3  Most Frequent Multi-Word Entities per Sentiment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  [Positive] Top 10 Multi-Word Entities:
+     1. ফেস ওয়াশ                           — 19 occurrences
+     2. ডেটল সাবান                          — 11 occurrences
+     3. সেপনিল মাস্ক                        — 2 occurrences
+     4. লাক্স সাবান                         — 1 occurrences
+     5. স্যাভলন সাবান                       — 1 occurrences
+     6. Savlon সাবান                        — 1 occurrences
+     7. প্যানটিন শ্যাম্পু                   — 1 occurrences
+     8. ফেস মাস্ক                           — 1 occurrences
+     9. থ্রিডি মাস্ক                        — 1 occurrences
+    10. সানছ ক্রিম                          — 1 occurrences
+
+  [Neutral] Top 10 Multi-Word Entities:
+     1. ডেটল সাবান                          — 3 occurrences
+     2. ফেস ওয়াশ                           — 3 occurrences
+     3. অলিভ অয়েল                          — 1 occurrences
+
+  [Negative] Top 10 Multi-Word Entities:
+     1. ফেস ওয়াশ                           — 6 occurrences
+     2. ফেস মাস্ক                           — 1 occurrences
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  6.4  Relationship: Multi-Word Entity → Single-Token Disambiguation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  In the ELSA Bangla dataset, multi-word entities follow the same principle
+  described in the MEID paper (AAAI 2020):
+
+  PATTERN:
+    Multi-word entity  →  "ডেটল সাবান"  (Dettol Soap)   [B-PRODUCT I-PRODUCT]
+    Single-word entity →  "সাবান"        (soap — ambiguous alone)  [B-PRODUCT]
+
+  WHY IT MATTERS:
+    • "সাবান" alone could refer to any soap brand.
+    • "ডেটল সাবান" uniquely identifies the product as Dettol brand soap.
+    • "ফেস ওয়াশ" (face wash) clarifies it is a face cleanser product.
+    • "প্যানটিন শ্যাম্পু" tells us both brand (Pantene) + product type.
+
+  DISAMBIGUATION RULE:
+    When a single-token entity like "সাবান" appears alone in a review,
+    check if a multi-token entity containing "সাবান" exists elsewhere in
+    the document or corpus → use its context to resolve the full product name.
+  
+
+================================================================================
+  SECTION 7: SAMPLE BIO-TAGGED REVIEWS (10 Examples)
+================================================================================
+  Review ID  : 35
+  Sentiment  : Positive
+  Review     : ছবির সাথে পন্যের মিল আছে। খুব সুন্দর আর কাপড়ের মান ও ভাল৷ সবাই নিতে পারেন৷
+  TOKEN                          TAG
+  ------------------------------ ------------
+  ছবির                           O
+  সাথে                           O
+  পন্যের                         B-PRODUCT
+  মিল                            O
+  আছে।খুব                        O
+  সুন্দর                         O
+  আর                             O
+  কাপড়ের                        O
+  মান                            O
+  ও                              O
+  ভাল                            O
+  ভাল।সবাই                       O
+  নিতে                           O
+  পারেন।                         O
+  Entities:
+    → [SINGLE] 'পন্য'
+
+  Review ID  : 36
+  Sentiment  : Positive
+  Review     : ড্রেস টা অনেক সুন্দর, অসংখ্য ধন্যবাদ ডেলিভারি খুব দ্রুত দেয়ার জন্য 
+  TOKEN                          TAG
+  ------------------------------ ------------
+  ড্রেস                          B-PRODUCT
+  টা                             O
+  অনেক                           O
+  সুন্দর                         O
+  অসংখ্য                         O
+  ধন্যবাদ                        O
+  ডেলিভারি                       O
+  ডেলিভারি                       O
+  খুব                            O
+  দ্রুত                          O
+  দেয়ার                         O
+  দেয়ার                         O
+  Entities:
+    → [SINGLE] 'ড্রেস'
+
+  Review ID  : 37
+  Sentiment  : Positive
+  Review     : জাস্ট,অসাধরন ড্রেসটা ?।আমার খুবই পছন্দ  হয়েছে??❤️❤️❤️
+  TOKEN                          TAG
+  ------------------------------ ------------
+  জাস্ট                          O
+  অসাধরন                         O
+  অসাধরন                         O
+  ড্রেসটা                        B-PRODUCT
+  ?।আমার                         O
+  খুবই                           O
+  হয়েছে??❤                      O
+  হয়েছে??❤                      O
+  Entities:
+    → [SINGLE] 'ড্রেস'
+
+  Review ID  : 71
+  Sentiment  : Positive
+  Review     : অসাধারণ বই। সবার পড়া উচিত
+  TOKEN                          TAG
+  ------------------------------ ------------
+  অসাধারণ                        O
+  বই।                            B-PRODUCT
+  সবার                           O
+  পড়া                            O
+  উচিত                           O
+  Entities:
+    → [SINGLE] 'বই'
+
+  Review ID  : 76
+  Sentiment  : Positive
+  Review     : ড্রেসটা অনেক সুন্দর হয়ছে এবং দ্রুত হাতে পেয়েছি।
+অনেক ধন্যবাদ দারাজ এবং গ্লাম টাচ
+  TOKEN                          TAG
+  ------------------------------ ------------
+  ড্রেসটা                        B-PRODUCT
+  অনেক                           O
+  সুন্দর                         O
+  হয়ছে                          O
+  এবং                            O
+  দ্রুত                          O
+  হাতে                           O
+  পেয়েছি                        O
+  পেয়েছি।                       O
+  অনেক                           O
+  ধন্যবাদ                        O
+  দারাজ                          O
+  এবং                            O
+  গ্লাম                          O
+  টাচ                            O
+  Entities:
+    → [SINGLE] 'ড্রেস'
+
+  Review ID  : 119
+  Sentiment  : Neutral
+  Review     : বইটিতে সহজ ও সাবলীলভাবে লেখা হয়েছে।
+  TOKEN                          TAG
+  ------------------------------ ------------
+  বইটিতে                         B-PRODUCT
+  সহজ                            O
+  ও                              O
+  সাবলীলভাবে                     O
+  লেখা                           O
+  হয়েছে।                         O
+  Entities:
+    → [SINGLE] 'বইটি'
+
+  Review ID  : 220
+  Sentiment  : Positive
+  Review     : ড্রেসটা সুন্দর ছিলো। সবাই নিতে পারেন আর কাপড় টাও খুবই ভালো। পুরো সেম ছবির সাথে
+  TOKEN                          TAG
+  ------------------------------ ------------
+  ড্রেসটা                        B-PRODUCT
+  সুন্দর                         O
+  ছিলো।সবাই                      O
+  নিতে                           O
+  পারেন                          O
+  আর                             O
+  কাপড়                          O
+  টাও                            O
+  খুবই                           O
+  ভালো                           O
+  ভালো।পুরো                      O
+  সেম                            O
+  ছবির                           O
+  সাথে                           O
+  Entities:
+    → [SINGLE] 'ড্রেস'
+
+  Review ID  : 225
+  Sentiment  : Negative
+  Review     : দাম অনুযায়ী প্রোডাক্ট ভালো না। কোয়ালিটি আরো ভালো হওয়া উচিত ছিল।
+  TOKEN                          TAG
+  ------------------------------ ------------
+  দাম                            O
+  অনুযায়ী                       O
+  প্রোডাক্ট                      B-PRODUCT
+  ভালো                           O
+  না।কোয়ালিটি                   O
+  আরো                            O
+  ভালো                           O
+  হওয়া                          O
+  উচিত                           O
+  উচিত                           O
+  ছিল।                           O
+  Entities:
+    → [SINGLE] 'প্রোডাক্ট'
+
+  Review ID  : 232
+  Sentiment  : Positive
+  Review     : জামাটা অনেক অনেক সুন্দর, আপনারা চাইলে নিতে পারেন 
+  TOKEN                          TAG
+  ------------------------------ ------------
+  জামাটা                         B-PRODUCT
+  অনেক                           O
+  অনেক                           O
+  সুন্দর                         O
+  আপনারা                         O
+  চাইলে                          O
+  নিতে                           O
+  নিতে                           O
+  পারেন                          O
+  Entities:
+    → [SINGLE] 'জামা'
+
+  Review ID  : 262
+  Sentiment  : Positive
+  Review     : বইটি পড়ে আমার খুব ভাল লাগছে।
+  TOKEN                          TAG
+  ------------------------------ ------------
+  বইটি                           B-PRODUCT
+  পড়ে                            O
+  আমার                           O
+  খুব                            O
+  ভাল                            O
+  লাগছে।                         O
+  Entities:
+    → [SINGLE] 'বই'
+
+
+================================================================================
+  SECTION 8: MULTI-WORD ENTITY EXAMPLES WITH FULL SENTENCE CONTEXT
+================================================================================
+  ID 68865 [Negative]
+  Review  : ফেস ওয়াশ এর ক্যাপ টা ভাঙ্গা, খুলা যাচ্ছে না
+  Entity  : 'ফেস ওয়াশ'
+  Tokens  : 'ফেস' + 'ওয়াশ'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 75729 [Positive]
+  Review  : ডেটল সাবান তো ভাল সাবান সবাই জানে।
+  Entity  : 'ডেটল সাবান'
+  Tokens  : 'ডেটল' + 'সাবান'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 75838 [Neutral]
+  Review  : ডেটল সাবান নিয়ে বলার কিছু নাই।
+  Entity  : 'ডেটল সাবান'
+  Tokens  : 'ডেটল' + 'সাবান'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 76622 [Positive]
+  Review  : ডেটল সাবান সবসময়ের জন্যই ভালো,অরিজিনাল প্রোডাক্ট। 
+  Entity  : 'ডেটল সাবান'
+  Tokens  : 'ডেটল' + 'সাবান'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 76738 [Positive]
+  Review  : ডেটল সাবান আমি সবসময় ব্যবহার করি। পণ্যের মান ভালো। চাইলে কেউ নিতে পারেন। ধন্যবাদ দারাজ।
+  Entity  : 'ডেটল সাবান'
+  Tokens  : 'ডেটল' + 'সাবান'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 76764 [Positive]
+  Review  : ডেটল সাবানগুলা অনেক ভালো।অথেনটিক পণ‍্য।আপনারা সবাই নিতে পারেন।
+  Entity  : 'ডেটল সাবান'
+  Tokens  : 'ডেটল' + 'সাবান'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 78022 [Positive]
+  Review  : ডেটল সাবান বাংলাদেশের নামবার ওয়ান সাবান
+  Entity  : 'ডেটল সাবান'
+  Tokens  : 'ডেটল' + 'সাবান'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 78395 [Positive]
+  Review  : 10 টাকায় মিনি লাক্স সাবান, খুব ভালো প্রোডাক্ট।
+  Entity  : 'লাক্স সাবান'
+  Tokens  : 'লাক্স' + 'সাবান'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 79372 [Positive]
+  Review  : ধন্যবাদ আজ   ডেটল সাবানটি পেয়েছি  অসংখ্য ধন্যবাদ দারাজ ছেলার কে ???
+  Entity  : 'ডেটল সাবান'
+  Tokens  : 'ডেটল' + 'সাবান'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 79906 [Positive]
+  Review  : ডেটল সাবান সবসময় আমার কাছে ভালোই লাগে।
+  Entity  : 'ডেটল সাবান'
+  Tokens  : 'ডেটল' + 'সাবান'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 80352 [Neutral]
+  Review  : আমি অনেক আগে থেকেই ডেটল সাবান দারাজ থেকে আনা হয়।
+  Entity  : 'ডেটল সাবান'
+  Tokens  : 'ডেটল' + 'সাবান'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 80632 [Positive]
+  Review  : বাজারের চেয়ে কম মূল্যে অরিজিনাল স্যাভলন সাবান
+  Entity  : 'স্যাভলন সাবান'
+  Tokens  : 'স্যাভলন' + 'সাবান'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 82749 [Positive]
+  Review  : বাজার থেকে কিছুটা কমে পেয়েছি। আর ডেটল সাবান তো ভালো।
+  Entity  : 'ডেটল সাবান'
+  Tokens  : 'ডেটল' + 'সাবান'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 85228 [Positive]
+  Review  : বাংলাদেশি সাবান গুলোর মধ্যে Savlon Soap Mild আমার কাছে Best মনে হয়েছে।
+  Entity  : 'Savlon সাবান'
+  Tokens  : 'Savlon' + 'সাবান'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 103621 [Positive]
+  Review  : শ্যাম্পু ব্যবহার করিনি। গিফট দিয়ে দিয়েছি। বাট ফেস ওয়াশ টা ভালো
+  Entity  : 'ফেস ওয়াশ'
+  Tokens  : 'ফেস' + 'ওয়াশ'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 103996 [Positive]
+  Review  : প্যানটিন শ্যাম্পু সবসময়ই আমার চুল পড়া কমিয়েছে। অনেক ভালো একটা প্রোডাক্ট। ধন্যবাদ সেলারকে।
+  Entity  : 'প্যানটিন শ্যাম্পু'
+  Tokens  : 'প্যানটিন' + 'শ্যাম্পু'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 129623 [Negative]
+  Review  : এইটা আশা করি নাই যে প্রোডাক্টের জন্য নিলাম সেটা পুরোটাই খারাপ Face Wash
+  Entity  : 'ফেস ওয়াশ'
+  Tokens  : 'ফেস' + 'ওয়াশ'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 149805 [Positive]
+  Review  : Face wash টা ঠিক আছে 
+তবে ক্রিমের উৎপাদন অনেক দিন আগের
+
+  Entity  : 'ফেস ওয়াশ'
+  Tokens  : 'ফেস' + 'ওয়াশ'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 150274 [Neutral]
+  Review  : ফেস ওয়াশ ঠিক আছে, মেয়াদ ভালোই আছে। কিন্তু ক্রিমের মেয়াদ কম।
+  Entity  : 'ফেস ওয়াশ'
+  Tokens  : 'ফেস' + 'ওয়াশ'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+  ID 150418 [Negative]
+  Review  : Face wash টা নকল
+ক্রিমটা ঠিক আছে 
+নেওয়ার আগে ভেবে নেবেন।
+  Entity  : 'ফেস ওয়াশ'
+  Tokens  : 'ফেস' + 'ওয়াশ'
+  BIO     : B-PRODUCT + I-PRODUCT
+
+
+================================================================================
+  SECTION 9: MULTI-WORD ENTITY — SENTENCE ID OCCURRENCE MAP  [NEW in v3]
+================================================================================
+  PURPOSE:
+    This section allows MANUAL VERIFICATION of every unique multi-word
+    entity. For each entity you can:
+      1. Find the exact Sentence/Review IDs listed below
+      2. Open the CSV, filter on the ID column to that row
+      3. Read the REVIEW text and confirm the entity is correctly detected
+      4. The 'Count in Sentence' column shows how many times the entity
+         appears within that single review (usually 1, sometimes >1)
+
+  HOW TO USE:
+    → Entities are sorted by total occurrence frequency (highest first)
+    → Sentence IDs are sorted ascending for easy CSV lookup
+    → A '(x2)', '(x3)' marker means the entity appears that many times
+      within the SAME sentence/review
+
+  ────────────────────────────────────────────────────────────────────────────
+  RANK #1     Entity: 'ফেস ওয়াশ'
+           Total Occurrences : 28
+           Appears in        : 28 unique sentence(s)
+           Avg per sentence  : 1.00
+
+  Sentence ID            Occurrences in that Sentence
+  -------------------- ------------------------------
+  68865                1
+  103621               1
+  129623               1
+  149805               1
+  150274               1
+  150418               1
+  150463               1
+  151474               1
+  151663               1
+  152641               1
+  184839               1
+  185213               1
+  185392               1
+  185436               1
+  186479               1
+  187437               1
+  187460               1
+  188225               1
+  191413               1
+  191639               1
+  191684               1
+  191807               1
+  194291               1
+  194297               1
+  202512               1
+  203819               1
+  212149               1
+  214788               1
+
+  ────────────────────────────────────────────────────────────────────────────
+  RANK #2     Entity: 'ডেটল সাবান'
+           Total Occurrences : 14
+           Appears in        : 14 unique sentence(s)
+           Avg per sentence  : 1.00
+
+  Sentence ID            Occurrences in that Sentence
+  -------------------- ------------------------------
+  75729                1
+  75838                1
+  76622                1
+  76738                1
+  76764                1
+  78022                1
+  79372                1
+  79906                1
+  80352                1
+  82749                1
+  218967               1
+  219000               1
+  219021               1
+  223757               1
+
+  ────────────────────────────────────────────────────────────────────────────
+  RANK #3     Entity: 'ফেস মাস্ক'
+           Total Occurrences : 2
+           Appears in        : 2 unique sentence(s)
+           Avg per sentence  : 1.00
+
+  Sentence ID            Occurrences in that Sentence
+  -------------------- ------------------------------
+  163544               1
+  170259               1
+
+  ────────────────────────────────────────────────────────────────────────────
+  RANK #4     Entity: 'সেপনিল মাস্ক'
+           Total Occurrences : 2
+           Appears in        : 2 unique sentence(s)
+           Avg per sentence  : 1.00
+
+  Sentence ID            Occurrences in that Sentence
+  -------------------- ------------------------------
+  163550               1
+  163815               1
+
+  ────────────────────────────────────────────────────────────────────────────
+  RANK #5     Entity: 'লাক্স সাবান'
+           Total Occurrences : 1
+           Appears in        : 1 unique sentence(s)
+           Avg per sentence  : 1.00
+
+  Sentence ID            Occurrences in that Sentence
+  -------------------- ------------------------------
+  78395                1
+
+  ────────────────────────────────────────────────────────────────────────────
+  RANK #6     Entity: 'স্যাভলন সাবান'
+           Total Occurrences : 1
+           Appears in        : 1 unique sentence(s)
+           Avg per sentence  : 1.00
+
+  Sentence ID            Occurrences in that Sentence
+  -------------------- ------------------------------
+  80632                1
+
+  ────────────────────────────────────────────────────────────────────────────
+  RANK #7     Entity: 'Savlon সাবান'
+           Total Occurrences : 1
+           Appears in        : 1 unique sentence(s)
+           Avg per sentence  : 1.00
+
+  Sentence ID            Occurrences in that Sentence
+  -------------------- ------------------------------
+  85228                1
+
+  ────────────────────────────────────────────────────────────────────────────
+  RANK #8     Entity: 'প্যানটিন শ্যাম্পু'
+           Total Occurrences : 1
+           Appears in        : 1 unique sentence(s)
+           Avg per sentence  : 1.00
+
+  Sentence ID            Occurrences in that Sentence
+  -------------------- ------------------------------
+  103996               1
+
+  ────────────────────────────────────────────────────────────────────────────
+  RANK #9     Entity: 'থ্রিডি মাস্ক'
+           Total Occurrences : 1
+           Appears in        : 1 unique sentence(s)
+           Avg per sentence  : 1.00
+
+  Sentence ID            Occurrences in that Sentence
+  -------------------- ------------------------------
+  165827               1
+
+  ────────────────────────────────────────────────────────────────────────────
+  RANK #10    Entity: 'সানছ ক্রিম'
+           Total Occurrences : 1
+           Appears in        : 1 unique sentence(s)
+           Avg per sentence  : 1.00
+
+  Sentence ID            Occurrences in that Sentence
+  -------------------- ------------------------------
+  192063               1
+
+  ────────────────────────────────────────────────────────────────────────────
+  RANK #11    Entity: 'ফেইস ওয়াশ'
+           Total Occurrences : 1
+           Appears in        : 1 unique sentence(s)
+           Avg per sentence  : 1.00
+
+  Sentence ID            Occurrences in that Sentence
+  -------------------- ------------------------------
+  192879               1
+
+  ────────────────────────────────────────────────────────────────────────────
+  RANK #12    Entity: 'অলিভ অয়েল'
+           Total Occurrences : 1
+           Appears in        : 1 unique sentence(s)
+           Avg per sentence  : 1.00
+
+  Sentence ID            Occurrences in that Sentence
+  -------------------- ------------------------------
+  224675               1
+
+  ────────────────────────────────────────────────────────────────────────────
+  RANK #13    Entity: 'ডেটল সোপ'
+           Total Occurrences : 1
+           Appears in        : 1 unique sentence(s)
+           Avg per sentence  : 1.00
+
+  Sentence ID            Occurrences in that Sentence
+  -------------------- ------------------------------
+  226188               1
+
+
+================================================================================
+  SECTION 10: COMPLETE ENTITY FREQUENCY TABLE (All Entities, Sorted)
+================================================================================
+  Rank   Entity                                      Count Type          % of Total Ents
+  ------ ---------------------------------------- -------- ------------ ----------------
+  1      প্রোডাক্ট                                   2,583 SINGLE                29.282%
+  2      বই                                          1,210 SINGLE                13.717%
+  3      পণ্য                                          986 SINGLE                11.178%
+  4      প্রডাক্ট                                      830 SINGLE                 9.409%
+  5      জিনিস                                         644 SINGLE                 7.301%
+  6      সাবান                                         498 SINGLE                 5.646%
+  7      মাস্ক                                         207 SINGLE                 2.347%
+  8      শ্যাম্পু                                       98 SINGLE                 1.111%
+  9      মাল                                            92 SINGLE                 1.043%
+  10     ট্রিমা                                         82 SINGLE                 0.930%
+  11     তেল                                            77 SINGLE                 0.873%
+  12     পোডাক্ট                                        76 SINGLE                 0.862%
+  13     পন্য                                           72 SINGLE                 0.816%
+  14     ব্যাগ                                          63 SINGLE                 0.714%
+  15     ক্রিম                                          63 SINGLE                 0.714%
+  16     ব্রাশ                                          60 SINGLE                 0.680%
+  17     ফেসওয়াশ                                       46 SINGLE                 0.521%
+  18     হিজাব                                          43 SINGLE                 0.487%
+  19     ডেটল                                           41 SINGLE                 0.465%
+  20     লোশন                                           39 SINGLE                 0.442%
+  21     মেশিন                                          36 SINGLE                 0.408%
+  22     বইয়                                            35 SINGLE                 0.397%
+  23     প্রডাক                                         34 SINGLE                 0.385%
+  24     ব্যাটারি                                       31 SINGLE                 0.351%
+  25     জেল                                            30 SINGLE                 0.340%
+  26     ফেস ওয়াশ                                      28 MULTI-WORD             0.317%
+  27     বইটি                                           26 SINGLE                 0.295%
+  28     জুতা                                           23 SINGLE                 0.261%
+  29     বোতল                                           21 SINGLE                 0.238%
+  30     কাপর                                           20 SINGLE                 0.227%
+  31     প্রোডাক্টস                                     20 SINGLE                 0.227%
+  32     আইটেম                                          20 SINGLE                 0.227%
+  33     ড্রেস                                          19 SINGLE                 0.215%
+  34     সিরাম                                          19 SINGLE                 0.215%
+  35     লিপস্টিক                                       19 SINGLE                 0.215%
+  36     টুথপেস্ট                                       17 SINGLE                 0.193%
+  37     আত                                             17 SINGLE                 0.193%
+  38     ব্রা                                           16 SINGLE                 0.181%
+  39     ফেসওয়াস                                       16 SINGLE                 0.181%
+  40     কাপ                                            15 SINGLE                 0.170%
+  41     পারফিউম                                        15 SINGLE                 0.170%
+  42     ট্রিমার                                        15 SINGLE                 0.170%
+  43     জিনিষ                                          14 SINGLE                 0.159%
+  44     ব্রেসলেট                                       14 SINGLE                 0.159%
+  45     ডিটারজেন্ট                                     14 SINGLE                 0.159%
+  46     ডেটল সাবান                                     14 MULTI-WORD             0.159%
+  47     সোপ                                            12 SINGLE                 0.136%
+  48     প্রডাক্                                        10 SINGLE                 0.113%
+  49     ফিতা                                           10 SINGLE                 0.113%
+  50     কাজল                                           10 SINGLE                 0.113%
+  51     জামা                                            9 SINGLE                 0.102%
+  52     বইটা                                            9 SINGLE                 0.102%
+  53     প্রডাক্টস                                       9 SINGLE                 0.102%
+  54     প্রোডাক্                                        9 SINGLE                 0.102%
+  55     প্রোডাক্টই                                      8 SINGLE                 0.091%
+  56     মেথি                                            8 SINGLE                 0.091%
+  57     ফেস                                             8 SINGLE                 0.091%
+  58     পেন্                                            7 SINGLE                 0.079%
+  59     ঘড়ি                                            7 SINGLE                 0.079%
+  60     দুল                                             7 SINGLE                 0.079%
+  61     বইগুলো                                          7 SINGLE                 0.079%
+  62     স্যাম্পু                                        7 SINGLE                 0.079%
+  63     প্রোডাক্টটি                                     6 SINGLE                 0.068%
+  64     মেহেদী                                          6 SINGLE                 0.068%
+  65     আইলাইনা                                         6 SINGLE                 0.068%
+  66     ক্রীম                                           6 SINGLE                 0.068%
+  67     টিমা                                            6 SINGLE                 0.068%
+  68     টোনা                                            6 SINGLE                 0.068%
+  69     সানগ্লাস                                        5 SINGLE                 0.057%
+  70     পণ্যই                                           5 SINGLE                 0.057%
+  71     প্রোডাক্টে                                      5 SINGLE                 0.057%
+  72     প্রোড়াক্ট                                      5 SINGLE                 0.057%
+  73     স্যানিটাইজা                                     5 SINGLE                 0.057%
+  74     স্প্রে                                          5 SINGLE                 0.057%
+  75     জিনিসই                                          5 SINGLE                 0.057%
+  76     জিনিসটা                                         4 SINGLE                 0.045%
+  77     শার্ট                                           4 SINGLE                 0.045%
+  78     পডাক                                            4 SINGLE                 0.045%
+  79     মানিব্যাগ                                       4 SINGLE                 0.045%
+  80     ক্লিপ                                           4 SINGLE                 0.045%
+  81     উপন্যাস                                         4 SINGLE                 0.045%
+  82     স্যাভলন                                         4 SINGLE                 0.045%
+  83     পডাক্ট                                          4 SINGLE                 0.045%
+  84     সেপনিল                                          4 SINGLE                 0.045%
+  85     মাক্স                                           4 SINGLE                 0.045%
+  86     লিপজেল                                          4 SINGLE                 0.045%
+  87     কাপড়                                           3 SINGLE                 0.034%
+  88     প্যান্ট                                         3 SINGLE                 0.034%
+  89     বইয়                                            3 SINGLE                 0.034%
+  90     অনুবাদ                                          3 SINGLE                 0.034%
+  91     জিনিশ                                           3 SINGLE                 0.034%
+  92     ভ্যাসলিন                                        3 SINGLE                 0.034%
+  93     লাক্স                                           3 SINGLE                 0.034%
+  94     আতর                                             3 SINGLE                 0.034%
+  95     চিরুনি                                          3 SINGLE                 0.034%
+  96     আইলাইনার                                        3 SINGLE                 0.034%
+  97     ব্রাস                                           3 SINGLE                 0.034%
+  98     সেমপু                                           3 SINGLE                 0.034%
+  99     টুথব্রাশ                                        3 SINGLE                 0.034%
+  100    টপ                                              2 SINGLE                 0.023%
+  101    টিশার্ট                                         2 SINGLE                 0.023%
+  102    পোর্ডাক                                         2 SINGLE                 0.023%
+  103    ঘরি                                             2 SINGLE                 0.023%
+  104    প্রাডাক্ট                                       2 SINGLE                 0.023%
+  105    আং                                              2 SINGLE                 0.023%
+  106    প্যান্টি                                        2 SINGLE                 0.023%
+  107    অয়েল                                           2 SINGLE                 0.023%
+  108    জেলি                                            2 SINGLE                 0.023%
+  109    হারপিক                                          2 SINGLE                 0.023%
+  110    বইয়ে                                           2 SINGLE                 0.023%
+  111    প্রডাক্টই                                       2 SINGLE                 0.023%
+  112    প্রডাক্টে                                       2 SINGLE                 0.023%
+  113    পোডাকট                                          2 SINGLE                 0.023%
+  114    প্রোডাক্ট‌                                      2 SINGLE                 0.023%
+  115    মেসিন                                           2 SINGLE                 0.023%
+  116    প্রডাক্টিভ                                      2 SINGLE                 0.023%
+  117    টুথপেষ্ট                                        2 SINGLE                 0.023%
+  118    সেনসোডাইন                                       2 SINGLE                 0.023%
+  119    বই-ই                                            2 SINGLE                 0.023%
+  120    ফেস মাস্ক                                       2 MULTI-WORD             0.023%
+  121    সেপনিল মাস্ক                                    2 MULTI-WORD             0.023%
+  122    গোলাপজল                                         2 SINGLE                 0.023%
+  123    ওষুধ                                            2 SINGLE                 0.023%
+  124    ব্রাউজ                                          1 SINGLE                 0.011%
+  125    জিনিসপত্                                        1 SINGLE                 0.011%
+  126    টি-শার্ট                                        1 SINGLE                 0.011%
+  127    টি-শাট                                          1 SINGLE                 0.011%
+  128    টি_শার্ট                                        1 SINGLE                 0.011%
+  129    টি                                              1 SINGLE                 0.011%
+  130    হেজাব                                           1 SINGLE                 0.011%
+  131    বোরকা                                           1 SINGLE                 0.011%
+  132    পণ্যতি                                          1 SINGLE                 0.011%
+  133    মাল্                                            1 SINGLE                 0.011%
+  134    বইয়ে                                            1 SINGLE                 0.011%
+  135    প্পণ্য                                          1 SINGLE                 0.011%
+  136    ব্রান্ড                                         1 SINGLE                 0.011%
+  137    ফুল-তারাফুল                                     1 SINGLE                 0.011%
+  138    বই❤❤❤                                           1 SINGLE                 0.011%
+  139    কোয়ালি                                         1 SINGLE                 0.011%
+  140    ব‍্যাগটি                                        1 SINGLE                 0.011%
+  141    ওয়ালেট                                         1 SINGLE                 0.011%
+  142    দুলটা                                           1 SINGLE                 0.011%
+  143    কানেরদুল                                        1 SINGLE                 0.011%
+  144    পেন্টি                                          1 SINGLE                 0.011%
+  145    বইগুলী                                          1 SINGLE                 0.011%
+  146    ম্যাপ                                           1 SINGLE                 0.011%
+  147    জিনিসগুলা                                       1 SINGLE                 0.011%
+  148    বই❤️                                            1 SINGLE                 0.011%
+  149    বইদু                                            1 SINGLE                 0.011%
+  150    পণ্যটাই                                         1 SINGLE                 0.011%
+  151    প্রোডাক্টটাও+ঘ্রাণ                              1 SINGLE                 0.011%
+  152    পেট্রোলিয়াম                                    1 SINGLE                 0.011%
+  153    প্রডাকট                                         1 SINGLE                 0.011%
+  154    শাবানটি                                         1 SINGLE                 0.011%
+  155    পণ্যে                                           1 SINGLE                 0.011%
+  156    স্যান্ডেলিনা                                    1 SINGLE                 0.011%
+  157    লাক্স সাবান                                     1 MULTI-WORD             0.011%
+  158    প্রডাকই                                         1 SINGLE                 0.011%
+  159    পোডাকাট                                         1 SINGLE                 0.011%
+  160    স্যাভলন সাবান                                   1 MULTI-WORD             0.011%
+  161    সাবানটা                                         1 SINGLE                 0.011%
+  162    বইট                                             1 SINGLE                 0.011%
+  163    ডাভ                                             1 SINGLE                 0.011%
+  164    বইবই                                            1 SINGLE                 0.011%
+  165    প্রডাক্ট‌                                       1 SINGLE                 0.011%
+  166    Savlon সাবান                                    1 MULTI-WORD             0.011%
+  167    বডি                                             1 SINGLE                 0.011%
+  168    স্যানিটাইজার                                    1 SINGLE                 0.011%
+  169    প্রোডাক্টগুলো                                   1 SINGLE                 0.011%
+  170    ভিট                                             1 SINGLE                 0.011%
+  171    হ্যান্ডওয়াশ                                    1 SINGLE                 0.011%
+  172    প্রোডাক্ট❤                                      1 SINGLE                 0.011%
+  173    হেয়া                                           1 SINGLE                 0.011%
+  174    পারফিউময়                                       1 SINGLE                 0.011%
+  175    আতরটা                                           1 SINGLE                 0.011%
+  176    আতরট‌ি                                          1 SINGLE                 0.011%
+  177    রেহাহব                                          1 SINGLE                 0.011%
+  178    শ্যামপুটা                                       1 SINGLE                 0.011%
+  179    সেস্পু                                          1 SINGLE                 0.011%
+  180    পন্ন্য                                          1 SINGLE                 0.011%
+  181    প্যানটিন শ্যাম্পু                               1 MULTI-WORD             0.011%
+  182    বইটায়                                           1 SINGLE                 0.011%
+  183    বইে                                             1 SINGLE                 0.011%
+  184    ত্রিফলা                                         1 SINGLE                 0.011%
+  185    নারিকেল                                         1 SINGLE                 0.011%
+  186    পট                                              1 SINGLE                 0.011%
+  187    প্রডাষ্ট                                        1 SINGLE                 0.011%
+  188    কন্ডিশনা                                        1 SINGLE                 0.011%
+  189    প্রডাক্টেই                                      1 SINGLE                 0.011%
+  190    লিপস্টিকই                                       1 SINGLE                 0.011%
+  191    লিপিষ্টিক                                       1 SINGLE                 0.011%
+  192    লিপগ্লোস                                        1 SINGLE                 0.011%
+  193    পমেড                                            1 SINGLE                 0.011%
+  194    ব্রাশগুলাই                                      1 SINGLE                 0.011%
+  195    শাম্পু                                          1 SINGLE                 0.011%
+  196    ফেসক্রিম                                        1 SINGLE                 0.011%
+  197    জিনিসগুলো                                       1 SINGLE                 0.011%
+  198    ট্রিনার                                         1 SINGLE                 0.011%
+  199    মেশিনে                                          1 SINGLE                 0.011%
+  200    ট্রিগা                                          1 SINGLE                 0.011%
+  201    টিমার                                           1 SINGLE                 0.011%
+  202    পণ্য-ভালো                                       1 SINGLE                 0.011%
+  203    প্রোডাক্টিভ                                     1 SINGLE                 0.011%
+  204    পোডাক                                           1 SINGLE                 0.011%
+  205    প্রডাক্ত                                        1 SINGLE                 0.011%
+  206    সামাল                                           1 SINGLE                 0.011%
+  207    ক্রিম'এ                                         1 SINGLE                 0.011%
+  208    পেষ্ট                                           1 SINGLE                 0.011%
+  209    পেস্ট                                           1 SINGLE                 0.011%
+  210    মাস্কটি                                         1 SINGLE                 0.011%
+  211    থ্রিডি মাস্ক                                    1 MULTI-WORD             0.011%
+  212    প্রোডাক্ট/১০০                                   1 SINGLE                 0.011%
+  213    মাস্কেই                                         1 SINGLE                 0.011%
+  214    প্রোডাক                                         1 SINGLE                 0.011%
+  215    প্রোডাক্টা                                      1 SINGLE                 0.011%
+  216    প্রোডাক্টটাই                                    1 SINGLE                 0.011%
+  217    প্রসাধনী                                        1 SINGLE                 0.011%
+  218    অ্যালোভে                                        1 SINGLE                 0.011%
+  219    জিনিসো                                          1 SINGLE                 0.011%
+  220    ফেসিয়াল                                        1 SINGLE                 0.011%
+  221    পণ্যটি                                          1 SINGLE                 0.011%
+  222    প্যাকেজিং                                       1 SINGLE                 0.011%
+  223    হোয়াইট                                         1 SINGLE                 0.011%
+  224    পোর্ডাক্ট                                       1 SINGLE                 0.011%
+  225    3                                               1 SINGLE                 0.011%
+  226    স্নো                                            1 SINGLE                 0.011%
+  227    ফেইছ                                            1 SINGLE                 0.011%
+  228    প্রর্ডাক❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤আমি               1 SINGLE                 0.011%
+  229    বইদ                                             1 SINGLE                 0.011%
+  230    সানছ ক্রিম                                      1 MULTI-WORD             0.011%
+  231    ক্লিনজা                                         1 SINGLE                 0.011%
+  232    ফেইস ওয়াশ                                      1 MULTI-WORD             0.011%
+  233    বই❤                                             1 SINGLE                 0.011%
+  234    লিপবাম                                          1 SINGLE                 0.011%
+  235    ক্রিমে                                          1 SINGLE                 0.011%
+  236    স্প্র                                           1 SINGLE                 0.011%
+  237    বাম                                             1 SINGLE                 0.011%
+  238    ফেসওয়াশটা                                      1 SINGLE                 0.011%
+  239    প্রর্ডাক্ট                                      1 SINGLE                 0.011%
+  240    শাবান                                           1 SINGLE                 0.011%
+  241    মালামাল                                         1 SINGLE                 0.011%
+  242    প্রডাকাক্টস                                     1 SINGLE                 0.011%
+  243    পুণ্য                                           1 SINGLE                 0.011%
+  244    পন্যে                                           1 SINGLE                 0.011%
+  245    অলিভ অয়েল                                      1 MULTI-WORD             0.011%
+  246    ডেটল সোপ                                        1 MULTI-WORD             0.011%
+  247    মাটি                                            1 SINGLE                 0.011%
+
+================================================================================
+  SECTION 11: SUMMARY INSIGHTS & CONCLUSIONS
+================================================================================
+
+  1. SCALE
+     The ELSA 10K dataset contains 10,000 product reviews in Bangla.
+     A total of 8,821 entity spans were detected across 8,685
+     sentences (86.9% of all reviews contain at least one entity).
+
+  2. SINGLE vs MULTI-WORD ENTITIES
+     • Single-word entities: 8,766 (99.4%)
+     • Multi-word entities : 55  (0.6%)
+     Multi-word entities make up 0.6% of all detected entities.
+
+  3. MOST COMMON SINGLE-WORD ENTITIES
+     The most frequent single-word product mentions are generic terms:
+     'প্রোডাক্ট' (product), 'বই' (book), 'পণ্য' (goods), 'জিনিস' (item).
+     These are highly AMBIGUOUS without multi-word context.
+
+  4. MOST COMMON MULTI-WORD ENTITIES
+     • 'ফেস ওয়াশ'   (Face Wash)    — cosmetic product
+     • 'ডেটল সাবান'  (Dettol Soap)  — brand + product type
+     • 'অলিভ অয়েল'  (Olive Oil)    — descriptor + product
+     These multi-word forms DISAMBIGUATE the product category clearly.
+
+  5. BIO TAG COVERAGE
+     B-PRODUCT tags: 8,821 (10.17% of tokens)
+     I-PRODUCT tags: 55 (0.06% of tokens)
+     O tags        : 77,865 (89.77% of tokens)
+
+  6. SENTIMENT CORRELATION
+     Multi-word entities appear across all sentiment classes, indicating
+     that reviewers use specific product names regardless of satisfaction.
+     Positive reviews tend to have more entity mentions overall.
+
+  7. NEW v3: SENTENCE ID MAP (Section 9)
+     Every unique multi-word entity now lists the exact Sentence/Review IDs
+     in which it was detected. Use these IDs to open the CSV, locate that
+     row, and manually verify the entity detection is correct.
+     Entries marked '(x2)', '(x3)' etc. mean the entity appears multiple
+     times within a single review — worth special attention during QA.
+
+  8. IMPLICATION FOR NER MODELS
+     Following the MEID (AAAI 2020) approach:
+     → Multi-word entities like 'ডেটল সাবান' should receive HIGHER
+       attention weights when disambiguating single-token occurrences
+       of 'সাবান' or 'ডেটল' elsewhere in the same document.
+     → An auxiliary MEC (Multi-token Entity Classification) task can
+       pre-label SUB vs NSUB tokens before the main NER decoding step.
+  
+================================================================================
+  END OF REPORT  [v3]
+================================================================================

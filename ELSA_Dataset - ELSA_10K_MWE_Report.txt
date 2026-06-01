@@ -1,0 +1,270 @@
+======================================================================
+  MULTI-WORD ENTITY (MWE) ANALYSIS REPORT
+  ELSA Dataset — Named Entity & Sentiment Analysis
+======================================================================
+  Generated   : 2026-05-18 12:29:24
+  Dataset     : ELSA_Dataset - ELSA_10K.csv
+  Framework   : Hu et al. (AAAI 2020) — Multi-Token Entity Theory
+======================================================================
+
+======================================================================
+  SECTION 1 — DATASET OVERVIEW
+======================================================================
+  Total rows in dataset             :   10,000
+  Rows containing NE tags           :    8,829
+  Rows WITHOUT any NE tag           :    1,171
+  Rows with MULTIPLE entities       :       75
+  Rows containing at least one MWE  :       58
+
+======================================================================
+  SECTION 2 — NAMED ENTITY OCCURRENCE SUMMARY
+======================================================================
+  Total NE occurrences              :    8,770
+  Unique NE surface forms           :      808
+  Unique MWE types identified       :       25
+  Unique tokens appearing in MWEs   :       26
+
+======================================================================
+  SECTION 3 — MWE CLASSIFICATION (Hu et al. Framework)
+======================================================================
+
+  Classification scheme:
+    MWE  = Multi-Word Entity span (2+ consecutive _NE_ tokens)
+    SUB  = Single-token NE that IS a constituent of a known MWE
+    NSUB = Single-token NE with NO multi-word anchor found
+
+  CLASS       COUNT    % of ALL  DESCRIPTION
+  -------- --------  ----------  -----------------------------------
+  MWE            58       0.66%  Multi-word entity spans
+  SUB         6,383      72.78%  Single-token, MWE constituent
+  NSUB        2,329      26.56%  Single-token, no MWE anchor
+  TOTAL       8,770     100.00%
+
+  Single-token NEs total            :    8,712
+  Of which are SUB (have MWE anchor):    6,383  (73.27% of single-tokens)
+
+  ► KEY INSIGHT (cf. Hu et al. 2020):
+    In the CoNLL-2003 dataset, 26.62% of single-token entities were
+    constituents of multi-token entities in the same document.
+    In this ELSA dataset, 73.27% of single-token NEs are SUB.
+
+======================================================================
+  SECTION 4 — BIOES TAGGING SCHEME
+======================================================================
+
+  BIOES tag definitions:
+    B = Beginning token of a multi-word entity
+    I = Inside token of a multi-word entity (length ≥ 3)
+    E = End token of a multi-word entity
+    S = Single-token entity (entire entity is one word)
+    O = Non-entity token (not tagged in this dataset)
+
+  MWE length distribution:
+    LENGTH     COUNT  TAG PATTERN
+  --------  --------  -------------------------
+         2        58  B E
+
+======================================================================
+  SECTION 5 — TOP MULTI-WORD ENTITY TYPES (surface forms)
+======================================================================
+
+   RANK  MWE SURFACE FORM                           COUNT
+  -----  ----------------------------------------  ------
+      1  প্রোডাক্ট প্রোডাক্ট                           15
+      2  পণ্য পণ্য                                      7
+      3  জিনিস জিনিস                                    5
+      4  প্রডাক্ট প্রডাক্ট                              4
+      5  প্রোডাক্টটি প্রোডাক্টটি                        3
+      6  ডেটল সাবান                                     2
+      7  ডেটল সাবানটি                                   2
+      8  ব্রাশ ব্রাশ                                    2
+      9  মাস্ক মাস্ক                                    2
+     10  বইটি বই                                        1
+     11  পন্য সাবান                                     1
+     12  সাবান স্যান্ডেলিনা                             1
+     13  সাবানের শ্যাম্পু                               1
+     14  ডেটল সাবানগুলো                                 1
+     15  বোতলের বোতলের                                  1
+     16  ডেটল পণ্য                                      1
+     17  আতর আতর                                        1
+     18  পন্যের পন্যের                                  1
+     19  জিনিসটা জিনিসটা                                1
+     20  পণ্যটি পণ্যটি                                  1
+     21  প্রোডাক্ট ব্যাটারি                             1
+     22  প্রোডাক্টস প্রোডাক্টস                          1
+     23  পণ্যের পণ্যের                                  1
+     24  সাবান সাবান                                    1
+     25  তেল তেল                                        1
+
+======================================================================
+  SECTION 6 — TOP 30 NE SURFACE FORMS (all classes)
+======================================================================
+
+   RANK  SURFACE FORM                          COUNT
+  -----  -----------------------------------  ------
+      1  প্রোডাক্ট                             2,058
+      2  বই                                      806
+      3  প্রডাক্ট                                723
+      4  পণ্য                                    689
+      5  জিনিস                                   489
+      6  সাবান                                   350
+      7  বইটি                                    283
+      8  মাস্ক                                   142
+      9  পণ্যটি                                  134
+     10  প্রোডাক্টটি                             124
+     11  প্রোডাক্টটা                              88
+     12  জিনিসটা                                  80
+     13  মাল                                      78
+     14  শ্যাম্পু                                 75
+     15  ট্রিমার                                  73
+     16  পোডাক্ট                                  69
+     17  বইটা                                     68
+     18  পণ্যের                                   63
+     19  সাবানের                                  57
+     20  তেল                                      49
+     21  ডেটল                                     48
+     22  ব্রাশ                                    45
+     23  ক্রিম                                    43
+     24  ফেস                                      38
+     25  পন্যের                                   37
+     26  ফেসওয়াশ                                 37
+     27  বইয়ের                                    35
+     28  লোশন                                     35
+     29  ব্যাগ                                    33
+     30  ব্যাটারি                                 30
+
+======================================================================
+  SECTION 7 — SENTIMENT DISTRIBUTION
+======================================================================
+
+  SENTIMENT       COUNT         %
+  ------------  -------  --------
+  Negative          980     9.80%
+  Neutral         1,123    11.23%
+  Positive        7,896    78.97%
+
+  Sentiment by NE class:
+  CLASS      POSITIVE    NEUTRAL   NEGATIVE
+  --------  ---------  ---------  ---------
+  MWE              45          5          8
+  SUB           5,117        745        521
+  NSUB          1,728        287        314
+
+======================================================================
+  SECTION 8 — SAMPLE ENTITY OCCURRENCES PER CLASS
+======================================================================
+
+  [ MWE samples ]
+  ----------------------------------------------------------------------
+  Row ID  : 18716
+  Surface : জিনিস জিনিস
+  Tokens  : জিনিস | জিনিস
+  BIOES   : B E
+
+  Row ID  : 22720
+  Surface : বইটি বই
+  Tokens  : বইটি | বই
+  BIOES   : B E
+
+  Row ID  : 26501
+  Surface : জিনিস জিনিস
+  Tokens  : জিনিস | জিনিস
+  BIOES   : B E
+
+  Row ID  : 31178
+  Surface : প্রোডাক্ট প্রোডাক্ট
+  Tokens  : প্রোডাক্ট | প্রোডাক্ট
+  BIOES   : B E
+
+  Row ID  : 50394
+  Surface : প্রোডাক্ট প্রোডাক্ট
+  Tokens  : প্রোডাক্ট | প্রোডাক্ট
+  BIOES   : B E
+
+
+  [ SUB samples ]
+  ----------------------------------------------------------------------
+  Row ID  : 35
+  Surface : পন্যের
+  Tokens  : পন্যের
+  BIOES   : S
+
+  Row ID  : 71
+  Surface : বই
+  Tokens  : বই
+  BIOES   : S
+
+  Row ID  : 225
+  Surface : প্রোডাক্ট
+  Tokens  : প্রোডাক্ট
+  BIOES   : S
+
+  Row ID  : 262
+  Surface : বইটি
+  Tokens  : বইটি
+  BIOES   : S
+
+  Row ID  : 347
+  Surface : বই
+  Tokens  : বই
+  BIOES   : S
+
+
+  [ NSUB samples ]
+  ----------------------------------------------------------------------
+  Row ID  : 36
+  Surface : ড্রেস
+  Tokens  : ড্রেস
+  BIOES   : S
+
+  Row ID  : 37
+  Surface : ড্রেসটা
+  Tokens  : ড্রেসটা
+  BIOES   : S
+
+  Row ID  : 76
+  Surface : ড্রেসটা
+  Tokens  : ড্রেসটা
+  BIOES   : S
+
+  Row ID  : 119
+  Surface : বইটিতে
+  Tokens  : বইটিতে
+  BIOES   : S
+
+  Row ID  : 220
+  Surface : ড্রেসটা
+  Tokens  : ড্রেসটা
+  BIOES   : S
+
+======================================================================
+  SECTION 9 — METHODOLOGY & THEORETICAL NOTES
+======================================================================
+
+  Detection Method:
+    Multi-word entities were detected by identifying consecutive
+    _NE_-prefixed tokens in the ENTITY_TAGGED_REVIEW column.
+    Two or more adjacent _NE_ tokens form one MWE span.
+
+  SUB Classification:
+    A single-token NE is classified as SUB if its clean surface
+    form appears as a constituent token in ANY MWE found in the
+    entire dataset (document-level inventory lookup).
+
+  BIOES Tagging:
+    Applied per the BIOES scheme standard in NER literature.
+    Single token → S; First of multi → B; Last of multi → E;
+    Any middle token(s) → I.
+
+  Theoretical basis:
+    Hu et al. (AAAI 2020) showed that occurrences of a token
+    within a multi-token entity provide more reliable contextual
+    signal for disambiguating single-token occurrences of the
+    same surface form elsewhere in the document.
+
+  Dataset language: Bengali (e-commerce product reviews)
+  NE type: Product entities (clothing, books, cosmetics, etc.)
+
+======================================================================
+  END OF REPORT
+======================================================================

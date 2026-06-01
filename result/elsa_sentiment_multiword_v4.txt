@@ -1,0 +1,265 @@
+================================================================================
+  ELSA DATASET — SENTIMENT ANALYSIS REPORT
+  Scope: Sentences containing Multi-Word Named Entities ONLY
+  Language: Bangla (Bengali) | Domain: E-commerce Product Reviews
+  v4 — Full pattern coverage applied
+================================================================================
+
+================================================================================
+  SECTION A: OVERVIEW OF MULTI-WORD ENTITY SENTENCES
+================================================================================
+  Total sentences with multi-word entities :      63
+  Total sentences in full dataset          :  10,000
+  Coverage                                 :   0.63%
+
+================================================================================
+  SECTION B: SENTIMENT DISTRIBUTION
+================================================================================
+  Sentiment       Count          %  Bar Chart (each █ ≈ 0.5%)
+  ------------ -------- ----------  ----------------------------------------
+  Positive           44     69.84%  ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+  Negative           10     15.87%  ███████████████████████████████
+  Neutral             9     14.29%  ████████████████████████████
+
+  KEY INSIGHT:
+    Positive sentences dominate multi-word entity usage (69.8%).
+    Reviewers who mention specific branded/multi-word products are
+    significantly more likely to express positive sentiment.
+
+================================================================================
+  SECTION C: SENTIMENT BREAKDOWN PER MULTI-WORD ENTITY
+================================================================================
+  Entity                                Total    Pos    Neg    Neu  Dominant Sentiment
+  ----------------------------------- ------- ------ ------ ------  --------------------
+  ফেস ওয়াশ                                28     19      6      3  Positive
+  ডেটল সাবান                               14     11      0      3  Positive
+  ব্রাশ সেট                                 2      2      0      0  Positive
+  ফেস মাস্ক                                 2      1      1      0  Positive
+  সেপনিল মাস্ক                              2      2      0      0  Positive
+  লাক্স সাবান                               1      1      0      0  Positive
+  স্যাভলন সাবান                             1      1      0      0  Positive
+  Savlon সাবান                              1      1      0      0  Positive
+  প্যানটিন শ্যাম্পু                         1      1      0      0  Positive
+  স্প্রে বোতল                               1      0      1      0  Negative
+  ফেস ওয়াশ বোতল                            1      0      1      0  Negative
+  তেল বোতল                                  1      0      0      1  Neutral
+  থ্রিডি মাস্ক                              1      1      0      0  Positive
+  ক্রিম ফেস                                 1      0      1      0  Negative
+  ফেসিয়াল স্ক্রাব                          1      1      0      0  Positive
+  লাক্স বডি ওয়াশ                           1      0      0      1  Neutral
+  সানছ ক্রিম                                1      1      0      0  Positive
+  ফেইস ওয়াশ                                1      1      0      0  Positive
+  অলিভ অয়েল                                1      0      0      1  Neutral
+  ডেটল সোপ                                  1      1      0      0  Positive
+
+================================================================================
+  SECTION D: FULL SENTENCE LISTING (Multi-Word Entity Sentences)
+  Format: [Sentiment] ID: sentence
+          Multi-word entities: entity1, entity2 …
+================================================================================
+
+  [Negative] ID 68865 : ফেস ওয়াশ এর ক্যাপ টা ভাঙ্গা, খুলা যাচ্ছে না
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Positive] ID 75729 : ডেটল সাবান তো ভাল সাবান সবাই জানে।
+             Multi-word entities: 'ডেটল সাবান'
+
+  [Neutral ] ID 75838 : ডেটল সাবান নিয়ে বলার কিছু নাই।
+             Multi-word entities: 'ডেটল সাবান'
+
+  [Positive] ID 76622 : ডেটল সাবান সবসময়ের জন্যই ভালো,অরিজিনাল প্রোডাক্ট। 
+             Multi-word entities: 'ডেটল সাবান'
+
+  [Positive] ID 76738 : ডেটল সাবান আমি সবসময় ব্যবহার করি। পণ্যের মান ভালো। চাইলে কেউ নিতে পারেন। ধন্যবাদ দারাজ।
+             Multi-word entities: 'ডেটল সাবান'
+
+  [Positive] ID 76764 : ডেটল সাবানগুলা অনেক ভালো।অথেনটিক পণ‍্য।আপনারা সবাই নিতে পারেন।
+             Multi-word entities: 'ডেটল সাবান'
+
+  [Positive] ID 78022 : ডেটল সাবান বাংলাদেশের নামবার ওয়ান সাবান
+             Multi-word entities: 'ডেটল সাবান'
+
+  [Positive] ID 78395 : 10 টাকায় মিনি লাক্স সাবান, খুব ভালো প্রোডাক্ট।
+             Multi-word entities: 'লাক্স সাবান'
+
+  [Positive] ID 79372 : ধন্যবাদ আজ   ডেটল সাবানটি পেয়েছি  অসংখ্য ধন্যবাদ দারাজ ছেলার কে ???
+             Multi-word entities: 'ডেটল সাবান'
+
+  [Positive] ID 79906 : ডেটল সাবান সবসময় আমার কাছে ভালোই লাগে।
+             Multi-word entities: 'ডেটল সাবান'
+
+  [Neutral ] ID 80352 : আমি অনেক আগে থেকেই ডেটল সাবান দারাজ থেকে আনা হয়।
+             Multi-word entities: 'ডেটল সাবান'
+
+  [Positive] ID 80632 : বাজারের চেয়ে কম মূল্যে অরিজিনাল স্যাভলন সাবান
+             Multi-word entities: 'স্যাভলন সাবান'
+
+  [Positive] ID 82749 : বাজার থেকে কিছুটা কমে পেয়েছি। আর ডেটল সাবান তো ভালো।
+             Multi-word entities: 'ডেটল সাবান'
+
+  [Positive] ID 85228 : বাংলাদেশি সাবান গুলোর মধ্যে Savlon Soap Mild আমার কাছে Best মনে হয়েছে।
+             Multi-word entities: 'Savlon সাবান'
+
+  [Positive] ID 103621: শ্যাম্পু ব্যবহার করিনি। গিফট দিয়ে দিয়েছি। বাট ফেস ওয়াশ টা ভালো
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Positive] ID 103996: প্যানটিন শ্যাম্পু সবসময়ই আমার চুল পড়া কমিয়েছে। অনেক ভালো একটা প্রোডাক্ট। ধন্যবাদ সেলারকে।
+             Multi-word entities: 'প্যানটিন শ্যাম্পু'
+
+  [Negative] ID 108329: চুল পড়ে, শক্ত হয়ে যায়,  স্প্রে বোতল সমস্যা 
+             Multi-word entities: 'স্প্রে বোতল'
+
+  [Positive] ID 124661: আলহামদুলিল্লাহ ব্রাশ সেট গুলো ঠিকঠাক হাতে পেয়েছি! মান অনেক ভালো! ব্রাশের তুলি গুলো অনেক সফট্।
+             Multi-word entities: 'ব্রাশ সেট'
+
+  [Positive] ID 124832: এক কথায় অসাধারণ ব্রাশ সেট টা  ❤️❤️❤️❤️❤️❤️❤️❤
+             Multi-word entities: 'ব্রাশ সেট'
+
+  [Negative] ID 129623: এইটা আশা করি নাই যে প্রোডাক্টের জন্য নিলাম সেটা পুরোটাই খারাপ Face Wash
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Positive] ID 149805: Face wash টা ঠিক আছে 
+তবে ক্রিমের উৎপাদন অনেক দিন আগের
+
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Neutral ] ID 150274: ফেস ওয়াশ ঠিক আছে, মেয়াদ ভালোই আছে। কিন্তু ক্রিমের মেয়াদ কম।
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Negative] ID 150418: Face wash টা নকল
+ক্রিমটা ঠিক আছে 
+নেওয়ার আগে ভেবে নেবেন।
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Negative] ID 150463: ফেসওয়াসের বোতল ফাটা ।।
+একদমি বাজে হয়েছে।
+             Multi-word entities: 'ফেস ওয়াশ বোতল'
+
+  [Positive] ID 151474: ধন্যবাদ দারাজ কম মুল্যে অরিজিনাল studio X face wash টি দেওয়ার জন্য❤️❤️❤️❤️❤️
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Neutral ] ID 151604: তেলের বোতলটা পুরানো মনে হলো।সাবান আর ফেসওয়াস ঠিক আছে
+             Multi-word entities: 'তেল বোতল'
+
+  [Positive] ID 151663: এই দামের মধ্যে বেস্ট Facewaah
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Positive] ID 152641: ফেস ওয়াশ টা ভালো ছিল
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Positive] ID 163544: বাজারের অন্যান্য Face Masks ? তুলনায় Sepnil Face Mask অনেক ভালো।
+             Multi-word entities: 'ফেস মাস্ক'
+
+  [Positive] ID 163550: সেপনিল মাস্ক টা অনেক ভালো এবং ব্যাবহার করে ও মজাThis is good
+             Multi-word entities: 'সেপনিল মাস্ক'
+
+  [Positive] ID 163815: এত কম দামে সেপনিল মাস্ক। খুব খুশি কিনতে পেরে।
+             Multi-word entities: 'সেপনিল মাস্ক'
+
+  [Positive] ID 165827: থ্রিডি মাস্কগুলো বেশ ভালোই ছিল।
+স্বাচ্ছন্দ ভাবেই ব্যবহার করছি। ধন্যবাদ দারাজ।
+             Multi-word entities: 'থ্রিডি মাস্ক'
+
+  [Negative] ID 170259: Face Mask  টি মোটামুটি মানের আর Packaging টাও ভাল ছিল না। Delivery Fast ছিল।
+             Multi-word entities: 'ফেস মাস্ক'
+
+  [Negative] ID 172899: ক্রিমটি ফেসের সাথে মিসে যায় নাহ। ভেসে থাকে ?
+             Multi-word entities: 'ক্রিম ফেস'
+
+  [Positive] ID 183695: অনেক ভালো হয়েছে ফেসিয়াল স্ক্রাব টা। ২০২৪ সাল পপর্যন্ত মেয়াদ। ডিসকাউন্ট রেটে পেয়েছি। সবাই নিতে পারেন।???❤️
+             Multi-word entities: 'ফেসিয়াল স্ক্রাব'
+
+  [Positive] ID 184839: আলহামদুলিল্লাহ ফেস ওয়াশ টি খুবই ভালো, ধন্যবাদ আপনাদেরকে। 
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Negative] ID 185213: ফেস ওয়াশ টার পেকেট এর মুখ খোলা ছিলো,
+অরিজিনাল কিনা সন্দেহ আছে ?
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Positive] ID 185392: অনেক ভাল একটা ফেস ওয়াশ। রিকমন্ডেড।
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Negative] ID 185436: খুবই বাজে একটা ফেস ওয়াশ। আমার টাকা গুলো নষ্ট হয়েছে।
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Positive] ID 186479: খুব ভালো একটি face wash এবং খুব সুন্দর প্যাকেজিং
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Positive] ID 187437: খুব ভালো ফেস ওয়াশ। ভালো ডিসকাউন্ট পেয়েছি। চাইলে যে কেউ নিতে পারেন।
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Positive] ID 187460: ভালো প্রোডাক্ট।
+১৬৫ টাকায় ভালোই ফেস ওয়াশ টা।
+আপনারাও নিতে পারেন।
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Positive] ID 188225: ফেশ ওয়াশ টি orginal uniliver এর প্রোডাক্ট ??
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Neutral ] ID 190929: সব কিছু ঠিক আছে সাথে একটা lux body wash ফ্রি দিছে
+             Multi-word entities: 'লাক্স বডি ওয়াশ'
+
+  [Positive] ID 191413: face wash টা অনেক অনেক ভালো??????
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Neutral ] ID 191639: ফেস ওয়াশের সাথে ভেজলিন লোশন ফ্রি পেয়েছি।
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Positive] ID 191684: কি আর বলবো এমন একটা ভালো face wash,
+আপনারা চাইলে নিতে পারেন,, 
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Positive] ID 191807: ফেস ওয়াশটি অনেক ভালো উন্নত মানের
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Positive] ID 192063: দাম অনুযায়ী অনেক  ভালো  একটা সানছ ক্রিম, 
+             Multi-word entities: 'সানছ ক্রিম'
+
+  [Positive] ID 192879: ফেইস ওয়াশটি অনেক ভালো। ময়েসশ্চার করে ত্বককে। অরিজিনাল পণ্য। স্টোরটাও অরিজিনাল। নির্ভরযোগ্য স্টোর।
+             Multi-word entities: 'ফেইস ওয়াশ'
+
+  [Positive] ID 194291: ফেস ওয়াশটা ভালোই মনে হচ্ছে।
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Neutral ] ID 194297: Face wash টি পেয়েছি ঠিক মতো।ভালোই আছে।
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Negative] ID 194650: প্যকেট করা হয় নাই। ফেসওয়াস পরে গেছে
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Positive] ID 202512: ফেস ওয়াশ টা অনেক ভালো
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Positive] ID 203819: সুন্দর  ফেস ওয়াস
+শেষ হয়ে গেছে ,  আর একটা অডার দিব কিন্তু পাচ্ছি না।
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Positive] ID 212149: ফেসওয়াশটা গত পরশু হাতে পেলাম। ১০০% অরিজিনাল ফেস ওয়াশ। ধন্যবাদ অরিজিনাল প্রোডাক্ট দেয়ার জন্য।
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Positive] ID 214788: খুবি ভালো একটা ফেস ওয়াশ
+             Multi-word entities: 'ফেস ওয়াশ'
+
+  [Neutral ] ID 218967: ডেটল সাবান মোটামুটি অর্ধেক দামে পেয়েছি। ধন্যবাদ দারাজ ?
+             Multi-word entities: 'ডেটল সাবান'
+
+  [Positive] ID 219000: আমার ভালো লাগে ডেটল সাবান ধন্যবাদ ???
+             Multi-word entities: 'ডেটল সাবান'
+
+  [Positive] ID 219021: ডেটল সাবান আমার খুব প্রিয় সাবান।
+             Multi-word entities: 'ডেটল সাবান'
+
+  [Positive] ID 223757: বাজারে যে রকম dettol  সাবান পাওয়া যায় ঠিক সে রকমই দারাজের dettol সাবান ।
+             Multi-word entities: 'ডেটল সাবান'
+
+  [Neutral ] ID 224675: ওলিভ ওয়েল ও কারবন সোপ অর্ডার করছিলাম, কারবন সোপ আসে নাই??
+             Multi-word entities: 'অলিভ অয়েল'
+
+  [Positive] ID 226188: চেনা বামুনের পৈতা লাগে না।
+ডেটল সোপ কেমন তা সবাই জানে।
+
+             Multi-word entities: 'ডেটল সোপ'
+
+================================================================================
+  END OF SENTIMENT REPORT
+================================================================================
