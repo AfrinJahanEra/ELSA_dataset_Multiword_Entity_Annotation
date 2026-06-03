@@ -1,0 +1,4407 @@
+[
+  {
+    "id": 1,
+    "original_csv_id": 68865,
+    "sentence": "ফেস ওয়াশ এর ক্যাপ টা ভাঙ্গা, খুলা যাচ্ছে না",
+    "sentiment": {
+      "label": "Negative",
+      "code": 0
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "এর",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "ক্যাপ",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "টা",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "ভাঙ্গা",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "খুলা",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "খুলা",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "না",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "original_csv_id": 75729,
+    "sentence": "ডেটল সাবান তো ভাল সাবান সবাই জানে।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ডেটল",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "সাবান",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "তো",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "ভাল",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "সাবান",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "সবাই",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "সবাই",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "জানে।।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ডেটল সাবান",
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ডেটল সাবান",
+        "is_multi": true,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "original_csv_id": 75838,
+    "sentence": "ডেটল সাবান নিয়ে বলার কিছু নাই।",
+    "sentiment": {
+      "label": "Neutral",
+      "code": 1
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ডেটল",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "সাবান",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "নিয়ে",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "বলার",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "কিছু",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "কিছু",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "নাই।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ডেটল সাবান",
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ডেটল সাবান",
+        "is_multi": true,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "original_csv_id": 76622,
+    "sentence": "ডেটল সাবান সবসময়ের জন্যই ভালো,অরিজিনাল প্রোডাক্ট।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ডেটল",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "সাবান",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "সবসময়ের",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "জন্যই",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "ভালো",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "অরিজিনাল",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "অরিজিনাল।।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ডেটল সাবান",
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ডেটল সাবান",
+        "is_multi": true,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "original_csv_id": 76738,
+    "sentence": "ডেটল সাবান আমি সবসময় ব্যবহার করি। পণ্যের মান ভালো। চাইলে কেউ নিতে পারেন। ধন্যবাদ দারাজ।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ডেটল",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "সাবান",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "আমি",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "সবসময়",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "ব্যবহার",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "ব্যবহার",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "করি।পণ্যের",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "মান",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "ভালো।চাইলে",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "কেউ",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "নিতে",
+        "tag": "O"
+      },
+      {
+        "token_index": 11,
+        "token": "পারেন।ধন্যবাদ",
+        "tag": "O"
+      },
+      {
+        "token_index": 12,
+        "token": "দারাজ।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ডেটল সাবান",
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ডেটল সাবান",
+        "is_multi": true,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "original_csv_id": 76764,
+    "sentence": "ডেটল সাবানগুলা অনেক ভালো।অথেনটিক পণ‍্য।আপনারা সবাই নিতে পারেন।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ডেটল",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "সাবানগুলা",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "অনেক",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "ভালো।অথেনটিক",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "পণ‍্য।আপনারা",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "সবাই",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "নিতে",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "নিতে",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "পারেন।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ডেটল সাবান",
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ডেটল সাবান",
+        "is_multi": true,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "original_csv_id": 78022,
+    "sentence": "ডেটল সাবান বাংলাদেশের নামবার ওয়ান সাবান",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ডেটল",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "সাবান",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "বাংলাদেশের",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "নামবার",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "ওয়ান",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "সাবান",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ডেটল সাবান",
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ডেটল সাবান",
+        "is_multi": true,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "original_csv_id": 78395,
+    "sentence": "10 টাকায় মিনি লাক্স সাবান, খুব ভালো প্রোডাক্ট।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "10",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "টাকায়",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "মিনি",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "লাক্স",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 4,
+        "token": "সাবান",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 5,
+        "token": "খুব",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "ভালো",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "প্রোডাক্ট।।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "লাক্স সাবান",
+        "tokens": [
+          "লাক্স",
+          "সাবান"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 3,
+        "bio_end_idx": 4
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "লাক্স সাবান",
+        "is_multi": true,
+        "tokens": [
+          "লাক্স",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "original_csv_id": 79372,
+    "sentence": "ধন্যবাদ আজ   ডেটল সাবানটি পেয়েছি  অসংখ্য ধন্যবাদ দারাজ ছেলার কে ???",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ধন্যবাদ",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "আজ",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "ডেটল",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 3,
+        "token": "সাবানটি",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 4,
+        "token": "পেয়েছি",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "অসংখ্য",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "ধন্যবাদ",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "দারাজ",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "দারাজ",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "ছেলার",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "কে",
+        "tag": "O"
+      },
+      {
+        "token_index": 11,
+        "token": "কে",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ডেটল সাবান",
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 2,
+        "bio_end_idx": 3
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ডেটল সাবান",
+        "is_multi": true,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "original_csv_id": 79906,
+    "sentence": "ডেটল সাবান সবসময় আমার কাছে ভালোই লাগে।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ডেটল",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "সাবান",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "সবসময়",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "আমার",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "কাছে",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "ভালোই",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "লাগে",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "লাগে।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ডেটল সাবান",
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ডেটল সাবান",
+        "is_multi": true,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "original_csv_id": 80352,
+    "sentence": "আমি অনেক আগে থেকেই ডেটল সাবান দারাজ থেকে আনা হয়।",
+    "sentiment": {
+      "label": "Neutral",
+      "code": 1
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "আমি",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "অনেক",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "আগে",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "থেকেই",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "ডেটল",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 5,
+        "token": "সাবান",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 6,
+        "token": "দারাজ",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "থেকে",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "থেকে",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "আনা",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "হয়",
+        "tag": "O"
+      },
+      {
+        "token_index": 11,
+        "token": "হয়",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ডেটল সাবান",
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 4,
+        "bio_end_idx": 5
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ডেটল সাবান",
+        "is_multi": true,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "original_csv_id": 80632,
+    "sentence": "বাজারের চেয়ে কম মূল্যে অরিজিনাল স্যাভলন সাবান",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "বাজারের",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "চেয়ে",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "কম",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "মূল্যে",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "অরিজিনাল",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "অরিজিনাল",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "স্যাভলন",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 7,
+        "token": "সাবান",
+        "tag": "I-PRODUCT"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "স্যাভলন সাবান",
+        "tokens": [
+          "স্যাভলন",
+          "সাবান"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 6,
+        "bio_end_idx": 7
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "স্যাভলন সাবান",
+        "is_multi": true,
+        "tokens": [
+          "স্যাভলন",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "original_csv_id": 82749,
+    "sentence": "বাজার থেকে কিছুটা কমে পেয়েছি। আর ডেটল সাবান তো ভালো।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "বাজার",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "থেকে",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "কিছুটা",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "কমে",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "পেয়েছি।আর",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "ডেটল",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 6,
+        "token": "সাবান",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 7,
+        "token": "তো",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "ভালো।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ডেটল সাবান",
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 5,
+        "bio_end_idx": 6
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ডেটল সাবান",
+        "is_multi": true,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "original_csv_id": 85228,
+    "sentence": "বাংলাদেশি সাবান গুলোর মধ্যে Savlon Soap Mild আমার কাছে Best মনে হয়েছে।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "বাংলাদেশি",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "সাবান",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "গুলোর",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "মধ্যে",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "Savlon",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 5,
+        "token": "সাবান",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 6,
+        "token": "মাইল্ড",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "আমার",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "কাছে",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "সেরা",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "মনে",
+        "tag": "O"
+      },
+      {
+        "token_index": 11,
+        "token": "হয়েছে।।।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "Savlon সাবান",
+        "tokens": [
+          "Savlon",
+          "সাবান"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 4,
+        "bio_end_idx": 5
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "Savlon সাবান",
+        "is_multi": true,
+        "tokens": [
+          "Savlon",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "original_csv_id": 103621,
+    "sentence": "শ্যাম্পু ব্যবহার করিনি। গিফট দিয়ে দিয়েছি। বাট ফেস ওয়াশ টা ভালো",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "শ্যাম্পু",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "ব্যবহার",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "করিনি।গিফট",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "দিয়ে",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "দিয়েছি।বাট",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 6,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 7,
+        "token": "টা",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "ভালো",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 5,
+        "bio_end_idx": 6
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "শ্যাম্পু",
+        "is_multi": false,
+        "tokens": [
+          "শ্যাম্পু"
+        ]
+      },
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "original_csv_id": 103996,
+    "sentence": "প্যানটিন শ্যাম্পু সবসময়ই আমার চুল পড়া কমিয়েছে। অনেক ভালো একটা প্রোডাক্ট। ধন্যবাদ সেলারকে।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "প্যানটিন",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "শ্যাম্পু",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "সবসময়ই",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "আমার",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "চুল",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "পড়া",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "কমিয়েছে",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "কমিয়েছে।অনেক",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "ভালো",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "একটা",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "প্রোডাক্ট।ধন্যবাদ",
+        "tag": "O"
+      },
+      {
+        "token_index": 11,
+        "token": "সেলারকে।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "প্যানটিন শ্যাম্পু",
+        "tokens": [
+          "প্যানটিন",
+          "শ্যাম্পু"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "প্যানটিন শ্যাম্পু",
+        "is_multi": true,
+        "tokens": [
+          "প্যানটিন",
+          "শ্যাম্পু"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "original_csv_id": 129623,
+    "sentence": "এইটা আশা করি নাই যে প্রোডাক্টের জন্য নিলাম সেটা পুরোটাই খারাপ Face Wash",
+    "sentiment": {
+      "label": "Negative",
+      "code": 0
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "এইটা",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "আশা",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "করি",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "নাই",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "যে",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "প্রোডাক্টের",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "জন্য",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "নিলাম",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "নিলাম",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "সেটা",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "খারাপ",
+        "tag": "O"
+      },
+      {
+        "token_index": 11,
+        "token": "খারাপ",
+        "tag": "O"
+      },
+      {
+        "token_index": 12,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 13,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 12,
+        "bio_end_idx": 13
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "original_csv_id": 149805,
+    "sentence": "Face wash টা ঠিক আছে \nতবে ক্রিমের উৎপাদন অনেক দিন আগের",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "টা",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "ঠিক",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "আছে",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "তবে",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "ক্রিমের",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 7,
+        "token": "উৎপাদন",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "অনেক",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "দিন",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "আগের",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      },
+      {
+        "text": "ক্রিম",
+        "is_multi": false,
+        "tokens": [
+          "ক্রিম"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "original_csv_id": 150274,
+    "sentence": "ফেস ওয়াশ ঠিক আছে, মেয়াদ ভালোই আছে। কিন্তু ক্রিমের মেয়াদ কম।",
+    "sentiment": {
+      "label": "Neutral",
+      "code": 1
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "ঠিক",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "আছে",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "মেয়াদ",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "ভালোই",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "আছে",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "আছে।কিন্তু",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "ক্রিমের",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 9,
+        "token": "মেয়াদ",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "কম।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      },
+      {
+        "text": "ক্রিম",
+        "is_multi": false,
+        "tokens": [
+          "ক্রিম"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "original_csv_id": 150418,
+    "sentence": "Face wash টা নকল\nক্রিমটা ঠিক আছে \nনেওয়ার আগে ভেবে নেবেন।",
+    "sentiment": {
+      "label": "Negative",
+      "code": 0
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "টা",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "নকল",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "ক্রিমটা",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 5,
+        "token": "ঠিক",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "আছে",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "নেওয়ার",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "আগে",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "ভেবে",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "নেবেন।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      },
+      {
+        "text": "ক্রিম",
+        "is_multi": false,
+        "tokens": [
+          "ক্রিম"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "original_csv_id": 150463,
+    "sentence": "ফেসওয়াসের বোতল ফাটা ।।\nএকদমি বাজে হয়েছে।",
+    "sentiment": {
+      "label": "Negative",
+      "code": 0
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "ওয়াশের",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "বোতল",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "ফাটা",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "একদম",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "বাজে",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "হয়েছে।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "original_csv_id": 151474,
+    "sentence": "ধন্যবাদ দারাজ কম মুল্যে অরিজিনাল studio X face wash টি দেওয়ার জন্য❤️❤️❤️❤️❤️",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ধন্যবাদ",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "দারাজ",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "কম",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "মুল্যে",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "অরিজিনাল",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "স্টুডিও",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "এক্স",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 8,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 9,
+        "token": "টি",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "দেওয়ার",
+        "tag": "O"
+      },
+      {
+        "token_index": 11,
+        "token": "জন্য❤",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 7,
+        "bio_end_idx": 8
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "original_csv_id": 151663,
+    "sentence": "এই দামের মধ্যে বেস্ট Facewaah",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "এই",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "দামের",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "মধ্যে",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "বেস্ট",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 5,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 4,
+        "bio_end_idx": 5
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "original_csv_id": 152641,
+    "sentence": "ফেস ওয়াশ টা ভালো ছিল",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "টা",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "ভালো",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "ছিল",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "original_csv_id": 163544,
+    "sentence": "বাজারের অন্যান্য Face Masks ? তুলনায় Sepnil Face Mask অনেক ভালো।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "অন্যান্য",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "অন্যান্য",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "মুখের",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "মুখোশ",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "তুলনায়",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "সেপিনিল",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 7,
+        "token": "মাস্ক",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 8,
+        "token": "অনেক",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "ভালো।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস মাস্ক",
+        "tokens": [
+          "ফেস",
+          "মাস্ক"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 6,
+        "bio_end_idx": 7
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস মাস্ক",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "মাস্ক"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "original_csv_id": 163550,
+    "sentence": "সেপনিল মাস্ক টা অনেক ভালো এবং ব্যাবহার করে ও মজাThis is good",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "সেপনিল",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "মাস্ক",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "টা",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "অনেক",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "অনেক",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "এবং",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "ব্যাবহার",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "ব্যাবহার",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "করে",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "মজা",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "মজা",
+        "tag": "O"
+      },
+      {
+        "token_index": 11,
+        "token": "এটি",
+        "tag": "O"
+      },
+      {
+        "token_index": 12,
+        "token": "ভাল",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "সেপনিল মাস্ক",
+        "tokens": [
+          "সেপনিল",
+          "মাস্ক"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "সেপনিল মাস্ক",
+        "is_multi": true,
+        "tokens": [
+          "সেপনিল",
+          "মাস্ক"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "original_csv_id": 163815,
+    "sentence": "এত কম দামে সেপনিল মাস্ক। খুব খুশি কিনতে পেরে।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "এত",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "কম",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "দামে",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "সেপনিল",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 4,
+        "token": "মাস্ক।খুব",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 5,
+        "token": "খুশি",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "কিনতে",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "পেরে।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "সেপনিল মাস্ক",
+        "tokens": [
+          "সেপনিল",
+          "মাস্ক"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 3,
+        "bio_end_idx": 4
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "সেপনিল মাস্ক",
+        "is_multi": true,
+        "tokens": [
+          "সেপনিল",
+          "মাস্ক"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "original_csv_id": 165827,
+    "sentence": "থ্রিডি মাস্কগুলো বেশ ভালোই ছিল।\nস্বাচ্ছন্দ ভাবেই ব্যবহার করছি। ধন্যবাদ দারাজ।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "থ্রিডি",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "মাস্কগুলো",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "বেশ",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "ভালোই",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "ছিল।",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "স্বাচ্ছন্দ",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "ভাবেই",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "ব্যবহার",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "করছি।ধন্যবাদ",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "দারাজ।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "থ্রিডি মাস্ক",
+        "tokens": [
+          "থ্রিডি",
+          "মাস্ক"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "থ্রিডি মাস্ক",
+        "is_multi": true,
+        "tokens": [
+          "থ্রিডি",
+          "মাস্ক"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "original_csv_id": 170259,
+    "sentence": "Face Mask  টি মোটামুটি মানের আর Packaging টাও ভাল ছিল না। Delivery Fast ছিল।",
+    "sentiment": {
+      "label": "Negative",
+      "code": 0
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "মাস্ক",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "টি",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "মোটামুটি",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "মানের",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "আর",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "প্যাকেজিং",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "টাও",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "ভাল",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "ছিল",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "না।বিতরণ",
+        "tag": "O"
+      },
+      {
+        "token_index": 11,
+        "token": "দ্রুত",
+        "tag": "O"
+      },
+      {
+        "token_index": 12,
+        "token": "ছিল।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস মাস্ক",
+        "tokens": [
+          "ফেস",
+          "মাস্ক"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস মাস্ক",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "মাস্ক"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "original_csv_id": 184839,
+    "sentence": "আলহামদুলিল্লাহ ফেস ওয়াশ টি খুবই ভালো, ধন্যবাদ আপনাদেরকে।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "আলহামদুলিল্লাহ",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 3,
+        "token": "টি",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "খুবই",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "ভালো",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "ধন্যবাদ",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "ধন্যবাদ।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 1,
+        "bio_end_idx": 2
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "original_csv_id": 185213,
+    "sentence": "ফেস ওয়াশ টার পেকেট এর মুখ খোলা ছিলো,\nঅরিজিনাল কিনা সন্দেহ আছে ?",
+    "sentiment": {
+      "label": "Negative",
+      "code": 0
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "টার",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "পেকেট",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "এর",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "মুখ",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "খোলা",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "ছিলো",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "ছিলো",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "অরিজিনাল",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "কিনা",
+        "tag": "O"
+      },
+      {
+        "token_index": 11,
+        "token": "সন্দেহ",
+        "tag": "O"
+      },
+      {
+        "token_index": 12,
+        "token": "আছে",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "original_csv_id": 185392,
+    "sentence": "অনেক ভাল একটা ফেস ওয়াশ। রিকমন্ডেড।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "অনেক",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "ভাল",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "একটা",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 4,
+        "token": "ওয়াশ।রিকমন্ডেড।",
+        "tag": "I-PRODUCT"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 3,
+        "bio_end_idx": 4
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "original_csv_id": 185436,
+    "sentence": "খুবই বাজে একটা ফেস ওয়াশ। আমার টাকা গুলো নষ্ট হয়েছে।",
+    "sentiment": {
+      "label": "Negative",
+      "code": 0
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "খুবই",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "বাজে",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "একটা",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 4,
+        "token": "ওয়াশ।আমার",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 5,
+        "token": "টাকা",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "গুলো",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "নষ্ট",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "হয়েছে।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 3,
+        "bio_end_idx": 4
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "original_csv_id": 186479,
+    "sentence": "খুব ভালো একটি face wash এবং খুব সুন্দর প্যাকেজিং",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "খুব",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "ভালো",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "একটি",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 4,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 5,
+        "token": "এবং",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "খুব",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "সুন্দর",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "প্যাকেজিং",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "প্যাকেজিং",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 3,
+        "bio_end_idx": 4
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "original_csv_id": 187437,
+    "sentence": "খুব ভালো ফেস ওয়াশ। ভালো ডিসকাউন্ট পেয়েছি। চাইলে যে কেউ নিতে পারেন।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "খুব",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "ভালো",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 3,
+        "token": "ওয়াশ।ভালো",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 4,
+        "token": "ডিসকাউন্ট",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "পেয়েছি।চাইলে",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "যে",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "কেউ",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "নিতে",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "পারেন।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 2,
+        "bio_end_idx": 3
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "original_csv_id": 187460,
+    "sentence": "ভালো প্রোডাক্ট।\n১৬৫ টাকায় ভালোই ফেস ওয়াশ টা।\nআপনারাও নিতে পারেন।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ভালো",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "প্রোডাক্ট।",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "১৬৫",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "টাকায়",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "ভালোই",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 6,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 7,
+        "token": "ওয়াশ",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "টা।",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "আপনারাও",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "নিতে",
+        "tag": "O"
+      },
+      {
+        "token_index": 11,
+        "token": "পারেন।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 5,
+        "bio_end_idx": 6
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "original_csv_id": 188225,
+    "sentence": "ফেশ ওয়াশ টি orginal uniliver এর প্রোডাক্ট ??",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "টি",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "আসল",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "ইউনিলিভার",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "এর",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "প্রোডাক্ট",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "original_csv_id": 191413,
+    "sentence": "face wash টা অনেক অনেক ভালো??????",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "টা",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "অনেক",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "অনেক",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "ভালো??????",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "original_csv_id": 191639,
+    "sentence": "ফেস ওয়াশের সাথে ভেজলিন লোশন ফ্রি পেয়েছি।",
+    "sentiment": {
+      "label": "Neutral",
+      "code": 1
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "ওয়াশের",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "সাথে",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "ভেজলিন",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "লোশন",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "ফ্রি",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "ফ্রি",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "পেয়েছি।।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "original_csv_id": 191684,
+    "sentence": "কি আর বলবো এমন একটা ভালো face wash,\nআপনারা চাইলে নিতে পারেন,,",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "কি",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "আর",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "বলবো",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "এমন",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "একটা",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "ভালো",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 7,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 8,
+        "token": "আপনারা",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "চাইলে",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "নিতে",
+        "tag": "O"
+      },
+      {
+        "token_index": 11,
+        "token": "পারেন",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 6,
+        "bio_end_idx": 7
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "original_csv_id": 191807,
+    "sentence": "ফেস ওয়াশটি অনেক ভালো উন্নত মানের",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "ওয়াশটি",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "অনেক",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "ভালো",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "উন্নত",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "মানের",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "original_csv_id": 192063,
+    "sentence": "দাম অনুযায়ী অনেক  ভালো  একটা সানছ ক্রিম,",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "দাম",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "অনুযায়ী",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "অনেক",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "ভালো",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "একটা",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "সানছ",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 6,
+        "token": "ক্রিম",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 7,
+        "token": "ক্রিম",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "সানছ ক্রিম",
+        "tokens": [
+          "সানছ",
+          "ক্রিম"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 5,
+        "bio_end_idx": 6
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "সানছ ক্রিম",
+        "is_multi": true,
+        "tokens": [
+          "সানছ",
+          "ক্রিম"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "original_csv_id": 192879,
+    "sentence": "ফেইস ওয়াশটি অনেক ভালো। ময়েসশ্চার করে ত্বককে। অরিজিনাল পণ্য। স্টোরটাও অরিজিনাল। নির্ভরযোগ্য স্টোর।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ফেইস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "ওয়াশটি",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "অনেক",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "ভালো।ময়েসশ্চার",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "করে",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "ত্বককে।অরিজিনাল",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "পণ্য।স্টোরটাও",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "অরিজিনাল।নির্ভরযোগ্য",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "স্টোর।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেইস ওয়াশ",
+        "tokens": [
+          "ফেইস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেইস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেইস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "original_csv_id": 194291,
+    "sentence": "ফেস ওয়াশটা ভালোই মনে হচ্ছে।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "ওয়াশটা",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "ভালোই",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "মনে",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "হচ্ছে।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "original_csv_id": 194297,
+    "sentence": "Face wash টি পেয়েছি ঠিক মতো।ভালোই আছে।",
+    "sentiment": {
+      "label": "Neutral",
+      "code": 1
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "টি",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "পেয়েছি",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "ঠিক",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "মতো।ভালোই",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "মতো।ভালোই।।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "original_csv_id": 202512,
+    "sentence": "ফেস ওয়াশ টা অনেক ভালো",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "টা",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "অনেক",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "ভালো",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "original_csv_id": 203819,
+    "sentence": "সুন্দর  ফেস ওয়াস\nশেষ হয়ে গেছে ,  আর একটা অডার দিব কিন্তু পাচ্ছি না।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "সুন্দর",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 3,
+        "token": "শেষ",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "হয়ে",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "গেছে",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "আর",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "আর",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "অর্ডার",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "দিব",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "দিব",
+        "tag": "O"
+      },
+      {
+        "token_index": 11,
+        "token": "কিন্তু",
+        "tag": "O"
+      },
+      {
+        "token_index": 12,
+        "token": "পাচ্ছি",
+        "tag": "O"
+      },
+      {
+        "token_index": 13,
+        "token": "না",
+        "tag": "O"
+      },
+      {
+        "token_index": 14,
+        "token": "না",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 1,
+        "bio_end_idx": 2
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "original_csv_id": 212149,
+    "sentence": "ফেসওয়াশটা গত পরশু হাতে পেলাম। ১০০% অরিজিনাল ফেস ওয়াশ। ধন্যবাদ অরিজিনাল প্রোডাক্ট দেয়ার জন্য।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ফেসওয়াশটা",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "গত",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "পরশু",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "হাতে",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "পেলাম।১০০",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "অরিজিনাল",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 7,
+        "token": "ওয়াশ।ধন্যবাদ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 8,
+        "token": "অরিজিনাল",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "প্রোডাক্ট",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "দেয়ার",
+        "tag": "O"
+      },
+      {
+        "token_index": 11,
+        "token": "জন্য।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 6,
+        "bio_end_idx": 7
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "original_csv_id": 214788,
+    "sentence": "খুবি ভালো একটা ফেস ওয়াশ",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "খুবি",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "ভালো",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "একটা",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "ফেস",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 4,
+        "token": "ওয়াশ",
+        "tag": "I-PRODUCT"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ফেস ওয়াশ",
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 3,
+        "bio_end_idx": 4
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ফেস ওয়াশ",
+        "is_multi": true,
+        "tokens": [
+          "ফেস",
+          "ওয়াশ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "original_csv_id": 218967,
+    "sentence": "ডেটল সাবান মোটামুটি অর্ধেক দামে পেয়েছি। ধন্যবাদ দারাজ ?",
+    "sentiment": {
+      "label": "Neutral",
+      "code": 1
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ডেটল",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "সাবান",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "মোটামুটি",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "অর্ধেক",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "দামে",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "দামে",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "পেয়েছি।ধন্যবাদ",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "দারাজ",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ডেটল সাবান",
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ডেটল সাবান",
+        "is_multi": true,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "original_csv_id": 219000,
+    "sentence": "আমার ভালো লাগে ডেটল সাবান ধন্যবাদ ???",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "আমার",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "ভালো",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "লাগে",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "ডেটল",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 4,
+        "token": "সাবান",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 5,
+        "token": "সাবান",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "ধন্যবাদ",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ডেটল সাবান",
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 3,
+        "bio_end_idx": 4
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ডেটল সাবান",
+        "is_multi": true,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "original_csv_id": 219021,
+    "sentence": "ডেটল সাবান আমার খুব প্রিয় সাবান।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "ডেটল",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "সাবান",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "আমার",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "খুব",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "প্রিয়",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "প্রিয়",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "সাবান।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ডেটল সাবান",
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ডেটল সাবান",
+        "is_multi": true,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "original_csv_id": 223757,
+    "sentence": "বাজারে যে রকম dettol  সাবান পাওয়া যায় ঠিক সে রকমই দারাজের dettol সাবান ।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "বাজারে",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "যে",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "রকম",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "ডেটল",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 4,
+        "token": "সাবান",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 5,
+        "token": "পাওয়া",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "যায়",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "ঠিক",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "সে",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "রকমই",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "দারাজের",
+        "tag": "O"
+      },
+      {
+        "token_index": 11,
+        "token": "ডেটল",
+        "tag": "O"
+      },
+      {
+        "token_index": 12,
+        "token": "সাবান।।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ডেটল সাবান",
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 3,
+        "bio_end_idx": 4
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ডেটল সাবান",
+        "is_multi": true,
+        "tokens": [
+          "ডেটল",
+          "সাবান"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "original_csv_id": 224675,
+    "sentence": "ওলিভ ওয়েল ও কারবন সোপ অর্ডার করছিলাম, কারবন সোপ আসে নাই??",
+    "sentiment": {
+      "label": "Neutral",
+      "code": 1
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "অলিভ",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 1,
+        "token": "অয়েল",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 2,
+        "token": "ও",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "কারবন",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "কারবন",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "অর্ডার",
+        "tag": "O"
+      },
+      {
+        "token_index": 6,
+        "token": "করেছিলাম",
+        "tag": "O"
+      },
+      {
+        "token_index": 7,
+        "token": "করেছিলাম",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "কারবোন",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "সোপ",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 10,
+        "token": "আসে",
+        "tag": "O"
+      },
+      {
+        "token_index": 11,
+        "token": "নাই??",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "অলিভ অয়েল",
+        "tokens": [
+          "অলিভ",
+          "অয়েল"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 0,
+        "bio_end_idx": 1
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "অলিভ অয়েল",
+        "is_multi": true,
+        "tokens": [
+          "অলিভ",
+          "অয়েল"
+        ]
+      },
+      {
+        "text": "সোপ",
+        "is_multi": false,
+        "tokens": [
+          "সোপ"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "original_csv_id": 226188,
+    "sentence": "চেনা বামুনের পৈতা লাগে না।\nডেটল সোপ কেমন তা সবাই জানে।",
+    "sentiment": {
+      "label": "Positive",
+      "code": 2
+    },
+    "bio_tags": [
+      {
+        "token_index": 0,
+        "token": "চেনা",
+        "tag": "O"
+      },
+      {
+        "token_index": 1,
+        "token": "বামুনের",
+        "tag": "O"
+      },
+      {
+        "token_index": 2,
+        "token": "পৈতা",
+        "tag": "O"
+      },
+      {
+        "token_index": 3,
+        "token": "লাগে",
+        "tag": "O"
+      },
+      {
+        "token_index": 4,
+        "token": "না।",
+        "tag": "O"
+      },
+      {
+        "token_index": 5,
+        "token": "ডেটল",
+        "tag": "B-PRODUCT"
+      },
+      {
+        "token_index": 6,
+        "token": "সোপ",
+        "tag": "I-PRODUCT"
+      },
+      {
+        "token_index": 7,
+        "token": "কেমন",
+        "tag": "O"
+      },
+      {
+        "token_index": 8,
+        "token": "তা",
+        "tag": "O"
+      },
+      {
+        "token_index": 9,
+        "token": "সবাই",
+        "tag": "O"
+      },
+      {
+        "token_index": 10,
+        "token": "সবাই",
+        "tag": "O"
+      },
+      {
+        "token_index": 11,
+        "token": "জানে।",
+        "tag": "O"
+      }
+    ],
+    "multi_word_entities": [
+      {
+        "entity_text": "ডেটল সোপ",
+        "tokens": [
+          "ডেটল",
+          "সোপ"
+        ],
+        "token_count": 2,
+        "bio_start_idx": 5,
+        "bio_end_idx": 6
+      }
+    ],
+    "all_entity_spans": [
+      {
+        "text": "ডেটল সোপ",
+        "is_multi": true,
+        "tokens": [
+          "ডেটল",
+          "সোপ"
+        ]
+      }
+    ]
+  }
+]

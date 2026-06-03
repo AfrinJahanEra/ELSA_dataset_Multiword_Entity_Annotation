@@ -1,0 +1,120 @@
+================================================================================
+  ELSA DATASET — MULTI-WORD ENTITY SENTENCES: SENTIMENT ANALYSIS REPORT  [v4]
+  Scope    : ONLY sentences that contain at least one multi-word entity (B+I)
+  Language : Bangla (Bengali) | Domain: E-commerce Product Reviews
+================================================================================
+
+  SECTION 1: OVERALL SENTIMENT DISTRIBUTION
+--------------------------------------------------------------------------------
+  Total sentences with multi-word entities : 55
+
+  Sentiment       Count   Percentage
+  ------------ -------- ------------
+  Positive           41        74.5%
+  Neutral             7        12.7%
+  Negative            7        12.7%
+
+
+  SECTION 2: MULTI-WORD ENTITY FREQUENCY ACROSS ALL SENTIMENTS
+--------------------------------------------------------------------------------
+  Rank   Multi-Word Entity                           Total   Positive  Neutral   Negative
+  ------ ---------------------------------------- -------- ---------- -------- ----------
+  1      ফেস ওয়াশ                                      28         19        3          6
+  2      ডেটল সাবান                                     14         11        3          0
+  3      ফেস মাস্ক                                       2          1        0          1
+  4      সেপনিল মাস্ক                                    2          2        0          0
+  5      লাক্স সাবান                                     1          1        0          0
+  6      স্যাভলন সাবান                                   1          1        0          0
+  7      Savlon সাবান                                    1          1        0          0
+  8      প্যানটিন শ্যাম্পু                               1          1        0          0
+  9      থ্রিডি মাস্ক                                    1          1        0          0
+  10     সানছ ক্রিম                                      1          1        0          0
+  11     ফেইস ওয়াশ                                      1          1        0          0
+  12     অলিভ অয়েল                                      1          0        1          0
+  13     ডেটল সোপ                                        1          1        0          0
+
+
+  SECTION 3: PER-SENTIMENT BREAKDOWN
+--------------------------------------------------------------------------------
+
+  [POSITIVE]  41 sentences  (74.5% of multi-word-entity sentences)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Top Multi-Word Entities in Positive sentences:
+  Rank   Entity                                      Count
+  ------ ---------------------------------------- --------
+  1      ফেস ওয়াশ                                      19
+  2      ডেটল সাবান                                     11
+  3      সেপনিল মাস্ক                                    2
+  4      লাক্স সাবান                                     1
+  5      স্যাভলন সাবান                                   1
+  6      Savlon সাবান                                    1
+  7      প্যানটিন শ্যাম্পু                               1
+  8      ফেস মাস্ক                                       1
+  9      থ্রিডি মাস্ক                                    1
+  10     সানছ ক্রিম                                      1
+  11     ফেইস ওয়াশ                                      1
+  12     ডেটল সোপ                                        1
+
+  [NEUTRAL]  7 sentences  (12.7% of multi-word-entity sentences)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Top Multi-Word Entities in Neutral sentences:
+  Rank   Entity                                      Count
+  ------ ---------------------------------------- --------
+  1      ডেটল সাবান                                      3
+  2      ফেস ওয়াশ                                       3
+  3      অলিভ অয়েল                                      1
+
+  [NEGATIVE]  7 sentences  (12.7% of multi-word-entity sentences)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Top Multi-Word Entities in Negative sentences:
+  Rank   Entity                                      Count
+  ------ ---------------------------------------- --------
+  1      ফেস ওয়াশ                                       6
+  2      ফেস মাস্ক                                       1
+
+
+  SECTION 4: SAMPLE SENTENCES PER SENTIMENT (up to 5 each)
+--------------------------------------------------------------------------------
+
+  ── POSITIVE EXAMPLES ──
+  ID 75729: ডেটল সাবান তো ভাল সাবান সবাই জানে।
+    → Multi-Word Entity: 'ডেটল সাবান'  (2 tokens)
+  ID 76622: ডেটল সাবান সবসময়ের জন্যই ভালো,অরিজিনাল প্রোডাক্ট।
+    → Multi-Word Entity: 'ডেটল সাবান'  (2 tokens)
+  ID 76738: ডেটল সাবান আমি সবসময় ব্যবহার করি। পণ্যের মান ভালো। চাইলে কেউ নিতে পারেন। ধন্যবাদ দারাজ।
+    → Multi-Word Entity: 'ডেটল সাবান'  (2 tokens)
+  ID 76764: ডেটল সাবানগুলা অনেক ভালো।অথেনটিক পণ‍্য।আপনারা সবাই নিতে পারেন।
+    → Multi-Word Entity: 'ডেটল সাবান'  (2 tokens)
+  ID 78022: ডেটল সাবান বাংলাদেশের নামবার ওয়ান সাবান
+    → Multi-Word Entity: 'ডেটল সাবান'  (2 tokens)
+
+  ── NEUTRAL EXAMPLES ──
+  ID 75838: ডেটল সাবান নিয়ে বলার কিছু নাই।
+    → Multi-Word Entity: 'ডেটল সাবান'  (2 tokens)
+  ID 80352: আমি অনেক আগে থেকেই ডেটল সাবান দারাজ থেকে আনা হয়।
+    → Multi-Word Entity: 'ডেটল সাবান'  (2 tokens)
+  ID 150274: ফেস ওয়াশ ঠিক আছে, মেয়াদ ভালোই আছে। কিন্তু ক্রিমের মেয়াদ কম।
+    → Multi-Word Entity: 'ফেস ওয়াশ'  (2 tokens)
+  ID 191639: ফেস ওয়াশের সাথে ভেজলিন লোশন ফ্রি পেয়েছি।
+    → Multi-Word Entity: 'ফেস ওয়াশ'  (2 tokens)
+  ID 194297: Face wash টি পেয়েছি ঠিক মতো।ভালোই আছে।
+    → Multi-Word Entity: 'ফেস ওয়াশ'  (2 tokens)
+
+  ── NEGATIVE EXAMPLES ──
+  ID 68865: ফেস ওয়াশ এর ক্যাপ টা ভাঙ্গা, খুলা যাচ্ছে না
+    → Multi-Word Entity: 'ফেস ওয়াশ'  (2 tokens)
+  ID 129623: এইটা আশা করি নাই যে প্রোডাক্টের জন্য নিলাম সেটা পুরোটাই খারাপ Face Wash
+    → Multi-Word Entity: 'ফেস ওয়াশ'  (2 tokens)
+  ID 150418: Face wash টা নকল
+ক্রিমটা ঠিক আছে 
+নেওয়ার আগে ভেবে নেবেন।
+    → Multi-Word Entity: 'ফেস ওয়াশ'  (2 tokens)
+  ID 150463: ফেসওয়াসের বোতল ফাটা ।।
+একদমি বাজে হয়েছে।
+    → Multi-Word Entity: 'ফেস ওয়াশ'  (2 tokens)
+  ID 170259: Face Mask  টি মোটামুটি মানের আর Packaging টাও ভাল ছিল না। Delivery Fast ছিল।
+    → Multi-Word Entity: 'ফেস মাস্ক'  (2 tokens)
+
+================================================================================
+  END OF REPORT  [v4]
+================================================================================

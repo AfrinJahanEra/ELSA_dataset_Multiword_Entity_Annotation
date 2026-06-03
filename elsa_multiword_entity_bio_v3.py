@@ -1,6 +1,6 @@
 """
 =============================================================================
-ELSA Dataset - Multi-Word Entity Detection Using BIO Tagging  [FIXED v3]
+ELSA Dataset - Multi-Word Entity Detection Using BIO Tagging  [v4]
 =============================================================================
 Dataset  : ELSA_Dataset_-_ELSA_10K.csv
 Language : Bangla (Bengali) product reviews
@@ -29,6 +29,28 @@ NEW in v3:
                • How many times it occurs within that sentence
              This allows manual verification by finding the exact sentence
              in the dataset and checking the entity occurrence directly.
+
+NEW in v4:
+  FEATURE 1 – Sentiment Analysis Report for Multi-Word Entity Sentences only
+               Saved as: multiword_sentiment_report.txt
+               Contains:
+                 • Overall Positive / Neutral / Negative counts & percentages
+                 • Per-entity breakdown across all sentiments
+                 • Per-sentiment top entities table
+                 • Sample sentences per sentiment
+
+  FEATURE 2 – JSON Export (multiword_entities.json)
+               One record per multi-word-entity sentence with:
+                 • Sequential ID (1, 2, 3 …) — no _NE_ tags
+                 • original_csv_id  (real ID from the CSV)
+                 • sentence         (clean text, _NE_ removed)
+                 • sentiment        (label + numeric code)
+                 • bio_tags         (per-token index + tag)
+                 • multi_word_entities  (text, tokens, BIO start/end index)
+                 • all_entity_spans     (single + multi for full context)
+
+  FEATURE 3 – XML Export (multiword_entities.xml)
+               Same structure as JSON, serialised as well-formed XML.
 =============================================================================
 """
 
@@ -36,6 +58,7 @@ import pandas as pd
 import re
 import os
 import json
+import xml.etree.ElementTree as ET
 from collections import Counter, defaultdict
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -67,9 +90,11 @@ INPUT_FILE  = _find_input_file(_DEFAULT_FILENAME)
 OUTPUT_DIR  = os.path.join(os.path.dirname(os.path.abspath(__file__)), "result")
 OUTPUT_TXT  = os.path.join(OUTPUT_DIR, "elsa_multiword_entity_report_v3.txt")
 OUTPUT_BIO  = os.path.join(OUTPUT_DIR, "elsa_bio_tagged_sentences_v3.txt")
-OUTPUT_SENT_MULTI = os.path.join(OUTPUT_DIR, "elsa_sentiment_multiword_v3.txt")
-OUTPUT_MULTI_JSON = os.path.join(OUTPUT_DIR, "elsa_multiword_entity_v3.json")
-OUTPUT_MULTI_XML  = os.path.join(OUTPUT_DIR, "elsa_multiword_entity_v3.xml")
+
+# ── NEW in v4 ────────────────────────────────────────────────────────────────
+OUTPUT_SENTIMENT_TXT = os.path.join(OUTPUT_DIR, "multiword_sentiment_report.txt")
+OUTPUT_JSON          = os.path.join(OUTPUT_DIR, "multiword_entities.json")
+OUTPUT_XML           = os.path.join(OUTPUT_DIR, "multiword_entities.xml")
 
 # Known multi-word product continuation words in Bangla reviews.
 PRODUCT_SECOND_TOKENS = {
@@ -234,6 +259,14 @@ def get_entity_spans(bio_pairs):
         else:
             i += 1
     return spans
+
+
+# ── NEW in v4 ────────────────────────────────────────────────────────────────
+def clean_review(tagged_review):
+    """Return plain sentence text with all _NE_ prefixes removed."""
+    if not isinstance(tagged_review, str):
+        return ""
+    return re.sub(r'_NE_', '', tagged_review).strip()
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -739,86 +772,260 @@ def generate_report(stats, output_txt_path, bio_output, output_bio_path):
     return len(lines)
 
 
-def generate_multiword_sentiment_reports(stats, out_txt_path, out_json_path, out_xml_path):
-    """Generate a sentiment report (TXT), JSON and XML for sentences that
-    contain at least one multi-word entity.
+# ─────────────────────────────────────────────────────────────────────────────
+# NEW v4 — SENTIMENT REPORT FOR MULTI-WORD ENTITY SENTENCES ONLY
+# ─────────────────────────────────────────────────────────────────────────────
+
+def generate_multiword_sentiment_report(stats, output_path):
     """
-    rows = [rb for rb in stats['rows_bio'] if any(sp['is_multi'] for sp in rb['ENTITY_SPANS'])]
+    Write a sentiment analysis report that covers ONLY sentences which contain
+    at least one multi-word entity (B-PRODUCT + I-PRODUCT span).
 
-    # Summary counts by sentiment label
-    from collections import Counter
-    cnt = Counter(rb['SENTIMENT'] for rb in rows)
+    Sections:
+      1. Overall Positive / Neutral / Negative count & percentage
+      2. Multi-word entity frequency table split by sentiment
+      3. Per-sentiment top-entity tables
+      4. Up to 5 sample sentences per sentiment
+    """
+    rows_bio = stats['rows_bio']
 
-    # TXT report
-    lines = []
-    lines.append("ELSA — Multi-word sentences sentiment analysis")
-    lines.append(f"Total multi-word sentences: {len(rows)}")
-    lines.append("")
-    for label in ['Positive', 'Neutral', 'Negative']:
-        lines.append(f"{label}: {cnt.get(label,0)}")
-    lines.append("")
-    lines.append("DETAILS:")
-    for rb in rows:
-        lines.append(f"ID: {rb['ID']}  | Sentiment: {rb['SENTIMENT']}")
-        lines.append(f"Review: {rb['REVIEW']}")
-        lines.append("Entities:")
-        for sp in rb['ENTITY_SPANS']:
+    # Filter to multi-word-entity sentences only
+    mw_rows = [r for r in rows_bio if r['MULTI_ENTS'] > 0]
+    total   = len(mw_rows)
+
+    sentiment_counts       = Counter(r['SENTIMENT'] for r in mw_rows)
+    entity_freq            = Counter()
+    per_sentiment_entities = defaultdict(Counter)
+
+    for r in mw_rows:
+        for sp in r['ENTITY_SPANS']:
             if sp['is_multi']:
-                lines.append(f"  - {sp['text']}  (tokens {sp['start_idx']}..{sp['end_idx']})")
+                entity_freq[sp['text']] += 1
+                per_sentiment_entities[r['SENTIMENT']][sp['text']] += 1
+
+    H1 = "=" * 80
+    H2 = "-" * 80
+    H3 = "~" * 60
+    lines = []
+
+    lines.append(H1)
+    lines.append("  ELSA DATASET — MULTI-WORD ENTITY SENTENCES: SENTIMENT ANALYSIS REPORT  [v4]")
+    lines.append("  Scope    : ONLY sentences that contain at least one multi-word entity (B+I)")
+    lines.append("  Language : Bangla (Bengali) | Domain: E-commerce Product Reviews")
+    lines.append(H1)
+
+    # ── SECTION 1: OVERALL DISTRIBUTION ──────────────────────────────────────
+    lines.append("")
+    lines.append("  SECTION 1: OVERALL SENTIMENT DISTRIBUTION")
+    lines.append(H2)
+    lines.append(f"  Total sentences with multi-word entities : {total:,}")
+    lines.append("")
+    lines.append(f"  {'Sentiment':<12} {'Count':>8} {'Percentage':>12}")
+    lines.append(f"  {'-'*12} {'-'*8} {'-'*12}")
+    for label in ['Positive', 'Neutral', 'Negative']:
+        cnt = sentiment_counts.get(label, 0)
+        pct = cnt / total * 100 if total else 0
+        lines.append(f"  {label:<12} {cnt:>8,} {pct:>11.1f}%")
+
+    # ── SECTION 2: ENTITY FREQUENCY × SENTIMENT ──────────────────────────────
+    lines.append("")
+    lines.append("")
+    lines.append("  SECTION 2: MULTI-WORD ENTITY FREQUENCY ACROSS ALL SENTIMENTS")
+    lines.append(H2)
+    lines.append(f"  {'Rank':<6} {'Multi-Word Entity':<40} {'Total':>8}"
+                 f" {'Positive':>10} {'Neutral':>8} {'Negative':>10}")
+    lines.append(f"  {'-'*6} {'-'*40} {'-'*8} {'-'*10} {'-'*8} {'-'*10}")
+    for rank, (ent, total_cnt) in enumerate(entity_freq.most_common(), 1):
+        pos_c = per_sentiment_entities['Positive'][ent]
+        neu_c = per_sentiment_entities['Neutral'][ent]
+        neg_c = per_sentiment_entities['Negative'][ent]
+        lines.append(f"  {rank:<6} {ent:<40} {total_cnt:>8,}"
+                     f" {pos_c:>10,} {neu_c:>8,} {neg_c:>10,}")
+
+    # ── SECTION 3: PER-SENTIMENT BREAKDOWN ───────────────────────────────────
+    lines.append("")
+    lines.append("")
+    lines.append("  SECTION 3: PER-SENTIMENT BREAKDOWN")
+    lines.append(H2)
+    for label in ['Positive', 'Neutral', 'Negative']:
+        cnt = sentiment_counts.get(label, 0)
+        pct = cnt / total * 100 if total else 0
         lines.append("")
+        lines.append(f"  [{label.upper()}]  {cnt:,} sentences  "
+                     f"({pct:.1f}% of multi-word-entity sentences)")
+        lines.append(f"  {H3}")
+        ents_here = per_sentiment_entities[label]
+        if ents_here:
+            lines.append(f"  Top Multi-Word Entities in {label} sentences:")
+            lines.append(f"  {'Rank':<6} {'Entity':<40} {'Count':>8}")
+            lines.append(f"  {'-'*6} {'-'*40} {'-'*8}")
+            for rank, (ent, c) in enumerate(ents_here.most_common(20), 1):
+                lines.append(f"  {rank:<6} {ent:<40} {c:>8,}")
+        else:
+            lines.append("  (no multi-word entities found)")
 
-    os.makedirs(os.path.dirname(out_txt_path), exist_ok=True)
-    with open(out_txt_path, 'w', encoding='utf-8') as f:
+    # ── SECTION 4: SAMPLE SENTENCES ──────────────────────────────────────────
+    lines.append("")
+    lines.append("")
+    lines.append("  SECTION 4: SAMPLE SENTENCES PER SENTIMENT (up to 5 each)")
+    lines.append(H2)
+    for label in ['Positive', 'Neutral', 'Negative']:
+        shown = 0
+        lines.append("")
+        lines.append(f"  ── {label.upper()} EXAMPLES ──")
+        for r in mw_rows:
+            if r['SENTIMENT'] != label:
+                continue
+            if shown >= 5:
+                break
+            clean = clean_review(r['REVIEW'])
+            lines.append(f"  ID {r['ID']}: {clean[:120]}")
+            for sp in r['ENTITY_SPANS']:
+                if sp['is_multi']:
+                    lines.append(f"    → Multi-Word Entity: '{sp['text']}'  "
+                                 f"({len(sp['tokens'])} tokens)")
+            shown += 1
+
+    lines.append("")
+    lines.append(H1)
+    lines.append("  END OF REPORT  [v4]")
+    lines.append(H1)
+
+    with open(output_path, 'w', encoding='utf-8') as f:
         f.write('\n'.join(lines))
-    print(f"[INFO] Multi-word sentiment TXT report written to: {out_txt_path}")
+    print(f"[INFO] Sentiment report written to: {output_path}")
+    return total
 
-    # JSON output
-    json_list = []
-    for i, rb in enumerate(rows, start=1):
-        item = {
-            'id': i,
-            'doc_id': rb['ID'],
-            'sentence': rb['REVIEW'],
-            'sentiment': rb['SENTIMENT'],
-            'entities': [
-                {
-                    'text': sp['text'],
-                    'start_idx': sp['start_idx'],
-                    'end_idx': sp['end_idx'],
-                    'tokens': sp['tokens']
-                }
-                for sp in rb['ENTITY_SPANS'] if sp['is_multi']
-            ]
-        }
-        json_list.append(item)
 
-    with open(out_json_path, 'w', encoding='utf-8') as f:
-        json.dump(json_list, f, ensure_ascii=False, indent=2)
-    print(f"[INFO] Multi-word sentiment JSON written to: {out_json_path}")
+# ─────────────────────────────────────────────────────────────────────────────
+# NEW v4 — JSON + XML EXPORT FOR MULTI-WORD ENTITY SENTENCES
+# ─────────────────────────────────────────────────────────────────────────────
 
-    # XML output
-    try:
-        import xml.etree.ElementTree as ET
-        root = ET.Element('multiword_sentences')
-        for item in json_list:
-            s_el = ET.SubElement(root, 'sentence', attrib={'id': str(item['id']), 'doc_id': str(item['doc_id'])})
-            text_el = ET.SubElement(s_el, 'text')
-            text_el.text = item['sentence']
-            sent_el = ET.SubElement(s_el, 'sentiment')
-            sent_el.text = item['sentiment']
-            ents_el = ET.SubElement(s_el, 'entities')
-            for e in item['entities']:
-                ent_el = ET.SubElement(ents_el, 'entity', attrib={'start_idx': str(e['start_idx']), 'end_idx': str(e['end_idx'])})
-                ent_el.text = e['text']
+def _indent_xml(elem, level=0):
+    """Add pretty-print indentation to an ElementTree in-place."""
+    pad = "\n" + "  " * level
+    if len(elem):
+        if not elem.text or not elem.text.strip():
+            elem.text = pad + "  "
+        if not elem.tail or not elem.tail.strip():
+            elem.tail = pad
+        for child in elem:
+            _indent_xml(child, level + 1)
+        if not child.tail or not child.tail.strip():
+            child.tail = pad
+    else:
+        if level and (not elem.tail or not elem.tail.strip()):
+            elem.tail = pad
 
-        tree = ET.ElementTree(root)
-        tree.write(out_xml_path, encoding='utf-8', xml_declaration=True)
-        print(f"[INFO] Multi-word sentiment XML written to: {out_xml_path}")
-    except Exception as ex:
-        print(f"[WARN] Failed to write XML output: {ex}")
 
-    return len(rows)
+def generate_json_xml(stats, json_path, xml_path):
+    """
+    For every sentence that contains at least one multi-word entity, write:
 
+      JSON record fields:
+        id                  – sequential integer starting at 1 (no _NE_)
+        original_csv_id     – real ID column value from the CSV
+        sentence            – clean review text (_NE_ prefixes removed)
+        sentiment           – { label, code }
+        bio_tags            – list of { token_index, token, tag }
+        multi_word_entities – list of { entity_text, tokens,
+                                        token_count, bio_start_idx, bio_end_idx }
+        all_entity_spans    – list of { text, is_multi, tokens }
+
+      The XML mirrors the same structure as well-formed XML elements.
+    """
+    rows_bio = stats['rows_bio']
+    mw_rows  = [r for r in rows_bio if r['MULTI_ENTS'] > 0]
+
+    # ── Build shared record list ──────────────────────────────────────────────
+    records = []
+    for seq_id, r in enumerate(mw_rows, 1):
+        bio_index_entries = [
+            {"token_index": pos, "token": tok, "tag": tag}
+            for pos, (tok, tag) in enumerate(r['BIO_PAIRS'])
+        ]
+        multi_ent_entries = [
+            {
+                "entity_text":   sp['text'],
+                "tokens":        sp['tokens'],
+                "token_count":   len(sp['tokens']),
+                "bio_start_idx": sp['start_idx'],
+                "bio_end_idx":   sp['end_idx'],
+            }
+            for sp in r['ENTITY_SPANS'] if sp['is_multi']
+        ]
+        all_span_entries = [
+            {"text": sp['text'], "is_multi": sp['is_multi'], "tokens": sp['tokens']}
+            for sp in r['ENTITY_SPANS']
+        ]
+        records.append({
+            "id":               seq_id,
+            "original_csv_id":  int(r['ID']),
+            "sentence":         clean_review(r['REVIEW']),
+            "sentiment": {
+                "label": r['SENTIMENT'],
+                "code":  {"Negative": 0, "Neutral": 1, "Positive": 2}.get(r['SENTIMENT'], -1)
+            },
+            "bio_tags":             bio_index_entries,
+            "multi_word_entities":  multi_ent_entries,
+            "all_entity_spans":     all_span_entries,
+        })
+
+    # ── JSON ──────────────────────────────────────────────────────────────────
+    with open(json_path, 'w', encoding='utf-8') as f:
+        json.dump(records, f, ensure_ascii=False, indent=2)
+    print(f"[INFO] JSON written to         : {json_path}")
+
+    # ── XML ───────────────────────────────────────────────────────────────────
+    root = ET.Element("multiword_entity_sentences")
+
+    for rec in records:
+        sent_el = ET.SubElement(root, "sentence")
+        sent_el.set("id",              str(rec["id"]))
+        sent_el.set("original_csv_id", str(rec["original_csv_id"]))
+
+        ET.SubElement(sent_el, "text").text = rec["sentence"]
+
+        senti_el = ET.SubElement(sent_el, "sentiment")
+        ET.SubElement(senti_el, "label").text = rec["sentiment"]["label"]
+        ET.SubElement(senti_el, "code").text  = str(rec["sentiment"]["code"])
+
+        bio_el = ET.SubElement(sent_el, "bio_tags")
+        for entry in rec["bio_tags"]:
+            tok_el = ET.SubElement(bio_el, "token")
+            tok_el.set("index", str(entry["token_index"]))
+            tok_el.set("tag",   entry["tag"])
+            tok_el.text = entry["token"]
+
+        mw_el = ET.SubElement(sent_el, "multi_word_entities")
+        for sp in rec["multi_word_entities"]:
+            ent_el = ET.SubElement(mw_el, "entity")
+            ET.SubElement(ent_el, "text").text          = sp["entity_text"]
+            ET.SubElement(ent_el, "token_count").text   = str(sp["token_count"])
+            ET.SubElement(ent_el, "bio_start_idx").text = str(sp["bio_start_idx"])
+            ET.SubElement(ent_el, "bio_end_idx").text   = str(sp["bio_end_idx"])
+            toks_el = ET.SubElement(ent_el, "tokens")
+            for t in sp["tokens"]:
+                ET.SubElement(toks_el, "t").text = t
+
+        all_el = ET.SubElement(sent_el, "all_entity_spans")
+        for sp in rec["all_entity_spans"]:
+            sp_el = ET.SubElement(all_el, "span")
+            sp_el.set("is_multi", str(sp["is_multi"]).lower())
+            ET.SubElement(sp_el, "text").text = sp["text"]
+            toks_el = ET.SubElement(sp_el, "tokens")
+            for t in sp["tokens"]:
+                ET.SubElement(toks_el, "t").text = t
+
+    _indent_xml(root)
+    tree = ET.ElementTree(root)
+    with open(xml_path, "wb") as f:
+        f.write(b'<?xml version="1.0" encoding="UTF-8"?>\n')
+        tree.write(f, encoding="utf-8", xml_declaration=False)
+    print(f"[INFO] XML written to          : {xml_path}")
+
+    return len(records)
+# ─────────────────────────────────────────────────────────────────────────────
 
 # ─────────────────────────────────────────────────────────────────────────────
 # ENTRY POINT
@@ -829,7 +1036,10 @@ if __name__ == "__main__":
 
     df, stats, bio_output = process_dataset(INPUT_FILE)
     total_lines = generate_report(stats, OUTPUT_TXT, bio_output, OUTPUT_BIO)
-    multi_count = generate_multiword_sentiment_reports(stats, OUTPUT_SENT_MULTI, OUTPUT_MULTI_JSON, OUTPUT_MULTI_XML)
+
+    # ── NEW v4: sentiment report + JSON + XML ─────────────────────────────────
+    mw_sent_count  = generate_multiword_sentiment_report(stats, OUTPUT_SENTIMENT_TXT)
+    mw_json_count  = generate_json_xml(stats, OUTPUT_JSON, OUTPUT_XML)
 
     print("\n" + "=" * 60)
     print("  QUICK SUMMARY")
@@ -844,9 +1054,13 @@ if __name__ == "__main__":
     print(f"  Multi-word entities      : {stats['multi_entity_count']:,}")
     print(f"  Unique multi-word ents   : {stats['unique_multi']:,}")
     print(f"  Report lines written     : {total_lines:,}")
-    print(f"  Multi-word sentences     : {multi_count:,}")
+    print(f"  Multi-word-entity sents  : {mw_sent_count:,}  [v4]")
+    print(f"  JSON / XML records       : {mw_json_count:,}  [v4]")
     print("=" * 60)
     print(f"\n  Output files:")
     print(f"    1. {OUTPUT_TXT}")
     print(f"    2. {OUTPUT_BIO}")
+    print(f"    3. {OUTPUT_SENTIMENT_TXT}   [NEW v4]")
+    print(f"    4. {OUTPUT_JSON}            [NEW v4]")
+    print(f"    5. {OUTPUT_XML}             [NEW v4]")
     print("\n[DONE]")

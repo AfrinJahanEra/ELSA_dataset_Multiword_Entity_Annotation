@@ -1,0 +1,2205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<multiword_entity_sentences>
+  <sentence id="1" original_csv_id="68865">
+    <text>ফেস ওয়াশ এর ক্যাপ টা ভাঙ্গা, খুলা যাচ্ছে না</text>
+    <sentiment>
+      <label>Negative</label>
+      <code>0</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ফেস</token>
+      <token index="1" tag="I-PRODUCT">ওয়াশ</token>
+      <token index="2" tag="O">এর</token>
+      <token index="3" tag="O">ক্যাপ</token>
+      <token index="4" tag="O">টা</token>
+      <token index="5" tag="O">ভাঙ্গা</token>
+      <token index="6" tag="O">খুলা</token>
+      <token index="7" tag="O">খুলা</token>
+      <token index="8" tag="O">না</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="2" original_csv_id="75729">
+    <text>ডেটল সাবান তো ভাল সাবান সবাই জানে।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ডেটল</token>
+      <token index="1" tag="I-PRODUCT">সাবান</token>
+      <token index="2" tag="O">তো</token>
+      <token index="3" tag="O">ভাল</token>
+      <token index="4" tag="O">সাবান</token>
+      <token index="5" tag="O">সবাই</token>
+      <token index="6" tag="O">সবাই</token>
+      <token index="7" tag="O">জানে।।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ডেটল সাবান</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ডেটল সাবান</text>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="3" original_csv_id="75838">
+    <text>ডেটল সাবান নিয়ে বলার কিছু নাই।</text>
+    <sentiment>
+      <label>Neutral</label>
+      <code>1</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ডেটল</token>
+      <token index="1" tag="I-PRODUCT">সাবান</token>
+      <token index="2" tag="O">নিয়ে</token>
+      <token index="3" tag="O">বলার</token>
+      <token index="4" tag="O">কিছু</token>
+      <token index="5" tag="O">কিছু</token>
+      <token index="6" tag="O">নাই।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ডেটল সাবান</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ডেটল সাবান</text>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="4" original_csv_id="76622">
+    <text>ডেটল সাবান সবসময়ের জন্যই ভালো,অরিজিনাল প্রোডাক্ট।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ডেটল</token>
+      <token index="1" tag="I-PRODUCT">সাবান</token>
+      <token index="2" tag="O">সবসময়ের</token>
+      <token index="3" tag="O">জন্যই</token>
+      <token index="4" tag="O">ভালো</token>
+      <token index="5" tag="O">অরিজিনাল</token>
+      <token index="6" tag="O">অরিজিনাল।।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ডেটল সাবান</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ডেটল সাবান</text>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="5" original_csv_id="76738">
+    <text>ডেটল সাবান আমি সবসময় ব্যবহার করি। পণ্যের মান ভালো। চাইলে কেউ নিতে পারেন। ধন্যবাদ দারাজ।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ডেটল</token>
+      <token index="1" tag="I-PRODUCT">সাবান</token>
+      <token index="2" tag="O">আমি</token>
+      <token index="3" tag="O">সবসময়</token>
+      <token index="4" tag="O">ব্যবহার</token>
+      <token index="5" tag="O">ব্যবহার</token>
+      <token index="6" tag="O">করি।পণ্যের</token>
+      <token index="7" tag="O">মান</token>
+      <token index="8" tag="O">ভালো।চাইলে</token>
+      <token index="9" tag="O">কেউ</token>
+      <token index="10" tag="O">নিতে</token>
+      <token index="11" tag="O">পারেন।ধন্যবাদ</token>
+      <token index="12" tag="O">দারাজ।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ডেটল সাবান</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ডেটল সাবান</text>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="6" original_csv_id="76764">
+    <text>ডেটল সাবানগুলা অনেক ভালো।অথেনটিক পণ‍্য।আপনারা সবাই নিতে পারেন।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ডেটল</token>
+      <token index="1" tag="I-PRODUCT">সাবানগুলা</token>
+      <token index="2" tag="O">অনেক</token>
+      <token index="3" tag="O">ভালো।অথেনটিক</token>
+      <token index="4" tag="O">পণ‍্য।আপনারা</token>
+      <token index="5" tag="O">সবাই</token>
+      <token index="6" tag="O">নিতে</token>
+      <token index="7" tag="O">নিতে</token>
+      <token index="8" tag="O">পারেন।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ডেটল সাবান</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ডেটল সাবান</text>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="7" original_csv_id="78022">
+    <text>ডেটল সাবান বাংলাদেশের নামবার ওয়ান সাবান</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ডেটল</token>
+      <token index="1" tag="I-PRODUCT">সাবান</token>
+      <token index="2" tag="O">বাংলাদেশের</token>
+      <token index="3" tag="O">নামবার</token>
+      <token index="4" tag="O">ওয়ান</token>
+      <token index="5" tag="O">সাবান</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ডেটল সাবান</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ডেটল সাবান</text>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="8" original_csv_id="78395">
+    <text>10 টাকায় মিনি লাক্স সাবান, খুব ভালো প্রোডাক্ট।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">10</token>
+      <token index="1" tag="O">টাকায়</token>
+      <token index="2" tag="O">মিনি</token>
+      <token index="3" tag="B-PRODUCT">লাক্স</token>
+      <token index="4" tag="I-PRODUCT">সাবান</token>
+      <token index="5" tag="O">খুব</token>
+      <token index="6" tag="O">ভালো</token>
+      <token index="7" tag="O">প্রোডাক্ট।।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>লাক্স সাবান</text>
+        <token_count>2</token_count>
+        <bio_start_idx>3</bio_start_idx>
+        <bio_end_idx>4</bio_end_idx>
+        <tokens>
+          <t>লাক্স</t>
+          <t>সাবান</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>লাক্স সাবান</text>
+        <tokens>
+          <t>লাক্স</t>
+          <t>সাবান</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="9" original_csv_id="79372">
+    <text>ধন্যবাদ আজ   ডেটল সাবানটি পেয়েছি  অসংখ্য ধন্যবাদ দারাজ ছেলার কে ???</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">ধন্যবাদ</token>
+      <token index="1" tag="O">আজ</token>
+      <token index="2" tag="B-PRODUCT">ডেটল</token>
+      <token index="3" tag="I-PRODUCT">সাবানটি</token>
+      <token index="4" tag="O">পেয়েছি</token>
+      <token index="5" tag="O">অসংখ্য</token>
+      <token index="6" tag="O">ধন্যবাদ</token>
+      <token index="7" tag="O">দারাজ</token>
+      <token index="8" tag="O">দারাজ</token>
+      <token index="9" tag="O">ছেলার</token>
+      <token index="10" tag="O">কে</token>
+      <token index="11" tag="O">কে</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ডেটল সাবান</text>
+        <token_count>2</token_count>
+        <bio_start_idx>2</bio_start_idx>
+        <bio_end_idx>3</bio_end_idx>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ডেটল সাবান</text>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="10" original_csv_id="79906">
+    <text>ডেটল সাবান সবসময় আমার কাছে ভালোই লাগে।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ডেটল</token>
+      <token index="1" tag="I-PRODUCT">সাবান</token>
+      <token index="2" tag="O">সবসময়</token>
+      <token index="3" tag="O">আমার</token>
+      <token index="4" tag="O">কাছে</token>
+      <token index="5" tag="O">ভালোই</token>
+      <token index="6" tag="O">লাগে</token>
+      <token index="7" tag="O">লাগে।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ডেটল সাবান</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ডেটল সাবান</text>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="11" original_csv_id="80352">
+    <text>আমি অনেক আগে থেকেই ডেটল সাবান দারাজ থেকে আনা হয়।</text>
+    <sentiment>
+      <label>Neutral</label>
+      <code>1</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">আমি</token>
+      <token index="1" tag="O">অনেক</token>
+      <token index="2" tag="O">আগে</token>
+      <token index="3" tag="O">থেকেই</token>
+      <token index="4" tag="B-PRODUCT">ডেটল</token>
+      <token index="5" tag="I-PRODUCT">সাবান</token>
+      <token index="6" tag="O">দারাজ</token>
+      <token index="7" tag="O">থেকে</token>
+      <token index="8" tag="O">থেকে</token>
+      <token index="9" tag="O">আনা</token>
+      <token index="10" tag="O">হয়</token>
+      <token index="11" tag="O">হয়</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ডেটল সাবান</text>
+        <token_count>2</token_count>
+        <bio_start_idx>4</bio_start_idx>
+        <bio_end_idx>5</bio_end_idx>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ডেটল সাবান</text>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="12" original_csv_id="80632">
+    <text>বাজারের চেয়ে কম মূল্যে অরিজিনাল স্যাভলন সাবান</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">বাজারের</token>
+      <token index="1" tag="O">চেয়ে</token>
+      <token index="2" tag="O">কম</token>
+      <token index="3" tag="O">মূল্যে</token>
+      <token index="4" tag="O">অরিজিনাল</token>
+      <token index="5" tag="O">অরিজিনাল</token>
+      <token index="6" tag="B-PRODUCT">স্যাভলন</token>
+      <token index="7" tag="I-PRODUCT">সাবান</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>স্যাভলন সাবান</text>
+        <token_count>2</token_count>
+        <bio_start_idx>6</bio_start_idx>
+        <bio_end_idx>7</bio_end_idx>
+        <tokens>
+          <t>স্যাভলন</t>
+          <t>সাবান</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>স্যাভলন সাবান</text>
+        <tokens>
+          <t>স্যাভলন</t>
+          <t>সাবান</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="13" original_csv_id="82749">
+    <text>বাজার থেকে কিছুটা কমে পেয়েছি। আর ডেটল সাবান তো ভালো।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">বাজার</token>
+      <token index="1" tag="O">থেকে</token>
+      <token index="2" tag="O">কিছুটা</token>
+      <token index="3" tag="O">কমে</token>
+      <token index="4" tag="O">পেয়েছি।আর</token>
+      <token index="5" tag="B-PRODUCT">ডেটল</token>
+      <token index="6" tag="I-PRODUCT">সাবান</token>
+      <token index="7" tag="O">তো</token>
+      <token index="8" tag="O">ভালো।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ডেটল সাবান</text>
+        <token_count>2</token_count>
+        <bio_start_idx>5</bio_start_idx>
+        <bio_end_idx>6</bio_end_idx>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ডেটল সাবান</text>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="14" original_csv_id="85228">
+    <text>বাংলাদেশি সাবান গুলোর মধ্যে Savlon Soap Mild আমার কাছে Best মনে হয়েছে।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">বাংলাদেশি</token>
+      <token index="1" tag="O">সাবান</token>
+      <token index="2" tag="O">গুলোর</token>
+      <token index="3" tag="O">মধ্যে</token>
+      <token index="4" tag="B-PRODUCT">Savlon</token>
+      <token index="5" tag="I-PRODUCT">সাবান</token>
+      <token index="6" tag="O">মাইল্ড</token>
+      <token index="7" tag="O">আমার</token>
+      <token index="8" tag="O">কাছে</token>
+      <token index="9" tag="O">সেরা</token>
+      <token index="10" tag="O">মনে</token>
+      <token index="11" tag="O">হয়েছে।।।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>Savlon সাবান</text>
+        <token_count>2</token_count>
+        <bio_start_idx>4</bio_start_idx>
+        <bio_end_idx>5</bio_end_idx>
+        <tokens>
+          <t>Savlon</t>
+          <t>সাবান</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>Savlon সাবান</text>
+        <tokens>
+          <t>Savlon</t>
+          <t>সাবান</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="15" original_csv_id="103621">
+    <text>শ্যাম্পু ব্যবহার করিনি। গিফট দিয়ে দিয়েছি। বাট ফেস ওয়াশ টা ভালো</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">শ্যাম্পু</token>
+      <token index="1" tag="O">ব্যবহার</token>
+      <token index="2" tag="O">করিনি।গিফট</token>
+      <token index="3" tag="O">দিয়ে</token>
+      <token index="4" tag="O">দিয়েছি।বাট</token>
+      <token index="5" tag="B-PRODUCT">ফেস</token>
+      <token index="6" tag="I-PRODUCT">ওয়াশ</token>
+      <token index="7" tag="O">টা</token>
+      <token index="8" tag="O">ভালো</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>5</bio_start_idx>
+        <bio_end_idx>6</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="false">
+        <text>শ্যাম্পু</text>
+        <tokens>
+          <t>শ্যাম্পু</t>
+        </tokens>
+      </span>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="16" original_csv_id="103996">
+    <text>প্যানটিন শ্যাম্পু সবসময়ই আমার চুল পড়া কমিয়েছে। অনেক ভালো একটা প্রোডাক্ট। ধন্যবাদ সেলারকে।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">প্যানটিন</token>
+      <token index="1" tag="I-PRODUCT">শ্যাম্পু</token>
+      <token index="2" tag="O">সবসময়ই</token>
+      <token index="3" tag="O">আমার</token>
+      <token index="4" tag="O">চুল</token>
+      <token index="5" tag="O">পড়া</token>
+      <token index="6" tag="O">কমিয়েছে</token>
+      <token index="7" tag="O">কমিয়েছে।অনেক</token>
+      <token index="8" tag="O">ভালো</token>
+      <token index="9" tag="O">একটা</token>
+      <token index="10" tag="O">প্রোডাক্ট।ধন্যবাদ</token>
+      <token index="11" tag="O">সেলারকে।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>প্যানটিন শ্যাম্পু</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>প্যানটিন</t>
+          <t>শ্যাম্পু</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>প্যানটিন শ্যাম্পু</text>
+        <tokens>
+          <t>প্যানটিন</t>
+          <t>শ্যাম্পু</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="17" original_csv_id="129623">
+    <text>এইটা আশা করি নাই যে প্রোডাক্টের জন্য নিলাম সেটা পুরোটাই খারাপ Face Wash</text>
+    <sentiment>
+      <label>Negative</label>
+      <code>0</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">এইটা</token>
+      <token index="1" tag="O">আশা</token>
+      <token index="2" tag="O">করি</token>
+      <token index="3" tag="O">নাই</token>
+      <token index="4" tag="O">যে</token>
+      <token index="5" tag="O">প্রোডাক্টের</token>
+      <token index="6" tag="O">জন্য</token>
+      <token index="7" tag="O">নিলাম</token>
+      <token index="8" tag="O">নিলাম</token>
+      <token index="9" tag="O">সেটা</token>
+      <token index="10" tag="O">খারাপ</token>
+      <token index="11" tag="O">খারাপ</token>
+      <token index="12" tag="B-PRODUCT">ফেস</token>
+      <token index="13" tag="I-PRODUCT">ওয়াশ</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>12</bio_start_idx>
+        <bio_end_idx>13</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="18" original_csv_id="149805">
+    <text>Face wash টা ঠিক আছে 
+তবে ক্রিমের উৎপাদন অনেক দিন আগের</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ফেস</token>
+      <token index="1" tag="I-PRODUCT">ওয়াশ</token>
+      <token index="2" tag="O">টা</token>
+      <token index="3" tag="O">ঠিক</token>
+      <token index="4" tag="O">আছে</token>
+      <token index="5" tag="O">তবে</token>
+      <token index="6" tag="B-PRODUCT">ক্রিমের</token>
+      <token index="7" tag="O">উৎপাদন</token>
+      <token index="8" tag="O">অনেক</token>
+      <token index="9" tag="O">দিন</token>
+      <token index="10" tag="O">আগের</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+      <span is_multi="false">
+        <text>ক্রিম</text>
+        <tokens>
+          <t>ক্রিম</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="19" original_csv_id="150274">
+    <text>ফেস ওয়াশ ঠিক আছে, মেয়াদ ভালোই আছে। কিন্তু ক্রিমের মেয়াদ কম।</text>
+    <sentiment>
+      <label>Neutral</label>
+      <code>1</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ফেস</token>
+      <token index="1" tag="I-PRODUCT">ওয়াশ</token>
+      <token index="2" tag="O">ঠিক</token>
+      <token index="3" tag="O">আছে</token>
+      <token index="4" tag="O">মেয়াদ</token>
+      <token index="5" tag="O">ভালোই</token>
+      <token index="6" tag="O">আছে</token>
+      <token index="7" tag="O">আছে।কিন্তু</token>
+      <token index="8" tag="B-PRODUCT">ক্রিমের</token>
+      <token index="9" tag="O">মেয়াদ</token>
+      <token index="10" tag="O">কম।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+      <span is_multi="false">
+        <text>ক্রিম</text>
+        <tokens>
+          <t>ক্রিম</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="20" original_csv_id="150418">
+    <text>Face wash টা নকল
+ক্রিমটা ঠিক আছে 
+নেওয়ার আগে ভেবে নেবেন।</text>
+    <sentiment>
+      <label>Negative</label>
+      <code>0</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ফেস</token>
+      <token index="1" tag="I-PRODUCT">ওয়াশ</token>
+      <token index="2" tag="O">টা</token>
+      <token index="3" tag="O">নকল</token>
+      <token index="4" tag="B-PRODUCT">ক্রিমটা</token>
+      <token index="5" tag="O">ঠিক</token>
+      <token index="6" tag="O">আছে</token>
+      <token index="7" tag="O">নেওয়ার</token>
+      <token index="8" tag="O">আগে</token>
+      <token index="9" tag="O">ভেবে</token>
+      <token index="10" tag="O">নেবেন।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+      <span is_multi="false">
+        <text>ক্রিম</text>
+        <tokens>
+          <t>ক্রিম</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="21" original_csv_id="150463">
+    <text>ফেসওয়াসের বোতল ফাটা ।।
+একদমি বাজে হয়েছে।</text>
+    <sentiment>
+      <label>Negative</label>
+      <code>0</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ফেস</token>
+      <token index="1" tag="I-PRODUCT">ওয়াশের</token>
+      <token index="2" tag="O">বোতল</token>
+      <token index="3" tag="O">ফাটা</token>
+      <token index="4" tag="O">একদম</token>
+      <token index="5" tag="O">বাজে</token>
+      <token index="6" tag="O">হয়েছে।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="22" original_csv_id="151474">
+    <text>ধন্যবাদ দারাজ কম মুল্যে অরিজিনাল studio X face wash টি দেওয়ার জন্য❤️❤️❤️❤️❤️</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">ধন্যবাদ</token>
+      <token index="1" tag="O">দারাজ</token>
+      <token index="2" tag="O">কম</token>
+      <token index="3" tag="O">মুল্যে</token>
+      <token index="4" tag="O">অরিজিনাল</token>
+      <token index="5" tag="O">স্টুডিও</token>
+      <token index="6" tag="O">এক্স</token>
+      <token index="7" tag="B-PRODUCT">ফেস</token>
+      <token index="8" tag="I-PRODUCT">ওয়াশ</token>
+      <token index="9" tag="O">টি</token>
+      <token index="10" tag="O">দেওয়ার</token>
+      <token index="11" tag="O">জন্য❤</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>7</bio_start_idx>
+        <bio_end_idx>8</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="23" original_csv_id="151663">
+    <text>এই দামের মধ্যে বেস্ট Facewaah</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">এই</token>
+      <token index="1" tag="O">দামের</token>
+      <token index="2" tag="O">মধ্যে</token>
+      <token index="3" tag="O">বেস্ট</token>
+      <token index="4" tag="B-PRODUCT">ফেস</token>
+      <token index="5" tag="I-PRODUCT">ওয়াশ</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>4</bio_start_idx>
+        <bio_end_idx>5</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="24" original_csv_id="152641">
+    <text>ফেস ওয়াশ টা ভালো ছিল</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ফেস</token>
+      <token index="1" tag="I-PRODUCT">ওয়াশ</token>
+      <token index="2" tag="O">টা</token>
+      <token index="3" tag="O">ভালো</token>
+      <token index="4" tag="O">ছিল</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="25" original_csv_id="163544">
+    <text>বাজারের অন্যান্য Face Masks ? তুলনায় Sepnil Face Mask অনেক ভালো।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">অন্যান্য</token>
+      <token index="1" tag="O">অন্যান্য</token>
+      <token index="2" tag="O">মুখের</token>
+      <token index="3" tag="O">মুখোশ</token>
+      <token index="4" tag="O">তুলনায়</token>
+      <token index="5" tag="O">সেপিনিল</token>
+      <token index="6" tag="B-PRODUCT">ফেস</token>
+      <token index="7" tag="I-PRODUCT">মাস্ক</token>
+      <token index="8" tag="O">অনেক</token>
+      <token index="9" tag="O">ভালো।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস মাস্ক</text>
+        <token_count>2</token_count>
+        <bio_start_idx>6</bio_start_idx>
+        <bio_end_idx>7</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>মাস্ক</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস মাস্ক</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>মাস্ক</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="26" original_csv_id="163550">
+    <text>সেপনিল মাস্ক টা অনেক ভালো এবং ব্যাবহার করে ও মজাThis is good</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">সেপনিল</token>
+      <token index="1" tag="I-PRODUCT">মাস্ক</token>
+      <token index="2" tag="O">টা</token>
+      <token index="3" tag="O">অনেক</token>
+      <token index="4" tag="O">অনেক</token>
+      <token index="5" tag="O">এবং</token>
+      <token index="6" tag="O">ব্যাবহার</token>
+      <token index="7" tag="O">ব্যাবহার</token>
+      <token index="8" tag="O">করে</token>
+      <token index="9" tag="O">মজা</token>
+      <token index="10" tag="O">মজা</token>
+      <token index="11" tag="O">এটি</token>
+      <token index="12" tag="O">ভাল</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>সেপনিল মাস্ক</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>সেপনিল</t>
+          <t>মাস্ক</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>সেপনিল মাস্ক</text>
+        <tokens>
+          <t>সেপনিল</t>
+          <t>মাস্ক</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="27" original_csv_id="163815">
+    <text>এত কম দামে সেপনিল মাস্ক। খুব খুশি কিনতে পেরে।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">এত</token>
+      <token index="1" tag="O">কম</token>
+      <token index="2" tag="O">দামে</token>
+      <token index="3" tag="B-PRODUCT">সেপনিল</token>
+      <token index="4" tag="I-PRODUCT">মাস্ক।খুব</token>
+      <token index="5" tag="O">খুশি</token>
+      <token index="6" tag="O">কিনতে</token>
+      <token index="7" tag="O">পেরে।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>সেপনিল মাস্ক</text>
+        <token_count>2</token_count>
+        <bio_start_idx>3</bio_start_idx>
+        <bio_end_idx>4</bio_end_idx>
+        <tokens>
+          <t>সেপনিল</t>
+          <t>মাস্ক</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>সেপনিল মাস্ক</text>
+        <tokens>
+          <t>সেপনিল</t>
+          <t>মাস্ক</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="28" original_csv_id="165827">
+    <text>থ্রিডি মাস্কগুলো বেশ ভালোই ছিল।
+স্বাচ্ছন্দ ভাবেই ব্যবহার করছি। ধন্যবাদ দারাজ।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">থ্রিডি</token>
+      <token index="1" tag="I-PRODUCT">মাস্কগুলো</token>
+      <token index="2" tag="O">বেশ</token>
+      <token index="3" tag="O">ভালোই</token>
+      <token index="4" tag="O">ছিল।</token>
+      <token index="5" tag="O">স্বাচ্ছন্দ</token>
+      <token index="6" tag="O">ভাবেই</token>
+      <token index="7" tag="O">ব্যবহার</token>
+      <token index="8" tag="O">করছি।ধন্যবাদ</token>
+      <token index="9" tag="O">দারাজ।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>থ্রিডি মাস্ক</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>থ্রিডি</t>
+          <t>মাস্ক</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>থ্রিডি মাস্ক</text>
+        <tokens>
+          <t>থ্রিডি</t>
+          <t>মাস্ক</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="29" original_csv_id="170259">
+    <text>Face Mask  টি মোটামুটি মানের আর Packaging টাও ভাল ছিল না। Delivery Fast ছিল।</text>
+    <sentiment>
+      <label>Negative</label>
+      <code>0</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ফেস</token>
+      <token index="1" tag="I-PRODUCT">মাস্ক</token>
+      <token index="2" tag="O">টি</token>
+      <token index="3" tag="O">মোটামুটি</token>
+      <token index="4" tag="O">মানের</token>
+      <token index="5" tag="O">আর</token>
+      <token index="6" tag="O">প্যাকেজিং</token>
+      <token index="7" tag="O">টাও</token>
+      <token index="8" tag="O">ভাল</token>
+      <token index="9" tag="O">ছিল</token>
+      <token index="10" tag="O">না।বিতরণ</token>
+      <token index="11" tag="O">দ্রুত</token>
+      <token index="12" tag="O">ছিল।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস মাস্ক</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>মাস্ক</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস মাস্ক</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>মাস্ক</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="30" original_csv_id="184839">
+    <text>আলহামদুলিল্লাহ ফেস ওয়াশ টি খুবই ভালো, ধন্যবাদ আপনাদেরকে।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">আলহামদুলিল্লাহ</token>
+      <token index="1" tag="B-PRODUCT">ফেস</token>
+      <token index="2" tag="I-PRODUCT">ওয়াশ</token>
+      <token index="3" tag="O">টি</token>
+      <token index="4" tag="O">খুবই</token>
+      <token index="5" tag="O">ভালো</token>
+      <token index="6" tag="O">ধন্যবাদ</token>
+      <token index="7" tag="O">ধন্যবাদ।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>1</bio_start_idx>
+        <bio_end_idx>2</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="31" original_csv_id="185213">
+    <text>ফেস ওয়াশ টার পেকেট এর মুখ খোলা ছিলো,
+অরিজিনাল কিনা সন্দেহ আছে ?</text>
+    <sentiment>
+      <label>Negative</label>
+      <code>0</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ফেস</token>
+      <token index="1" tag="I-PRODUCT">ওয়াশ</token>
+      <token index="2" tag="O">টার</token>
+      <token index="3" tag="O">পেকেট</token>
+      <token index="4" tag="O">এর</token>
+      <token index="5" tag="O">মুখ</token>
+      <token index="6" tag="O">খোলা</token>
+      <token index="7" tag="O">ছিলো</token>
+      <token index="8" tag="O">ছিলো</token>
+      <token index="9" tag="O">অরিজিনাল</token>
+      <token index="10" tag="O">কিনা</token>
+      <token index="11" tag="O">সন্দেহ</token>
+      <token index="12" tag="O">আছে</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="32" original_csv_id="185392">
+    <text>অনেক ভাল একটা ফেস ওয়াশ। রিকমন্ডেড।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">অনেক</token>
+      <token index="1" tag="O">ভাল</token>
+      <token index="2" tag="O">একটা</token>
+      <token index="3" tag="B-PRODUCT">ফেস</token>
+      <token index="4" tag="I-PRODUCT">ওয়াশ।রিকমন্ডেড।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>3</bio_start_idx>
+        <bio_end_idx>4</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="33" original_csv_id="185436">
+    <text>খুবই বাজে একটা ফেস ওয়াশ। আমার টাকা গুলো নষ্ট হয়েছে।</text>
+    <sentiment>
+      <label>Negative</label>
+      <code>0</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">খুবই</token>
+      <token index="1" tag="O">বাজে</token>
+      <token index="2" tag="O">একটা</token>
+      <token index="3" tag="B-PRODUCT">ফেস</token>
+      <token index="4" tag="I-PRODUCT">ওয়াশ।আমার</token>
+      <token index="5" tag="O">টাকা</token>
+      <token index="6" tag="O">গুলো</token>
+      <token index="7" tag="O">নষ্ট</token>
+      <token index="8" tag="O">হয়েছে।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>3</bio_start_idx>
+        <bio_end_idx>4</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="34" original_csv_id="186479">
+    <text>খুব ভালো একটি face wash এবং খুব সুন্দর প্যাকেজিং</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">খুব</token>
+      <token index="1" tag="O">ভালো</token>
+      <token index="2" tag="O">একটি</token>
+      <token index="3" tag="B-PRODUCT">ফেস</token>
+      <token index="4" tag="I-PRODUCT">ওয়াশ</token>
+      <token index="5" tag="O">এবং</token>
+      <token index="6" tag="O">খুব</token>
+      <token index="7" tag="O">সুন্দর</token>
+      <token index="8" tag="O">প্যাকেজিং</token>
+      <token index="9" tag="O">প্যাকেজিং</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>3</bio_start_idx>
+        <bio_end_idx>4</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="35" original_csv_id="187437">
+    <text>খুব ভালো ফেস ওয়াশ। ভালো ডিসকাউন্ট পেয়েছি। চাইলে যে কেউ নিতে পারেন।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">খুব</token>
+      <token index="1" tag="O">ভালো</token>
+      <token index="2" tag="B-PRODUCT">ফেস</token>
+      <token index="3" tag="I-PRODUCT">ওয়াশ।ভালো</token>
+      <token index="4" tag="O">ডিসকাউন্ট</token>
+      <token index="5" tag="O">পেয়েছি।চাইলে</token>
+      <token index="6" tag="O">যে</token>
+      <token index="7" tag="O">কেউ</token>
+      <token index="8" tag="O">নিতে</token>
+      <token index="9" tag="O">পারেন।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>2</bio_start_idx>
+        <bio_end_idx>3</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="36" original_csv_id="187460">
+    <text>ভালো প্রোডাক্ট।
+১৬৫ টাকায় ভালোই ফেস ওয়াশ টা।
+আপনারাও নিতে পারেন।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">ভালো</token>
+      <token index="1" tag="O">প্রোডাক্ট।</token>
+      <token index="2" tag="O">১৬৫</token>
+      <token index="3" tag="O">টাকায়</token>
+      <token index="4" tag="O">ভালোই</token>
+      <token index="5" tag="B-PRODUCT">ফেস</token>
+      <token index="6" tag="I-PRODUCT">ওয়াশ</token>
+      <token index="7" tag="O">ওয়াশ</token>
+      <token index="8" tag="O">টা।</token>
+      <token index="9" tag="O">আপনারাও</token>
+      <token index="10" tag="O">নিতে</token>
+      <token index="11" tag="O">পারেন।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>5</bio_start_idx>
+        <bio_end_idx>6</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="37" original_csv_id="188225">
+    <text>ফেশ ওয়াশ টি orginal uniliver এর প্রোডাক্ট ??</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ফেস</token>
+      <token index="1" tag="I-PRODUCT">ওয়াশ</token>
+      <token index="2" tag="O">টি</token>
+      <token index="3" tag="O">আসল</token>
+      <token index="4" tag="O">ইউনিলিভার</token>
+      <token index="5" tag="O">এর</token>
+      <token index="6" tag="O">প্রোডাক্ট</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="38" original_csv_id="191413">
+    <text>face wash টা অনেক অনেক ভালো??????</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ফেস</token>
+      <token index="1" tag="I-PRODUCT">ওয়াশ</token>
+      <token index="2" tag="O">টা</token>
+      <token index="3" tag="O">অনেক</token>
+      <token index="4" tag="O">অনেক</token>
+      <token index="5" tag="O">ভালো??????</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="39" original_csv_id="191639">
+    <text>ফেস ওয়াশের সাথে ভেজলিন লোশন ফ্রি পেয়েছি।</text>
+    <sentiment>
+      <label>Neutral</label>
+      <code>1</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ফেস</token>
+      <token index="1" tag="I-PRODUCT">ওয়াশের</token>
+      <token index="2" tag="O">সাথে</token>
+      <token index="3" tag="O">ভেজলিন</token>
+      <token index="4" tag="O">লোশন</token>
+      <token index="5" tag="O">ফ্রি</token>
+      <token index="6" tag="O">ফ্রি</token>
+      <token index="7" tag="O">পেয়েছি।।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="40" original_csv_id="191684">
+    <text>কি আর বলবো এমন একটা ভালো face wash,
+আপনারা চাইলে নিতে পারেন,,</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">কি</token>
+      <token index="1" tag="O">আর</token>
+      <token index="2" tag="O">বলবো</token>
+      <token index="3" tag="O">এমন</token>
+      <token index="4" tag="O">একটা</token>
+      <token index="5" tag="O">ভালো</token>
+      <token index="6" tag="B-PRODUCT">ফেস</token>
+      <token index="7" tag="I-PRODUCT">ওয়াশ</token>
+      <token index="8" tag="O">আপনারা</token>
+      <token index="9" tag="O">চাইলে</token>
+      <token index="10" tag="O">নিতে</token>
+      <token index="11" tag="O">পারেন</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>6</bio_start_idx>
+        <bio_end_idx>7</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="41" original_csv_id="191807">
+    <text>ফেস ওয়াশটি অনেক ভালো উন্নত মানের</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ফেস</token>
+      <token index="1" tag="I-PRODUCT">ওয়াশটি</token>
+      <token index="2" tag="O">অনেক</token>
+      <token index="3" tag="O">ভালো</token>
+      <token index="4" tag="O">উন্নত</token>
+      <token index="5" tag="O">মানের</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="42" original_csv_id="192063">
+    <text>দাম অনুযায়ী অনেক  ভালো  একটা সানছ ক্রিম,</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">দাম</token>
+      <token index="1" tag="O">অনুযায়ী</token>
+      <token index="2" tag="O">অনেক</token>
+      <token index="3" tag="O">ভালো</token>
+      <token index="4" tag="O">একটা</token>
+      <token index="5" tag="B-PRODUCT">সানছ</token>
+      <token index="6" tag="I-PRODUCT">ক্রিম</token>
+      <token index="7" tag="O">ক্রিম</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>সানছ ক্রিম</text>
+        <token_count>2</token_count>
+        <bio_start_idx>5</bio_start_idx>
+        <bio_end_idx>6</bio_end_idx>
+        <tokens>
+          <t>সানছ</t>
+          <t>ক্রিম</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>সানছ ক্রিম</text>
+        <tokens>
+          <t>সানছ</t>
+          <t>ক্রিম</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="43" original_csv_id="192879">
+    <text>ফেইস ওয়াশটি অনেক ভালো। ময়েসশ্চার করে ত্বককে। অরিজিনাল পণ্য। স্টোরটাও অরিজিনাল। নির্ভরযোগ্য স্টোর।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ফেইস</token>
+      <token index="1" tag="I-PRODUCT">ওয়াশটি</token>
+      <token index="2" tag="O">অনেক</token>
+      <token index="3" tag="O">ভালো।ময়েসশ্চার</token>
+      <token index="4" tag="O">করে</token>
+      <token index="5" tag="O">ত্বককে।অরিজিনাল</token>
+      <token index="6" tag="O">পণ্য।স্টোরটাও</token>
+      <token index="7" tag="O">অরিজিনাল।নির্ভরযোগ্য</token>
+      <token index="8" tag="O">স্টোর।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেইস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ফেইস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেইস ওয়াশ</text>
+        <tokens>
+          <t>ফেইস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="44" original_csv_id="194291">
+    <text>ফেস ওয়াশটা ভালোই মনে হচ্ছে।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ফেস</token>
+      <token index="1" tag="I-PRODUCT">ওয়াশটা</token>
+      <token index="2" tag="O">ভালোই</token>
+      <token index="3" tag="O">মনে</token>
+      <token index="4" tag="O">হচ্ছে।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="45" original_csv_id="194297">
+    <text>Face wash টি পেয়েছি ঠিক মতো।ভালোই আছে।</text>
+    <sentiment>
+      <label>Neutral</label>
+      <code>1</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ফেস</token>
+      <token index="1" tag="I-PRODUCT">ওয়াশ</token>
+      <token index="2" tag="O">টি</token>
+      <token index="3" tag="O">পেয়েছি</token>
+      <token index="4" tag="O">ঠিক</token>
+      <token index="5" tag="O">মতো।ভালোই</token>
+      <token index="6" tag="O">মতো।ভালোই।।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="46" original_csv_id="202512">
+    <text>ফেস ওয়াশ টা অনেক ভালো</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ফেস</token>
+      <token index="1" tag="I-PRODUCT">ওয়াশ</token>
+      <token index="2" tag="O">টা</token>
+      <token index="3" tag="O">অনেক</token>
+      <token index="4" tag="O">ভালো</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="47" original_csv_id="203819">
+    <text>সুন্দর  ফেস ওয়াস
+শেষ হয়ে গেছে ,  আর একটা অডার দিব কিন্তু পাচ্ছি না।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">সুন্দর</token>
+      <token index="1" tag="B-PRODUCT">ফেস</token>
+      <token index="2" tag="I-PRODUCT">ওয়াশ</token>
+      <token index="3" tag="O">শেষ</token>
+      <token index="4" tag="O">হয়ে</token>
+      <token index="5" tag="O">গেছে</token>
+      <token index="6" tag="O">আর</token>
+      <token index="7" tag="O">আর</token>
+      <token index="8" tag="O">অর্ডার</token>
+      <token index="9" tag="O">দিব</token>
+      <token index="10" tag="O">দিব</token>
+      <token index="11" tag="O">কিন্তু</token>
+      <token index="12" tag="O">পাচ্ছি</token>
+      <token index="13" tag="O">না</token>
+      <token index="14" tag="O">না</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>1</bio_start_idx>
+        <bio_end_idx>2</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="48" original_csv_id="212149">
+    <text>ফেসওয়াশটা গত পরশু হাতে পেলাম। ১০০% অরিজিনাল ফেস ওয়াশ। ধন্যবাদ অরিজিনাল প্রোডাক্ট দেয়ার জন্য।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">ফেসওয়াশটা</token>
+      <token index="1" tag="O">গত</token>
+      <token index="2" tag="O">পরশু</token>
+      <token index="3" tag="O">হাতে</token>
+      <token index="4" tag="O">পেলাম।১০০</token>
+      <token index="5" tag="O">অরিজিনাল</token>
+      <token index="6" tag="B-PRODUCT">ফেস</token>
+      <token index="7" tag="I-PRODUCT">ওয়াশ।ধন্যবাদ</token>
+      <token index="8" tag="O">অরিজিনাল</token>
+      <token index="9" tag="O">প্রোডাক্ট</token>
+      <token index="10" tag="O">দেয়ার</token>
+      <token index="11" tag="O">জন্য।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>6</bio_start_idx>
+        <bio_end_idx>7</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="49" original_csv_id="214788">
+    <text>খুবি ভালো একটা ফেস ওয়াশ</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">খুবি</token>
+      <token index="1" tag="O">ভালো</token>
+      <token index="2" tag="O">একটা</token>
+      <token index="3" tag="B-PRODUCT">ফেস</token>
+      <token index="4" tag="I-PRODUCT">ওয়াশ</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ফেস ওয়াশ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>3</bio_start_idx>
+        <bio_end_idx>4</bio_end_idx>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ফেস ওয়াশ</text>
+        <tokens>
+          <t>ফেস</t>
+          <t>ওয়াশ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="50" original_csv_id="218967">
+    <text>ডেটল সাবান মোটামুটি অর্ধেক দামে পেয়েছি। ধন্যবাদ দারাজ ?</text>
+    <sentiment>
+      <label>Neutral</label>
+      <code>1</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ডেটল</token>
+      <token index="1" tag="I-PRODUCT">সাবান</token>
+      <token index="2" tag="O">মোটামুটি</token>
+      <token index="3" tag="O">অর্ধেক</token>
+      <token index="4" tag="O">দামে</token>
+      <token index="5" tag="O">দামে</token>
+      <token index="6" tag="O">পেয়েছি।ধন্যবাদ</token>
+      <token index="7" tag="O">দারাজ</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ডেটল সাবান</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ডেটল সাবান</text>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="51" original_csv_id="219000">
+    <text>আমার ভালো লাগে ডেটল সাবান ধন্যবাদ ???</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">আমার</token>
+      <token index="1" tag="O">ভালো</token>
+      <token index="2" tag="O">লাগে</token>
+      <token index="3" tag="B-PRODUCT">ডেটল</token>
+      <token index="4" tag="I-PRODUCT">সাবান</token>
+      <token index="5" tag="O">সাবান</token>
+      <token index="6" tag="O">ধন্যবাদ</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ডেটল সাবান</text>
+        <token_count>2</token_count>
+        <bio_start_idx>3</bio_start_idx>
+        <bio_end_idx>4</bio_end_idx>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ডেটল সাবান</text>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="52" original_csv_id="219021">
+    <text>ডেটল সাবান আমার খুব প্রিয় সাবান।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">ডেটল</token>
+      <token index="1" tag="I-PRODUCT">সাবান</token>
+      <token index="2" tag="O">আমার</token>
+      <token index="3" tag="O">খুব</token>
+      <token index="4" tag="O">প্রিয়</token>
+      <token index="5" tag="O">প্রিয়</token>
+      <token index="6" tag="O">সাবান।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ডেটল সাবান</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ডেটল সাবান</text>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="53" original_csv_id="223757">
+    <text>বাজারে যে রকম dettol  সাবান পাওয়া যায় ঠিক সে রকমই দারাজের dettol সাবান ।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">বাজারে</token>
+      <token index="1" tag="O">যে</token>
+      <token index="2" tag="O">রকম</token>
+      <token index="3" tag="B-PRODUCT">ডেটল</token>
+      <token index="4" tag="I-PRODUCT">সাবান</token>
+      <token index="5" tag="O">পাওয়া</token>
+      <token index="6" tag="O">যায়</token>
+      <token index="7" tag="O">ঠিক</token>
+      <token index="8" tag="O">সে</token>
+      <token index="9" tag="O">রকমই</token>
+      <token index="10" tag="O">দারাজের</token>
+      <token index="11" tag="O">ডেটল</token>
+      <token index="12" tag="O">সাবান।।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ডেটল সাবান</text>
+        <token_count>2</token_count>
+        <bio_start_idx>3</bio_start_idx>
+        <bio_end_idx>4</bio_end_idx>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ডেটল সাবান</text>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সাবান</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="54" original_csv_id="224675">
+    <text>ওলিভ ওয়েল ও কারবন সোপ অর্ডার করছিলাম, কারবন সোপ আসে নাই??</text>
+    <sentiment>
+      <label>Neutral</label>
+      <code>1</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="B-PRODUCT">অলিভ</token>
+      <token index="1" tag="I-PRODUCT">অয়েল</token>
+      <token index="2" tag="O">ও</token>
+      <token index="3" tag="O">কারবন</token>
+      <token index="4" tag="O">কারবন</token>
+      <token index="5" tag="O">অর্ডার</token>
+      <token index="6" tag="O">করেছিলাম</token>
+      <token index="7" tag="O">করেছিলাম</token>
+      <token index="8" tag="O">কারবোন</token>
+      <token index="9" tag="B-PRODUCT">সোপ</token>
+      <token index="10" tag="O">আসে</token>
+      <token index="11" tag="O">নাই??</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>অলিভ অয়েল</text>
+        <token_count>2</token_count>
+        <bio_start_idx>0</bio_start_idx>
+        <bio_end_idx>1</bio_end_idx>
+        <tokens>
+          <t>অলিভ</t>
+          <t>অয়েল</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>অলিভ অয়েল</text>
+        <tokens>
+          <t>অলিভ</t>
+          <t>অয়েল</t>
+        </tokens>
+      </span>
+      <span is_multi="false">
+        <text>সোপ</text>
+        <tokens>
+          <t>সোপ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+  <sentence id="55" original_csv_id="226188">
+    <text>চেনা বামুনের পৈতা লাগে না।
+ডেটল সোপ কেমন তা সবাই জানে।</text>
+    <sentiment>
+      <label>Positive</label>
+      <code>2</code>
+    </sentiment>
+    <bio_tags>
+      <token index="0" tag="O">চেনা</token>
+      <token index="1" tag="O">বামুনের</token>
+      <token index="2" tag="O">পৈতা</token>
+      <token index="3" tag="O">লাগে</token>
+      <token index="4" tag="O">না।</token>
+      <token index="5" tag="B-PRODUCT">ডেটল</token>
+      <token index="6" tag="I-PRODUCT">সোপ</token>
+      <token index="7" tag="O">কেমন</token>
+      <token index="8" tag="O">তা</token>
+      <token index="9" tag="O">সবাই</token>
+      <token index="10" tag="O">সবাই</token>
+      <token index="11" tag="O">জানে।</token>
+    </bio_tags>
+    <multi_word_entities>
+      <entity>
+        <text>ডেটল সোপ</text>
+        <token_count>2</token_count>
+        <bio_start_idx>5</bio_start_idx>
+        <bio_end_idx>6</bio_end_idx>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সোপ</t>
+        </tokens>
+      </entity>
+    </multi_word_entities>
+    <all_entity_spans>
+      <span is_multi="true">
+        <text>ডেটল সোপ</text>
+        <tokens>
+          <t>ডেটল</t>
+          <t>সোপ</t>
+        </tokens>
+      </span>
+    </all_entity_spans>
+  </sentence>
+</multiword_entity_sentences>
