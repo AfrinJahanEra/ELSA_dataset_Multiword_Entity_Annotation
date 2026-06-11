@@ -1,0 +1,13 @@
+GPT-5.5
+DeepSeek-V3
+Claude Sonnet 4.6 Low
+Claude Sonnet 4.6 Medium
+Claude Sonnet 4.6 High
+Grok 4
+Gemini 3.5 Flash
+Gemini 3.5 Flash Extended
+Gemini 3.1 Pro
+Gemini 3.1 Pro Extended
+Gemini 3.1 Flash Lite
+Gemini 3.1 Flash Lite Extended
+Claude Haiku 4.5
