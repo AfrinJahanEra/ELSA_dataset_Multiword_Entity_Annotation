@@ -209,13 +209,6 @@ Each report includes:
 
 ---
 
-## Author
-
-**Afrin Jahan Era** — Student ID: 220042132  
-Contact: afrinjahanera04@gmail.com
-
----
-
 ## License
 
 This repository does not include a license file. Add one if you plan to publish or share this project.
