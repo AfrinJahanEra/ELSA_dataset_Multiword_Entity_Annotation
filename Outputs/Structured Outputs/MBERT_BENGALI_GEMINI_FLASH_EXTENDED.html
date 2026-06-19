@@ -1,0 +1,343 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><h1 id="-model-performance-summary-tables">📊 Model Performance Summary Tables</h1>
+<h2 id="1-dataset-split-information">1. Dataset Split Information</h2>
+<table>
+<thead>
+<tr>
+<th>Split</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Training samples</td>
+<td>3,000</td>
+</tr>
+<tr>
+<td>Test samples</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Train set (80%)</td>
+<td>2,400</td>
+</tr>
+<tr>
+<td>Validation set (20%)</td>
+<td>600</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="2-ner-model-validation-performance-per-epoch-">2. NER Model - Validation Performance (per epoch)</h2>
+<table>
+<thead>
+<tr>
+<th>Epoch</th>
+<th>Training Loss</th>
+<th>Validation Loss</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>F1-Score</th>
+<th>Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0.015395</td>
+<td>0.009201</td>
+<td>0.995420</td>
+<td>0.981928</td>
+<td>0.988628</td>
+<td>0.997417</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0.006988</td>
+<td>0.004844</td>
+<td>1.000000</td>
+<td>0.987952</td>
+<td>0.993939</td>
+<td>0.998481</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>0.004309</strong></td>
+<td><strong>0.003525</strong></td>
+<td><strong>0.998487</strong></td>
+<td><strong>0.993976</strong></td>
+<td><strong>0.996226</strong></td>
+<td><strong>0.999240</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Best checkpoint:</strong> Epoch 3 (F1: 0.9962)</p>
+<hr>
+<h2 id="3-ner-model-test-set-performance">3. NER Model - Test Set Performance</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loss</td>
+<td>0.331041</td>
+</tr>
+<tr>
+<td><strong>Precision</strong></td>
+<td><strong>0.735294</strong></td>
+</tr>
+<tr>
+<td><strong>Recall</strong></td>
+<td><strong>0.757576</strong></td>
+</tr>
+<tr>
+<td><strong>F1-Score</strong></td>
+<td><strong>0.746269</strong></td>
+</tr>
+<tr>
+<td><strong>Accuracy</strong></td>
+<td><strong>0.960265</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="4-sentiment-analysis-model-validation-performance-per-epoch-">4. Sentiment Analysis Model - Validation Performance (per epoch)</h2>
+<table>
+<thead>
+<tr>
+<th>Epoch</th>
+<th>Training Loss</th>
+<th>Validation Loss</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>F1-Score</th>
+<th>Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0.031511</td>
+<td>0.006127</td>
+<td>1.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0.004131</td>
+<td>0.002103</td>
+<td>1.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>0.002606</strong></td>
+<td><strong>0.001590</strong></td>
+<td><strong>1.000000</strong></td>
+<td><strong>1.000000</strong></td>
+<td><strong>1.000000</strong></td>
+<td><strong>1.000000</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Best checkpoint:</strong> Epoch 1–3 (all identical: perfect validation)</p>
+<hr>
+<h2 id="5-sentiment-analysis-model-test-set-performance">5. Sentiment Analysis Model - Test Set Performance</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loss</td>
+<td>1.267380</td>
+</tr>
+<tr>
+<td><strong>Precision</strong></td>
+<td><strong>0.868750</strong></td>
+</tr>
+<tr>
+<td><strong>Recall</strong></td>
+<td><strong>0.700000</strong></td>
+</tr>
+<tr>
+<td><strong>F1-Score</strong></td>
+<td><strong>0.700810</strong></td>
+</tr>
+<tr>
+<td><strong>Accuracy</strong></td>
+<td><strong>0.700000</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="6-model-configuration-summary">6. Model Configuration Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NER Base Model</td>
+<td><code>sagorsarker/mbert-bengali-ner</code></td>
+</tr>
+<tr>
+<td>SA Base Model</td>
+<td><code>csebuetnlp/banglabert</code></td>
+</tr>
+<tr>
+<td>Epochs</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Batch Size</td>
+<td>16</td>
+</tr>
+<tr>
+<td>Learning Rate</td>
+<td>3e-5</td>
+</tr>
+<tr>
+<td>Optimizer</td>
+<td>AdamW</td>
+</tr>
+<tr>
+<td>Hardware</td>
+<td>GPU (Colab T4 / equivalent)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="ner-configuration">NER Configuration</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of labels</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Labels</td>
+<td><code>O</code>, <code>B-Product</code>, <code>I-Product</code></td>
+</tr>
+<tr>
+<td>Metric for best model</td>
+<td>F1-score</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="sentiment-analysis-configuration">Sentiment Analysis Configuration</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of labels</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Labels</td>
+<td>NEGATIVE / NEUTRAL / POSITIVE</td>
+</tr>
+<tr>
+<td>Metric for best model</td>
+<td>Accuracy</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="7-inference-example-results">7. Inference Example Results</h2>
+<p><strong>Sample Review:</strong>
+<code>ফেস ওয়াশ টা অনেক সুন্দর, অসংখ্য ধন্যবাদ ডেলিভারি খুব দ্রুত দেয়ার জন্য।</code></p>
+<hr>
+<h3 id="ner-output">NER Output</h3>
+<table>
+<thead>
+<tr>
+<th>Entity Group</th>
+<th>Word</th>
+<th>Confidence Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Product</td>
+<td>ফ</td>
+<td>0.99985</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>ে</td>
+<td>0.99985</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>স ওযাশ</td>
+<td>0.99983</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="sentiment-output">Sentiment Output</h3>
+<table>
+<thead>
+<tr>
+<th>Prediction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Positive</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="8-performance-summary">8. Performance Summary</h2>
+<h3 id="ner-model">NER Model</h3>
+<ul>
+<li>✅ Strong validation performance (F1 ≈ <strong>0.996</strong>)</li>
+<li>✅ Good generalization on test set (F1 ≈ <strong>0.746</strong>)</li>
+<li>⚠️ Slight token fragmentation in inference output (BERT subword issue)</li>
+</ul>
+<hr>
+<h3 id="sentiment-analysis-model">Sentiment Analysis Model</h3>
+<ul>
+<li>⚠️ Perfect validation accuracy (possible overfitting)</li>
+<li>⚠️ Moderate test performance (F1 ≈ <strong>0.70</strong>)</li>
+<li>✅ Stable training convergence</li>
+</ul>
+<hr>
+<h2 id="9-key-observations">9. Key Observations</h2>
+<ul>
+<li>mBERT NER model works well for Bengali but produces <strong>subword splits in inference</strong></li>
+<li>NER performance dropped slightly on test set (expected domain gap)</li>
+<li>Sentiment model is <strong>overconfident on validation set</strong></li>
+<li>Dataset size (3,000 samples) is relatively small for deep generalization</li>
+</ul>
+</body></html>

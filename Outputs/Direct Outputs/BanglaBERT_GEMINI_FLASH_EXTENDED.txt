@@ -1,0 +1,104 @@
+Training samples: 3000
+Test samples:     30
+Train size: 2400,  Validation size: 600
+config.json: 100%
+ 586/586 [00:00<00:00, 59.4kB/s]
+tokenizer_config.json: 100%
+ 119/119 [00:00<00:00, 11.5kB/s]
+vocab.txt: 100%
+ 528k/528k [00:00<00:00, 33.8MB/s]
+special_tokens_map.json: 100%
+ 112/112 [00:00<00:00, 12.2kB/s]
+NER datasets created -- train: 2400, val: 600
+
+=== Training NER model on full training data ===
+pytorch_model.bin: 100%
+ 443M/443M [00:03<00:00, 144MB/s]
+Loading weights: 100%
+ 197/197 [00:00<00:00, 5332.17it/s]
+[transformers] ElectraForTokenClassification LOAD REPORT from: csebuetnlp/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.bias                                   | MISSING    | 
+classifier.weight                                 | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+model.safetensors: 100%
+ 443M/443M [00:02<00:00, 233MB/s]
+Downloading builder script: 
+ 6.34k/? [00:00<00:00, 527kB/s]
+ [564/564 01:27, Epoch 3/3]
+Epoch	Training Loss	Validation Loss	Precision	Recall	F1	Accuracy
+1	0.026360	0.010735	1.000000	0.987952	0.993939	0.998481
+2	0.008547	0.005911	1.000000	0.987952	0.993939	0.998481
+3	0.005038	0.004422	1.000000	0.992470	0.996221	0.998936
+Writing model shards: 100%
+ 1/1 [00:03<00:00,  3.07s/it]
+Writing model shards: 100%
+ 1/1 [00:03<00:00,  3.51s/it]
+Writing model shards: 100%
+ 1/1 [00:10<00:00, 10.36s/it]
+ [2/2 00:00]
+Training Loss	Validation Loss	Epoch	Precision	Recall	F1	Accuracy
+0.005038	0.250168	3	0.684211	0.787879	0.732394	0.960265
+
+=== NER Test Results ===
+{'eval_loss': 0.25016823410987854, 'eval_precision': 0.6842105263157895, 'eval_recall': 0.7878787878787878, 'eval_f1': 0.732394366197183, 'eval_accuracy': 0.9602649006622517}
+Writing model shards: 100%
+ 1/1 [00:02<00:00,  2.94s/it]
+
+NER model saved.
+SA datasets created -- train: 2400, val: 600
+
+=== Training final SA model on full training data ===
+Loading weights: 100%
+ 197/197 [00:00<00:00, 6490.23it/s]
+[transformers] ElectraForSequenceClassification LOAD REPORT from: csebuetnlp/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.out_proj.bias                          | MISSING    | 
+classifier.dense.bias                             | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.weight                        | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+ [564/564 01:25, Epoch 3/3]
+Epoch	Training Loss	Validation Loss	Precision	Recall	F1	Accuracy
+1	0.031511	0.006127	1.000000	1.000000	1.000000	1.000000
+2	0.004131	0.002103	1.000000	1.000000	1.000000	1.000000
+3	0.002606	0.001590	1.000000	1.000000	1.000000	1.000000
+Writing model shards: 100%
+ 1/1 [00:06<00:00,  6.18s/it]
+Writing model shards: 100%
+ 1/1 [00:03<00:00,  3.04s/it]
+Writing model shards: 100%
+ 1/1 [00:01<00:00,  1.25s/it]
+ [2/2 00:00]
+Training Loss	Validation Loss	Epoch	Precision	Recall	F1	Accuracy
+0.002606	1.267380	3	0.868750	0.700000	0.700810	0.700000
+
+=== SA Test Results ===
+{'eval_loss': 1.2673803567886353, 'eval_precision': 0.86875, 'eval_recall': 0.7, 'eval_f1': 0.7008103475144148, 'eval_accuracy': 0.7}
+Writing model shards: 100%
+ 1/1 [00:11<00:00, 11.85s/it]
+SA model saved.
+Loading weights: 100%
+ 199/199 [00:00<00:00, 766.70it/s]
+
+Sample review: ফেস ওয়াশ টা অনেক সুন্দর, অসংখ্য ধন্যবাদ ডেলিভারি খুব দ্রুত দেয়ার জন্য।
+NER results: [{'entity_group': 'Product', 'score': np.float32(0.99858654), 'word': 'ফেস ওয়াশ', 'start': 0, 'end': 9}]
+Sentiment: Positive
+
+All tasks completed successfully!
