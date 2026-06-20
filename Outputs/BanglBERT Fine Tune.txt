@@ -1,0 +1,112 @@
+Training samples: 3000
+Test samples:     30
+Train size: 2400,  Validation size: 600
+/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_auth.py:112: UserWarning: 
+The secret `HF_TOKEN` does not exist in your Colab secrets.
+To authenticate with the Hugging Face Hub, create a token in your settings tab (https://huggingface.co/settings/tokens), set it as secret in your Google Colab and restart your session.
+You will be able to reuse this secret in all of your notebooks.
+Please note that authentication is recommended but still optional to access public models or datasets.
+  warnings.warn(
+config.json: 100%
+ 586/586 [00:00<00:00, 2.32kB/s]
+tokenizer_config.json: 100%
+ 119/119 [00:00<00:00, 10.1kB/s]
+vocab.txt: 100%
+ 528k/528k [00:00<00:00, 21.2MB/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+special_tokens_map.json: 100%
+ 112/112 [00:00<00:00, 11.8kB/s]
+NER datasets created -- train: 2400, val: 600
+
+=== Training NER model on full training data ===
+pytorch_model.bin: 100%
+ 443M/443M [00:03<00:00, 131MB/s]
+Loading weights: 100%
+ 197/197 [00:00<00:00, 3567.49it/s]
+[transformers] ElectraForTokenClassification LOAD REPORT from: csebuetnlp/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.bias                                   | MISSING    | 
+classifier.weight                                 | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+model.safetensors: 100%
+ 443M/443M [00:05<00:00, 107MB/s]
+Downloading builder script: 
+ 6.34k/? [00:00<00:00, 178kB/s]
+ [564/564 01:27, Epoch 3/3]
+Epoch	Training Loss	Validation Loss	Precision	Recall	F1	Accuracy
+1	0.019202	0.009678	0.990937	0.987952	0.989442	0.997721
+2	0.007360	0.005537	0.998478	0.987952	0.993187	0.998329
+3	0.004542	0.004122	1.000000	0.992470	0.996221	0.999088
+Writing model shards: 100%
+ 1/1 [00:07<00:00,  7.07s/it]
+Writing model shards: 100%
+ 1/1 [00:06<00:00,  6.03s/it]
+Writing model shards: 100%
+ 1/1 [00:01<00:00,  1.36s/it]
+ [2/2 00:00]
+Training Loss	Validation Loss	Epoch	Precision	Recall	F1	Accuracy
+0.004542	0.277910	3	0.666667	0.787879	0.722222	0.956954
+
+=== NER Test Results ===
+{'eval_loss': 0.277910053730011, 'eval_precision': 0.6666666666666666, 'eval_recall': 0.7878787878787878, 'eval_f1': 0.7222222222222221, 'eval_accuracy': 0.956953642384106}
+Writing model shards: 100%
+ 1/1 [00:01<00:00,  1.52s/it]
+
+NER model saved.
+SA datasets created -- train: 2400, val: 600
+
+=== Training final SA model on full training data ===
+Loading weights: 100%
+ 197/197 [00:00<00:00, 6209.11it/s]
+[transformers] ElectraForSequenceClassification LOAD REPORT from: csebuetnlp/banglabert
+Key                                               | Status     | 
+--------------------------------------------------+------------+-
+discriminator_predictions.dense.weight            | UNEXPECTED | 
+discriminator_predictions.dense_prediction.bias   | UNEXPECTED | 
+discriminator_predictions.dense_prediction.weight | UNEXPECTED | 
+discriminator_predictions.dense.bias              | UNEXPECTED | 
+classifier.out_proj.weight                        | MISSING    | 
+classifier.dense.weight                           | MISSING    | 
+classifier.out_proj.bias                          | MISSING    | 
+classifier.dense.bias                             | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+ [564/564 01:42, Epoch 3/3]
+Epoch	Training Loss	Validation Loss	Precision	Recall	F1	Accuracy
+1	0.031511	0.006127	1.000000	1.000000	1.000000	1.000000
+2	0.004131	0.002103	1.000000	1.000000	1.000000	1.000000
+3	0.002606	0.001590	1.000000	1.000000	1.000000	1.000000
+Writing model shards: 100%
+ 1/1 [00:03<00:00,  3.09s/it]
+Writing model shards: 100%
+ 1/1 [00:10<00:00, 10.70s/it]
+Writing model shards: 100%
+ 1/1 [00:12<00:00, 12.02s/it]
+ [2/2 00:00]
+Training Loss	Validation Loss	Epoch	Precision	Recall	F1	Accuracy
+0.002606	1.267380	3	0.868750	0.700000	0.700810	0.700000
+
+=== SA Test Results ===
+{'eval_loss': 1.2673803567886353, 'eval_precision': 0.86875, 'eval_recall': 0.7, 'eval_f1': 0.7008103475144148, 'eval_accuracy': 0.7}
+Writing model shards: 100%
+ 1/1 [00:03<00:00,  3.95s/it]
+SA model saved.
+Loading weights: 100%
+ 199/199 [00:00<00:00, 756.99it/s]
+
+Sample review: ফেস ওয়াশ টা অনেক সুন্দর, অসংখ্য ধন্যবাদ ডেলিভারি খুব দ্রুত দেয়ার জন্য।
+NER results: [{'entity_group': 'Product', 'score': np.float32(0.99867815), 'word': 'ফেস ওয়াশ', 'start': 0, 'end': 9}]
+Sentiment: Positive
+
+All tasks completed successfully!
