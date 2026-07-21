@@ -1,0 +1,37 @@
+Training samples: 3000
+Test samples:     30
+Loading weights: 100%
+ 199/199 [00:00<00:00, 1026.03it/s]
+Loading weights: 100%
+ 202/202 [00:00<00:00, 1119.69it/s]
+
+Computing NER predictions (zero‑shot)...
+
+=== NER (binary O vs non‑O) Test Results ===
+{'precision': 0.17549668874172186, 'recall': 1.0, 'f1': 0.29859154929577464, 'accuracy': 0.17549668874172186}
+
+Computing sentiment predictions (zero‑shot)...
+
+=== Sentiment Test Results ===
+Accuracy: 0.6667
+Weighted F1: 0.6479
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    negative       0.80      0.57      0.67         7
+     neutral       0.00      0.00      0.00         5
+    positive       0.76      0.89      0.82        18
+
+    accuracy                           0.67        30
+   macro avg       0.52      0.49      0.50        30
+weighted avg       0.64      0.67      0.65        30
+
+
+Predictions saved to zero_shot_predictions.csv
+Loading weights: 100%
+ 199/199 [00:00<00:00, 3037.66it/s]
+
+Sample review: ফেস ওয়াশ টা অনেক সুন্দর, অসংখ্য ধন্যবাদ ডেলিভারি খুব দ্রুত দেয়ার জন্য।
+NER results (aggregated): [{'entity_group': 'LABEL_5', 'score': np.float32(0.9401843), 'word': 'ফেস', 'start': 0, 'end': 3}, {'entity_group': 'LABEL_6', 'score': np.float32(0.9936067), 'word': 'ওযাশ টা', 'start': 4, 'end': 12}, {'entity_group': 'LABEL_0', 'score': np.float32(0.95081514), 'word': 'অনেক সনদর, অসংখয ধনযবাদ ডেলিভারি খব দরত দেযার জনয ।', 'start': 13, 'end': 72}]
+Sentiment: positive (scores: [0.9146673679351807, 0.044046033173799515, 0.04128660261631012])

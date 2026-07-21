@@ -1,0 +1,116 @@
+Training samples: 3000
+Test samples:     30
+Train size: 2400,  Validation size: 600
+/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_auth.py:112: UserWarning: 
+The secret `HF_TOKEN` does not exist in your Colab secrets.
+To authenticate with the Hugging Face Hub, create a token in your settings tab (https://huggingface.co/settings/tokens), set it as secret in your Google Colab and restart your session.
+You will be able to reuse this secret in all of your notebooks.
+Please note that authentication is recommended but still optional to access public models or datasets.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+config.json: 100%
+ 615/615 [00:00<00:00, 23.9kB/s]
+tokenizer_config.json: 100%
+ 25.0/25.0 [00:00<00:00, 1.04kB/s]
+sentencepiece.bpe.model: 100%
+ 5.07M/5.07M [00:01<00:00, 4.79MB/s]
+tokenizer.json: 100%
+ 9.10M/9.10M [00:01<00:00, 8.41MB/s]
+NER datasets created -- train: 2400, val: 600
+
+=== Training NER model on full training data ===
+model.safetensors: 100%
+ 1.12G/1.12G [00:12<00:00, 94.0MB/s]
+Loading weights: 100%
+ 197/197 [00:00<00:00, 3962.56it/s]
+[transformers] XLMRobertaForTokenClassification LOAD REPORT from: xlm-roberta-base
+Key                         | Status     | 
+----------------------------+------------+-
+lm_head.layer_norm.bias     | UNEXPECTED | 
+roberta.pooler.dense.weight | UNEXPECTED | 
+roberta.pooler.dense.bias   | UNEXPECTED | 
+lm_head.layer_norm.weight   | UNEXPECTED | 
+lm_head.dense.weight        | UNEXPECTED | 
+lm_head.bias                | UNEXPECTED | 
+lm_head.dense.bias          | UNEXPECTED | 
+classifier.weight           | MISSING    | 
+classifier.bias             | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Downloading builder script: 
+ 6.34k/? [00:00<00:00, 595kB/s]
+ [564/564 09:34, Epoch 3/3]
+Epoch	Training Loss	Validation Loss	Precision	Recall	F1	Accuracy
+1	0.025198	0.017805	0.972561	0.960843	0.966667	0.995442
+2	0.010242	0.006222	0.998478	0.987952	0.993187	0.998329
+3	0.004664	0.004912	0.998478	0.987952	0.993187	0.998329
+Writing model shards: 100%
+ 1/1 [00:21<00:00, 21.82s/it]
+Writing model shards: 100%
+ 1/1 [00:52<00:00, 52.55s/it]
+Writing model shards: 100%
+ 1/1 [01:06<00:00, 66.11s/it]
+ [2/2 00:00]
+Training Loss	Validation Loss	Epoch	Precision	Recall	F1	Accuracy
+0.004664	0.278261	3	0.666667	0.727273	0.695652	0.956954
+
+=== NER Test Results ===
+{'eval_loss': 0.27826064825057983, 'eval_precision': 0.6666666666666666, 'eval_recall': 0.7272727272727273, 'eval_f1': 0.6956521739130435, 'eval_accuracy': 0.956953642384106}
+Writing model shards: 100%
+ 1/1 [01:15<00:00, 75.25s/it]
+
+NER model saved.
+SA datasets created -- train: 2400, val: 600
+
+=== Training final SA model on full training data ===
+Loading weights: 100%
+ 197/197 [00:00<00:00, 767.38it/s]
+[transformers] XLMRobertaForSequenceClassification LOAD REPORT from: xlm-roberta-base
+Key                         | Status     | 
+----------------------------+------------+-
+lm_head.layer_norm.bias     | UNEXPECTED | 
+roberta.pooler.dense.weight | UNEXPECTED | 
+roberta.pooler.dense.bias   | UNEXPECTED | 
+lm_head.layer_norm.weight   | UNEXPECTED | 
+lm_head.dense.weight        | UNEXPECTED | 
+lm_head.bias                | UNEXPECTED | 
+lm_head.dense.bias          | UNEXPECTED | 
+classifier.out_proj.weight  | MISSING    | 
+classifier.dense.weight     | MISSING    | 
+classifier.out_proj.bias    | MISSING    | 
+classifier.dense.bias       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+ [564/564 09:56, Epoch 3/3]
+Epoch	Training Loss	Validation Loss	Precision	Recall	F1	Accuracy
+1	0.147877	0.000937	1.000000	1.000000	1.000000	1.000000
+2	0.001001	0.000251	1.000000	1.000000	1.000000	1.000000
+3	0.000456	0.000185	1.000000	1.000000	1.000000	1.000000
+Writing model shards: 100%
+ 1/1 [00:47<00:00, 47.41s/it]
+Writing model shards: 100%
+ 1/1 [01:29<00:00, 89.83s/it]
+Writing model shards: 100%
+ 1/1 [00:49<00:00, 49.03s/it]
+ [2/2 00:00]
+Training Loss	Validation Loss	Epoch	Precision	Recall	F1	Accuracy
+0.000456	1.740542	3	0.763248	0.700000	0.706667	0.700000
+
+=== SA Test Results ===
+{'eval_loss': 1.740541934967041, 'eval_precision': 0.7632478632478633, 'eval_recall': 0.7, 'eval_f1': 0.7066666666666667, 'eval_accuracy': 0.7}
+Writing model shards: 100%
+ 1/1 [00:56<00:00, 56.74s/it]
+SA model saved.
+Loading weights: 100%
+ 199/199 [00:00<00:00, 874.95it/s]
+
+Sample review: ফেস ওয়াশ টা অনেক সুন্দর, অসংখ্য ধন্যবাদ ডেলিভারি খুব দ্রুত দেয়ার জন্য।
+NER results: [{'entity_group': 'Product', 'score': np.float32(0.999907), 'word': 'ফ', 'start': 0, 'end': 1}, {'entity_group': 'Product', 'score': np.float32(0.99973935), 'word': 'েস ওয়াশ', 'start': 1, 'end': 9}]
+Sentiment: Positive
+
+All tasks completed successfully!
