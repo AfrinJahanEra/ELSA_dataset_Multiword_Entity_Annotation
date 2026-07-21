@@ -1,0 +1,452 @@
+% !TEX program = xelatex
+% =============================================================================
+%  ELSA Dataset — Multi-Word Entity Detection: Method and Comparative Analysis
+% -----------------------------------------------------------------------------
+%  MUST be compiled with XeLaTeX (Overleaf: Menu -> Compiler -> XeLaTeX).
+%  Bengali font: Noto Sans Bengali (bundled on Overleaf / TeX Live).
+%  On local Windows, replace with:  \newfontfamily\bnfont{Nirmala UI}
+% =============================================================================
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=2.4cm]{geometry}
+\usepackage{fontspec}
+\newfontfamily\bnfont{Noto Sans Bengali}[Script=Bengali]
+\newcommand{\bn}[1]{{\bnfont #1}}
+
+\usepackage{xcolor}
+\definecolor{brandblue}{HTML}{1F4E79}
+\definecolor{brandteal}{HTML}{2E7D74}
+\definecolor{codegreen}{HTML}{2E7D32}
+\definecolor{codered}{HTML}{C62828}
+\definecolor{noteblue}{HTML}{E7F0FA}
+
+\usepackage[most]{tcolorbox}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=brandblue, urlcolor=brandteal}
+
+\titleformat{\section}{\large\bfseries\color{brandblue}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{brandteal}}{\thesubsection}{0.6em}{}
+
+\newtcolorbox{note}[1][]{colback=noteblue,colframe=brandblue,boxrule=0.5pt,
+  arc=2pt,left=8pt,right=8pt,top=6pt,bottom=6pt,fonttitle=\bfseries,title=#1}
+
+\newcommand{\yes}{\textcolor{codegreen}{\textbf{Yes}}}
+\newcommand{\no}{\textcolor{codered}{\textbf{No}}}
+
+\setlist{leftmargin=1.4em,itemsep=2pt,topsep=3pt}
+
+% =============================================================================
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries\color{brandblue} Multi-Word Entity Detection in the ELSA Dataset}\\[4pt]
+  {\normalsize Detection method, results, and a comparison of automated vs.\ manual analysis}\\[3pt]
+  {\small Bangla (Bengali) e-commerce product reviews\quad$\vert$\quad Pipeline: \texttt{elsa\_multiword\_entity\_bio\_v3.py}}\\[6pt]
+  \rule{\textwidth}{0.8pt}
+\end{center}
+
+% =============================================================================
+\section{Objective}
+
+The goal was to identify \textbf{multi-word product entities} in 10,000 Bangla
+product reviews --- product names composed of two or more tokens, such as
+\bn{ডেটল সাবান} (Dettol Soap) or \bn{ফেস ওয়াশ} (Face Wash). Multi-word forms
+matter because a lone token such as \bn{সাবান} (``soap'') is ambiguous, whereas
+\bn{ডেটল সাবান} identifies both the brand and the product type.
+
+Detection was performed two ways --- automatically with a Python pipeline and
+manually by a human reviewer. The automated pipeline returned \textbf{13} unique
+multi-word entities; the manual review returned \textbf{30}. This document
+describes the detection method, reports the results, and explains the
+difference.
+
+% =============================================================================
+\section{Data and Entity Tagging}
+
+Each review carries a pre-tagged column, \texttt{ENTITY\_TAGGED\_REVIEW}, in
+which every product token is marked with the prefix \texttt{\_NE\_} (Named
+Entity). For example, in \bn{\_NE\_ডেটল} \bn{সাবান} \bn{তো} \bn{ভাল}, the token
+\bn{ডেটল} carries the tag and begins a product name. The entire detection
+pipeline depends on this tag: an untagged token is never treated as a product.
+
+% =============================================================================
+\section{Detection Method}
+
+Detection is implemented in \texttt{elsa\_multiword\_entity\_bio\_v3.py}. The
+core routine is \texttt{extract\_bio\_tags()}, supported by
+\texttt{normalize\_token()} and \texttt{get\_entity\_spans()}. The pipeline
+assigns every token one of three \textbf{BIO} labels:
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Tag} & \textbf{Meaning} \\
+\midrule
+\texttt{B-PRODUCT} & First (or only) token of a product name \\
+\texttt{I-PRODUCT} & Continuation token of a multi-word product name \\
+\texttt{O}         & Non-entity token \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent A single-word entity is a lone \texttt{B-PRODUCT}; a multi-word entity
+is \texttt{B-PRODUCT} followed by one or more \texttt{I-PRODUCT} tokens.
+
+\subsection{Tokenisation and tag recognition}
+The tagged review is split on whitespace (\texttt{text.split()}), giving a linear
+list of raw tokens. The routine scans them left to right with a single index:
+
+\begin{itemize}
+  \item If a token begins with the prefix \texttt{\_NE\_}, the prefix is removed
+        (\texttt{entity\_word = token[4:]}) and the token is labelled
+        \texttt{B-PRODUCT}, opening a new entity span.
+  \item If a token is punctuation-only (checked by \texttt{is\_punctuation\_only()})
+        or empty, it is discarded --- it receives no tag and is excluded from all
+        counts.
+  \item Any other token is labelled \texttt{O}.
+\end{itemize}
+
+\subsection{Continuation matching and the whitelist}
+Immediately after a \texttt{B-PRODUCT} token is opened, an inner loop inspects
+the following tokens to decide whether the entity extends. A candidate token is
+merged as \texttt{I-PRODUCT} only if \emph{all} of the following hold:
+
+\begin{enumerate}
+  \item it does \emph{not} itself begin with \texttt{\_NE\_} (that would start a
+        new entity);
+  \item its normalised, lower-cased form is present in the fixed whitelist
+        \texttt{PRODUCT\_SECOND\_TOKENS};
+  \item it passes the three noise guards (Section~\ref{sec:guards}).
+\end{enumerate}
+
+The loop keeps consuming continuation tokens until one fails a test, at which
+point the entity closes.
+
+\begin{note}[The whitelist is the decisive component]
+A continuation token is merged \emph{only} if it matches
+\texttt{PRODUCT\_SECOND\_TOKENS}, a hand-curated set of product ``type'' words.
+It contains both Bangla and English forms:
+
+\medskip
+\begin{tabular}{@{}p{2.0cm}p{11.5cm}@{}}
+\textbf{Bangla} & \bn{সাবান}, \bn{ওয়াশ}, \bn{অয়েল}, \bn{ওয়েল}, \bn{লোশন},
+  \bn{ক্রিম}, \bn{শ্যাম্পু}, \bn{টাচ}, \bn{মাস্ক}, \bn{ট্রিমার}, \bn{ব্রাশ},
+  \bn{ব্যাগ}, \bn{তেল}, \bn{বার}, \bn{ফোম}, \bn{পাউডার}, \bn{জেল}, \bn{সিরাম},
+  \bn{টোনার}, \bn{স্প্রে}, \bn{বাম}, \bn{বাটার}, \bn{ড্রপ}, \bn{ট্যাবলেট},
+  \bn{ক্যাপসুল}, \bn{সিরাপ}, \bn{সোপ} \\[4pt]
+\textbf{English} & oil, wash, cream, soap, mask, lotion, shampoo, powder, gel,
+  spray, serum, toner, balm, butter, foam, bar, drop, tablet, capsule, syrup,
+  trimmer, brush \\
+\end{tabular}
+
+\medskip
+Any continuation word outside this set cannot form a multi-word entity, which
+accounts for most of the gap in Section~\ref{sec:gap}.
+\end{note}
+
+\subsection{Token normalisation}
+Before a token is tested against the whitelist (or stored as an entity stem) it
+passes through \texttt{normalize\_token()}, which applies three steps in order:
+
+\begin{enumerate}
+  \item \textbf{Split on interior sentence boundaries.} The token is cut at the
+        first occurrence of \bn{।} \texttt{. ? ! ;} \bn{৷} and only the part
+        before it is kept, e.g.\ \bn{ওয়াশ।রিকমন্ডেড} $\rightarrow$ \bn{ওয়াশ}.
+  \item \textbf{Strip trailing punctuation.} Trailing commas, colons, brackets
+        and quotes are removed, e.g.\ \bn{ওয়াশ,} $\rightarrow$ \bn{ওয়াশ}.
+  \item \textbf{Strip one inflectional suffix} (longest match first), reducing
+        the surface form to its stem.
+\end{enumerate}
+
+The recognised Bangla suffixes are:
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Suffix} & \textbf{Function} & \textbf{Example} \\
+\midrule
+\bn{গুলো} / \bn{গুলি} / \bn{গুলা} & plural classifier   & \bn{সাবানগুলা} $\rightarrow$ \bn{সাবান} \\
+\bn{খানা} / \bn{খানি}             & unit classifier     & \bn{বইখানা} $\rightarrow$ \bn{বই} \\
+\bn{টা} / \bn{টি} / \bn{টো}       & definiteness marker & \bn{ক্রিমটি} $\rightarrow$ \bn{ক্রিম} \\
+\bn{ের}                            & genitive            & \bn{সাবানের} $\rightarrow$ \bn{সাবান} \\
+\bn{কে}                            & dative / accusative & --- \\
+\bn{তে}                            & locative            & --- \\
+\bn{র}                             & bare genitive       & --- \\
+\bn{ও}                             & additive            & --- \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent Only one suffix is removed per token, and only when the remaining stem
+is long enough to be meaningful (the code requires the stem to exceed the suffix
+length). The genitive suffix uses the dependent vowel sign \bn{ে} (U+09C7)
+rather than the independent vowel \bn{এ}; using the wrong codepoint would cause
+silent match failures.
+
+\subsection{Noise guards}
+\label{sec:guards}
+Three guards prevent spurious multi-word entities during the continuation loop:
+
+\begin{center}
+\begin{tabular}{@{}p{1.1cm}p{12.4cm}@{}}
+\toprule
+\textbf{G1} & \textbf{Same-token repetition.} A candidate whose stem is already
+              present in the current span is rejected, so \bn{\_NE\_সাবান সাবান}
+              yields a single entity \bn{সাবান} rather than the false pair
+              \bn{সাবান সাবান}. \\[3pt]
+\textbf{G2} & \textbf{Interior sentence boundary.} If the \texttt{B-PRODUCT}
+              token itself contains a sentence-boundary mark in its interior
+              (e.g.\ \bn{\_NE\_পণ্য।ইতিপূর্বেও ব্যাগ}), no continuation is
+              attempted at all --- the merge would cross a sentence. \\[3pt]
+\textbf{G3} & \textbf{Comma-list guard.} Using the \emph{original} untagged
+              review, if the current stem is immediately followed by a comma
+              (\bn{তেল, শ্যাম্পু}), the tokens are treated as an enumeration of
+              separate products, not one entity. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Span extraction and deduplication}
+After tagging, \texttt{get\_entity\_spans()} walks the tag sequence and groups
+each \texttt{B-PRODUCT} with its trailing \texttt{I-PRODUCT} tokens into a span.
+Each span stores its normalised token list, the joined surface text, its start
+and end indices, and an \texttt{is\_multi} flag (true when it holds more than one
+token). The joined \emph{normalised} text is the deduplication key: unique
+multi-word entities are the distinct normalised strings, counted with a
+\texttt{Counter}. Because the key is an exact string, two spellings of one
+product (e.g.\ \bn{স্যাভলন সাবান} and \bn{Savlon সাবান}) form two separate keys.
+
+\subsection{Worked example}
+Input tag stream: \bn{\_NE\_ডেটল} \bn{সাবানটি} \bn{তো} \bn{ভাল}
+
+\begin{enumerate}
+  \item \bn{\_NE\_ডেটল} $\rightarrow$ prefix removed, stem \bn{ডেটল}, labelled
+        \texttt{B-PRODUCT}; a new span opens.
+  \item \bn{সাবানটি}: normalisation strips the definiteness suffix \bn{টি}
+        $\rightarrow$ \bn{সাবান}; this is in the whitelist and passes G1--G3, so
+        it is labelled \texttt{I-PRODUCT} and merged.
+  \item \bn{তো}: not whitelisted $\rightarrow$ the span closes; token labelled
+        \texttt{O}.
+  \item \bn{ভাল}: labelled \texttt{O}.
+\end{enumerate}
+
+\noindent Resulting span: \bn{ডেটল সাবান} --- tokens \bn{ডেটল} + \bn{সাবান},
+tags \texttt{B-PRODUCT + I-PRODUCT}, \texttt{is\_multi = true}.
+
+
+% =============================================================================
+\section{Results}
+
+\begin{center}
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Measure} & \textbf{Value} \\
+\midrule
+Total reviews                    & 10,000 \\
+Total tokens                     & 86,741 \\
+\texttt{B-PRODUCT} tags          & 8,821 \\
+\texttt{I-PRODUCT} tags          & 55 \\
+\texttt{O} tags                  & 77,865 \\
+Total entity spans               & 8,821 \\
+\quad Single-word                & 8,766 \ (99.4\%) \\
+\quad Multi-word                 & 55 \ \ \ (0.6\%) \\
+Unique multi-word entities       & \textbf{13} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent The 13 unique multi-word entities detected:
+
+\begin{center}
+\small
+\begin{tabular}{@{}rl r rl@{}}
+\toprule
+\textbf{\#} & \textbf{Entity} & \textbf{Count} & \textbf{\#} & \textbf{Entity} \\
+\midrule
+1 & \bn{ফেস ওয়াশ}      & 28 & 8  & \bn{প্যানটিন শ্যাম্পু} \\
+2 & \bn{ডেটল সাবান}     & 14 & 9  & \bn{থ্রিডি মাস্ক} \\
+3 & \bn{ফেস মাস্ক}      & 2  & 10 & \bn{সানছ ক্রিম} \\
+4 & \bn{সেপনিল মাস্ক}   & 2  & 11 & \bn{ফেইস ওয়াশ} \\
+5 & \bn{লাক্স সাবান}    & 1  & 12 & \bn{অলিভ অয়েল} \\
+6 & \bn{স্যাভলন সাবান}  & 1  & 13 & \bn{ডেটল সোপ} \\
+7 & \bn{Savlon সাবান}   & 1  &    & \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Three of these are spelling variants of products already in the list:
+\bn{Savlon সাবান} duplicates \bn{স্যাভলন সাবান}, \bn{ফেইস ওয়াশ} duplicates
+\bn{ফেস ওয়াশ}, and \bn{ডেটল সোপ} duplicates \bn{ডেটল সাবান}. The pipeline treats
+each spelling as a distinct entity because it matches text exactly.
+
+% =============================================================================
+\section{Manual Review}
+
+Reading the reviews directly, the human reviewer catalogued \textbf{30} unique
+multi-word product names (\texttt{manual\_report.txt}):
+
+\begin{center}
+\small
+\begin{tabular}{@{}rl rl rl@{}}
+\toprule
+\# & Entity & \# & Entity & \# & Entity \\
+\midrule
+1  & \bn{ফেস ওয়াশ}       & 11 & \bn{মেথি গুড়ো}     & 21 & \bn{টুথপেস্ট} \\
+2  & \bn{ডেটল সাবান}      & 12 & \bn{আইলাইনার}       & 22 & \bn{টুথব্রাশ} \\
+3  & \bn{ফেসমাস্ক}        & 13 & \bn{ফেসক্রিম}       & 23 & \bn{টি-শার্ট} \\
+4  & \bn{সেপনিল মাস্ক}    & 14 & \bn{হেয়ার জেল}     & 24 & \bn{বডি স্প্রে} \\
+5  & \bn{লাক্স সাবান}     & 15 & \bn{লিপজেল}         & 25 & \bn{শেভিং মেশিন} \\
+6  & \bn{স্যাভলন সাবান}   & 16 & \bn{হোয়াইট বিউটি}  & 26 & \bn{মেহেদী গুড়ো} \\
+7  & \bn{প্যানটিন শ্যাম্পু} & 17 & \bn{স্লিপিং মাস্ক} & 27 & \bn{সেপটেক্স সাবান} \\
+8  & \bn{থ্রিডি মাস্ক}    & 18 & \bn{আলোভেরা জেল}    & 28 & \bn{মেরিলের সাবান} \\
+9  & \bn{সানছ ক্রিম}      & 19 & \bn{কটন প্যাড}      & 29 & \bn{পেট্রোলিয়াম জেলি} \\
+10 & \bn{অলিভ অয়েল}      & 20 & \bn{সার্জিক্যাল মাস্ক} & 30 & \bn{বেবি লোশন} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+% =============================================================================
+\section{Gap Analysis: 13 vs.\ 30}
+\label{sec:gap}
+
+The pipeline captured 9 of the 30 products as exact multi-word matches. The
+remaining 21 were missed for three reasons.
+
+\subsection{Continuation word absent from the whitelist}
+The pipeline merges a second token only if it is listed in
+\texttt{PRODUCT\_SECOND\_TOKENS}. Products ending in unlisted words could not be
+formed:
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Missing continuation word} & \textbf{Affected products} \\
+\midrule
+\bn{গুড়ো} (powder)  & \bn{মেথি গুড়ো}, \bn{মেহেদী গুড়ো} \\
+\bn{বিউটি} (beauty)  & \bn{হোয়াইট বিউটি} \\
+\bn{প্যাড} (pad)     & \bn{কটন প্যাড} \\
+\bn{মেশিন} (machine) & \bn{শেভিং মেশিন} \\
+\bn{জেলি} (jelly)    & \bn{পেট্রোলিয়াম জেলি} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Product written as a single joined token}
+Several products are written without a space and so are tokenised as one word.
+The pipeline classifies them as single-word entities and never as multi-word:
+\bn{ফেসমাস্ক} (face+mask), \bn{ফেসক্রিম} (face+cream), \bn{লিপজেল} (lip+gel),
+\bn{আইলাইনার} (eye+liner), \bn{টুথপেস্ট} (tooth+paste), \bn{টুথব্রাশ}
+(tooth+brush), \bn{টি-শার্ট} (t-shirt). It cannot split a token that contains no
+space. Note that the code did detect the spaced form \bn{ফেস মাস্ক} elsewhere,
+but not the joined \bn{ফেসমাস্ক} the reviewer recorded.
+
+\subsection{Spelling and transliteration variants}
+The same product appears under different spellings and scripts. Because matching
+is exact, the pipeline either counts variants separately or fails to link them.
+For example, the single product \textbf{Savlon Soap} occurs as
+\bn{স্যাভলন সাবান} and \bn{Savlon সাবান}, and could equally appear as \bn{সালভন}
+or \emph{Savlon Soap}. The reviewer recognises these as one product; the pipeline
+does not, because it cannot equate \bn{সাবান} with ``soap'' or \bn{ফেস} with
+\bn{ফেইস}. The same applies to \bn{ডেটল সাবান} vs.\ \bn{ডেটল সোপ}.
+
+\subsection{Tagged but not merged}
+A few products whose continuation word \emph{is} whitelisted (\bn{সাবান},
+\bn{মাস্ক}, \bn{লোশন}, \bn{স্প্রে}, \bn{জেল}) still did not appear as merged
+entities --- for example \bn{সেপটেক্স সাবান}, \bn{মেরিলের সাবান},
+\bn{সার্জিক্যাল মাস্ক}, \bn{স্লিপিং মাস্ক}, \bn{বডি স্প্রে}, \bn{আলোভেরা জেল},
+\bn{হেয়ার জেল}, \bn{বেবি লোশন}. In these cases the two tokens were not both
+\texttt{\_NE\_}-tagged, were not adjacent, or the brand token was spelled
+unusually.
+
+\subsection{Per-entity outcome}
+
+\begin{center}
+\footnotesize
+\begin{longtable}{@{}rlcl@{}}
+\toprule
+\textbf{\#} & \textbf{Product} & \textbf{Detected} & \textbf{Reason} \\
+\midrule
+\endhead
+1  & \bn{ফেস ওয়াশ}         & \yes & whitelisted (\bn{ওয়াশ}) \\
+2  & \bn{ডেটল সাবান}        & \yes & whitelisted (\bn{সাবান}) \\
+3  & \bn{ফেসমাস্ক}          & \no  & written as one token \\
+4  & \bn{সেপনিল মাস্ক}      & \yes & whitelisted (\bn{মাস্ক}) \\
+5  & \bn{লাক্স সাবান}       & \yes & whitelisted (\bn{সাবান}) \\
+6  & \bn{স্যাভলন সাবান}     & \yes & detected (also as \bn{Savlon সাবান}) \\
+7  & \bn{প্যানটিন শ্যাম্পু} & \yes & whitelisted (\bn{শ্যাম্পু}) \\
+8  & \bn{থ্রিডি মাস্ক}      & \yes & whitelisted (\bn{মাস্ক}) \\
+9  & \bn{সানছ ক্রিম}        & \yes & whitelisted (\bn{ক্রিম}) \\
+10 & \bn{অলিভ অয়েল}        & \yes & whitelisted (\bn{অয়েল}) \\
+11 & \bn{মেথি গুড়ো}        & \no  & \bn{গুড়ো} not whitelisted \\
+12 & \bn{আইলাইনার}          & \no  & written as one token \\
+13 & \bn{ফেসক্রিম}          & \no  & written as one token \\
+14 & \bn{হেয়ার জেল}        & \no  & not tagged / not merged \\
+15 & \bn{লিপজেল}            & \no  & written as one token \\
+16 & \bn{হোয়াইট বিউটি}     & \no  & \bn{বিউটি} not whitelisted \\
+17 & \bn{স্লিপিং মাস্ক}     & \no  & not tagged / not merged \\
+18 & \bn{আলোভেরা জেল}       & \no  & not tagged / not merged \\
+19 & \bn{কটন প্যাড}         & \no  & \bn{প্যাড} not whitelisted \\
+20 & \bn{সার্জিক্যাল মাস্ক} & \no  & not tagged / not merged \\
+21 & \bn{টুথপেস্ট}          & \no  & written as one token \\
+22 & \bn{টুথব্রাশ}          & \no  & written as one token \\
+23 & \bn{টি-শার্ট}          & \no  & written as one token \\
+24 & \bn{বডি স্প্রে}        & \no  & not tagged / not merged \\
+25 & \bn{শেভিং মেশিন}       & \no  & \bn{মেশিন} not whitelisted \\
+26 & \bn{মেহেদী গুড়ো}      & \no  & \bn{গুড়ো} not whitelisted \\
+27 & \bn{সেপটেক্স সাবান}    & \no  & not tagged / not merged \\
+28 & \bn{মেরিলের সাবান}     & \no  & not tagged / not merged \\
+29 & \bn{পেট্রোলিয়াম জেলি} & \no  & \bn{জেলি} not whitelisted \\
+30 & \bn{বেবি লোশন}         & \no  & not tagged / not merged \\
+\bottomrule
+\end{longtable}
+\end{center}
+
+% =============================================================================
+\section{Limitations}
+
+\subsection{Automated pipeline}
+\begin{itemize}
+  \item \textbf{Fixed whitelist.} Only continuation words in
+        \texttt{PRODUCT\_SECOND\_TOKENS} can form a multi-word entity; unlisted
+        words (\bn{গুড়ো}, \bn{বিউটি}, \bn{প্যাড}, \bn{মেশিন}, \bn{জেলি}) are missed.
+  \item \textbf{Exact matching.} Spelling and transliteration variants
+        (\bn{স্যাভলন} / Savlon / \bn{সালভন}) are not unified.
+  \item \textbf{No token splitting.} Space-free compounds (\bn{ফেসমাস্ক},
+        \bn{টুথপেস্ট}) are read as single words.
+  \item \textbf{No cross-language equivalence.} \bn{সাবান} and ``soap'', or
+        \bn{ফেস} and \bn{ফেইস}, are treated as unrelated.
+  \item \textbf{Tag dependence.} Detection is impossible where the source
+        \texttt{\_NE\_} tag is absent.
+\end{itemize}
+
+\subsection{Manual review}
+\begin{itemize}
+  \item \textbf{Not scalable} to large corpora; slow and labour-intensive.
+  \item \textbf{Subjective and inconsistent} across reviewers or sessions.
+  \item \textbf{Error-prone} under fatigue; occurrences can be miscounted or missed.
+  \item \textbf{Not reproducible} and produces no automatic statistics
+        (counts, sentiment breakdown, sentence-ID map).
+\end{itemize}
+
+% =============================================================================
+\section{Conclusion}
+
+The two methods measure different things and each is incomplete alone. The
+pipeline is fast, consistent, and produces exact statistics, but is bounded by a
+fixed whitelist, exact string matching, and dependence on source tags. Manual
+review captures spelling variants, compounds, and unlisted product types through
+human judgement, but does not scale and is not reproducible.
+
+The practical improvement is to combine them: extend the whitelist (e.g.\
+\bn{গুড়ো}, \bn{বিউটি}, \bn{প্যাড}, \bn{মেশিন}, \bn{জেলি}), add a
+transliteration/normalisation layer so brand variants collapse to one entity,
+add a compound-word splitter for space-free products, and retain a human review
+pass over flagged edge cases using the sentence-ID map the pipeline already
+produces.
+
+\end{document}
